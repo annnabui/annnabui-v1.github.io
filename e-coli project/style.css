@@ -1,0 +1,124 @@
+html {
+    background-color: #F5F5F5 ;
+}
+
+.main {
+    position: absolute;
+    top: 47px;
+    left: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.e {
+    position: absolute;
+    bottom: 47px;
+    left: 1044px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.c {
+    position: absolute;
+    bottom: 47px;
+    right: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.a {
+    position: absolute;
+    top: 55px;
+    left: 712px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+     color: #000000;
+}
+
+.sss {
+    position: absolute;
+    top: 55px;
+    right: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.s {
+    position: absolute;
+    bottom: 55px;
+    left: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.ss {
+    position: absolute;
+    bottom: 55px;
+    left: 630px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.line1 {
+    position: absolute;
+    top: 88px;
+    left: 756px;
+    height: 524px;
+    border: 1px solid #000000;
+}
+
+.line2 {
+    position: absolute;
+    top: 348px;
+    left: 48px;
+    width: 803.2px;
+    height: 0px;
+    border: 1px solid #000000;
+    transform: rotate(-40.25deg);
+}
+
+.line3 {
+    position: absolute;
+    top: 352px;
+    left: 662px;
+    width: 803.2px;
+    height: 0px;
+    border: 1px solid #000000;
+    transform: rotate(-40.25deg);
+}
+
+.line4 {
+    position: absolute;
+    bottom: 70px;
+    left: 190px;
+    width: 430px;
+    height: 0px;
+    border: 1px solid #000000;
+}

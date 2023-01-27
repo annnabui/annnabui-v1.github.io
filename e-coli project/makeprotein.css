@@ -1,0 +1,160 @@
+html {
+    background-color: #F5F5F5 ;
+}
+
+.main {
+    position: absolute;
+    top: 47px;
+    left: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.ge {
+    position: absolute;
+    top: 69px;
+    left: 341px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.ecoli {
+    position: absolute;
+    right: 55px;
+    top: 12%;
+    z-index: 3;
+}
+
+.plasmid {
+    position: absolute;
+    top: 241px;
+    left: 940px;
+    z-index: 4;
+}
+
+.h {
+    position: absolute;
+    top: 260px;
+    left: 930px;
+    z-index: 4;
+}
+
+.bg {
+    position: absolute;
+    right: 0;
+    top: 182px;
+    width: 621px;
+    height: 351px;
+    background: #F5F5F5;
+    z-index: 2;
+}
+
+.i1 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 214px;
+    background: #F15A29;
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: insulin1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insulin1 {
+    0% {right: 0px}
+    100% {right: 882px}
+}
+
+.i2 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 435px;
+    background: #F15A29;
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: insulin2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insulin2 {
+    0% {right: 0px}
+    100% {right: 835px}
+}
+
+.i3 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 331px;
+    background: #F15A29;
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: insulin3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insulin3 {
+    0% {right: 0px}
+    100% {right: 930px}
+}
+
+.i4 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 424px;
+    background: #F15A29;
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: insulin4;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insulin4 {
+    0% {right: 0px}
+    100% {right: 997px}
+}
+
+.i5 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    top: 331px;
+    background: #F15A29;
+    border-radius: 50%;
+    z-index: 1;
+    animation-name: insulin5;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes insulin5 {
+    0% {right: 0px}
+    100% {right: 1146px}
+}
+
+.c {
+    position: absolute;
+    left: 47px;
+    bottom: 47px;
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}

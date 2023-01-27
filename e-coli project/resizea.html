@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <link rel="stylesheet" href="resizea.css">
+</head>
+<body>
+    <footer>
+        <span id="currentwidth">RESIZE YOUR BROWSER TO 1200PX</span>
+    </footer>
+    
+    <div id="wrapper">
+      <img src="./imgs/b1.png" class="a">
+      <img src="./imgs/b2.png" class="b">
+      <img src="./imgs/b3.png" class="c">
+      <img src="./imgs/b4.png" class="d">
+      <img src="./imgs/b5.png" class="e">
+      <img src="./imgs/b6.png" class="f">
+      <img src="./imgs/b7.png" class="g">
+      <img src="./imgs/b8.png" class="h">
+      <img src="./imgs/b9.png" class="i">
+      <img src="./imgs/b10.png" class="j">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(window).resize(function() {
+            var thewidth = $(window).width();
+            $("currentwidth").text(thewidth + "PX");
+            if (thewidth > 1200) {
+                $(wrapper).fadeIn("slow");
+            }
+        });
+    </script>
+</body>
+</html>
