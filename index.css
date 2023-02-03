@@ -4,13 +4,6 @@ html {
     margin: 2vw;
 }
 
-.title {
-    font-size: 5vw;
-}
-.text {
-    font-size: 2.5vw;
-}
-
 a:link{
     color: aquamarine;
     text-decoration: none;
