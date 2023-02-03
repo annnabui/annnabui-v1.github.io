@@ -4,6 +4,10 @@ html {
     padding: 2vw;
 }
 
+body {
+    font-size: 3vw;
+}
+
 a:link{
     color: aquamarine;
     text-decoration: none;
