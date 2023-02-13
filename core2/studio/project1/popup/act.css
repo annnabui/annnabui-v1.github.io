@@ -1,0 +1,44 @@
+.videobg {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    margin: -8px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Exposure50";
+    src: url("./font/ExposureTrial[-50].otf");
+}
+
+div {
+    font-family: "Exposure50";
+    font-weight: 397;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div > div {
+    height: auto;
+    width: auto;
+    border: 1px black;
+    margin: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
