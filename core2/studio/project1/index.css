@@ -1,0 +1,30 @@
+body {
+    background: url("./imgs/static.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: "Exposure30";
+    src: url("./font/ExposureTrial[-30].otf");
+}
+
+p {
+    font-family: "Exposure30";
+    font-weight: 397;
+    font-size: 1.5vw;
+    color: #f5f5f5;
+}
+
+a {
+    opacity: 50%;
+}
+
+marquee {
+    margin: -2vw;
+}
+
+/*cant make red yet*/
+.red {
+    color: red;
+}
