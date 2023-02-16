@@ -1,0 +1,45 @@
+html {
+    background: black;
+}
+
+.title {
+    font-family: Helvetica Neue;
+    color: white;
+    font-size: 8vw;;
+    line-height: 6vw;
+}
+
+.space {
+    width:auto;
+    height: 7vw;
+}
+
+.box {
+    background: radial-gradient(#c5bf83,#92b17a,#5c8159,#090c08);
+    position: absolute;
+    top: 24.4vw;
+    left: 38%;
+    width: 24vw;
+    height: 15vw;
+    z-index: 2;
+}
+
+.box:hover {
+    display: none;
+}
+
+.survey {
+    text-align: center;;
+}
+
+.flex {
+    color: white;
+    font-family: Helvetica Neue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 900;
+}
