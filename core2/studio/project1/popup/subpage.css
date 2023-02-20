@@ -72,3 +72,20 @@ a:active{
     color: #FFF37A;
     text-decoration: none;
 }
+
+span {
+    color: #FFF37A;
+    animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

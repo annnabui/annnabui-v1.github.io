@@ -8,12 +8,12 @@
 
     <link rel="stylesheet" href="subpage.css">
 </head>
-<body onclick="myFunction()">
+<body onclick="setTimeout(myFunction, 3000);">
 
     <div class="videobg">
         <video src="../imgs/bg.mp4" autoplay muted loop class="video"></video>
     </div> 
-    
+
     <div class="text">
         Everyone knows that if you query poets about how their poems begin, the answer is always the same: a phrase, a line, a scrap of language, a rhythm, an image, something seen, heard, witnessed, or imagined. And the lesson is always the same, and young poets recognize this to be one of the most important lessons they can learn: if you have any idea for a poem, an exact grid of intent, you are on the wrong path, a dead-end alley, at the top of a cliff you haven't even climbed. This is a lesson that can only be learned by trial and error. <br>
          <br>
@@ -21,5 +21,11 @@
          <br>
         Now here is something really interesting (to me), something you can use at a standing-up-only party when everyone is tired of hearing there are one million three-thousand-two-hundred-ninety-five words used by the Eskimo for snow. This is what Ezra Pound learned from Ernest Fenollosa: Some languages are so constructed—English among them—that we each only really speak one sentence in our lifetime. That sentence begins with your first words, toddling around the kitchen, and ends with your last words right before you step into the limousine, or in a nursing home, the night-duty attendant vaguely on hand. Or, if you are blessed, they are heard by someone who knows you and loves you and will be sorry to hear the sentence end.
     </div>
+
+    <script>
+        function myFunction() {
+            alert('are you 100% sure you want to go with this idea?');
+    }
+    </script>
 </body>
 </html>
