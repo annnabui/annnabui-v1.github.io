@@ -17,7 +17,7 @@
 }
 
 html {
-    background-color: #DF8F39;
+    background-color: #4A6648;
 }
 
 @font-face {
@@ -42,33 +42,23 @@ div {
     height: 5vw;
 }
 
-.paul {
-    animation: appear 0s 5.5s forwards;
-    opacity: 0;
-    color: #FFF37A;
-}
-
-@keyframes appear {
-    to {opacity: 1; }
-}
-
 a:link{
-    color: #FFF37A;
+    color: #BCD6A9;
     text-decoration: none;
 }
 a:visited{
-    color: #FFF37A;
+    color: #BCD6A9;
     text-decoration: none;
 }
 a:hover{
-    color: #FFF37A;
+    color: #BCD6A9;
     text-decoration: none;
 }
 a:focus{
-    color: #FFF37A;
+    color: #BCD6A9;
     text-decoration: none;
 }
 a:active{
-    color: #FFF37A;
+    color: #BCD6A9;
     text-decoration: none;
 }
