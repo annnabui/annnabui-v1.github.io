@@ -1,9 +1,3 @@
-/* body {
-    background: url("./imgs/static.png");
-    background-repeat: no-repeat;
-} */
-
-
 .videobg {
     position: fixed;
     min-width: 100%;
@@ -42,6 +36,10 @@ a {
     opacity: 40%;
 }
 
+a:visited{
+    color: red;
+}
+
 marquee {
     margin: -3vh;
 }
@@ -50,4 +48,6 @@ marquee {
 .red {
     color: red;
 }
+
+/* semicolon */
 

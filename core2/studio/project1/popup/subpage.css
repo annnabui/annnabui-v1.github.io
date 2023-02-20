@@ -1,4 +1,4 @@
-.videobg {
+/* .videobg {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -13,6 +13,10 @@
     min-width: 100%;
     min-height: 100%;
     overflow: hidden;
+} */
+
+html {
+    background-color: #2B3926;
 }
 
 @font-face {
@@ -28,6 +32,7 @@ div {
 }
 
 .text {
-    padding-top: 50%;
-    padding-left: 50%;
+    width: 500px;
+    height: auto;
+    margin: 50vw;
 }

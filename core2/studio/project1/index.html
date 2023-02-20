@@ -7,19 +7,18 @@
     <title>project 1</title>
 
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </head>
-<body>
-
+<body onload="myFunction()">
     <div class="videobg">
-        <video src="./imgs/bg.mp4" autoplay muted loop class="video"></video>
+        <video src="./imgs/forest.mp4" autoplay muted loop class="video"></video>
     </div> 
 
     <div class="text">
         <marquee onmouseover="stop()" onmouseout="start()">
             <p>
                 In <a onclick=
-                'window.open("https://annnabui.github.io/core2/studio/project1/popup/life.html",
+                'linkVisited(this), window.open("https://annnabui.github.io/core2/studio/project1/popup/life.html",
                 "_blank", "width=300, height=300, top=300, left=300");'>life</a>, the number of <a onclick=
                 'window.open("https://annnabui.github.io/core2/studio/project1/popup/beginning.html",
                 "_blank", "width=300, height=300, top=300, left=300");'>beginnings</a> is <a onclick=
@@ -286,6 +285,16 @@
                 "_blank", "width=300, height=300, top=250, left=250");'>in</a></em>. And it was. 
         </marquee>
     </div>
+
+    <script>
+        function myFunction() {
+            alert("Please enable pop up to explore this website");
+        }
+
+        function linkVisited(link) {
+            link.classlist.add("visited");
+        }
+    </script>
 </body>
 </body>
 </html>
