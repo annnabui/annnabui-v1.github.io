@@ -7,6 +7,27 @@
     <title>act of the mind</title>
 
     <link rel="stylesheet" href="subpage4th.css">
+
+    <style>
+        :root {
+            cursor: none;
+            --cursorXPos: 50vw;
+            --cursorYPos: 50vh;
+        }
+    
+        :root:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: radial-gradient(
+            circle 8rem at var(--cursorXPos) var(--cursorYPos),
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.95) 100%
+            );
+            z-index: 11;
+        }
+        </style>
 </head>
 <body>
     <div class="videobg">
@@ -14,10 +35,22 @@
     </div> 
 
     <div class="text">
-        <a onclick='window.open("https://annnabui.github.io/core2/studio/project1/popup/act5.html",
-        "_blank", "width=300, height=300, top=300, left=300");'>
         How a poem acts marks its individual character. A poem by Glandolyn Blue does not sound like a poem by Timothy Sure. to pretend, feign, impersonate. That, too, yes and always, because self-consciousness is its own pretension, and has been from its beginning; the human mind is capable of a great elastic theatre. 
-        </a> 
     </div>
+
+    <script>
+        function trackMouse(event) {
+            document.documentElement.style.setProperty(
+            '--cursorXPos',
+            `${event.clientX}px`
+            )
+            document.documentElement.style.setProperty(
+            '--cursorYPos',
+            `${event.clientY}px`
+            )
+        }
+    
+            document.addEventListener('mousemove', trackMouse)
+    </script>
 </body>
 </html>

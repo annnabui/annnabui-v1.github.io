@@ -17,7 +17,7 @@
 }
 
 html {
-    background-color: #DF8F39;
+    background-color: #D98041;
 }
 
 @font-face {
@@ -45,7 +45,7 @@ div {
 .paul {
     animation: appear 0s 5.5s forwards;
     opacity: 0;
-    color: #FFF37A;
+    color: #C1483F;
 }
 
 @keyframes appear {
@@ -53,28 +53,29 @@ div {
 }
 
 a:link{
-    color: #FFF37A;
+    color: #C1483F;
     text-decoration: none;
 }
 a:visited{
-    color: #FFF37A;
+    color: #C1483F;
     text-decoration: none;
 }
 a:hover{
-    color: #FFF37A;
+    color: #C1483F;
     text-decoration: none;
 }
 a:focus{
-    color: #FFF37A;
+    color: #C1483F;
     text-decoration: none;
 }
 a:active{
-    color: #FFF37A;
+    color: #C1483F;
     text-decoration: none;
 }
 
-span {
-    color: #FFF37A;
+
+.first-word {
+    color: #C1483F;
     animation: flicker 3s linear infinite;
 }
 
@@ -89,3 +90,29 @@ span {
         opacity: 0;
     }
 }
+
+.first-word:hover ~ .last-word {
+    color: #C1483F;
+}
+
+.first-word:active ~ .last-word {
+    color: #C1483F;
+}
+
+.first-word:focus ~ .last-word {
+    color: #C1483F;
+}
+
+.last-word:hover {
+    color: #C1483F;
+}
+
+.last-word:hover ~ .sm {
+    color: #C1483F;
+}
+
+.link {
+    color: #F8DD5E;
+    animation: flicker 3s linear infinite;
+}
+

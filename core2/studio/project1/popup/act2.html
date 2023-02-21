@@ -7,6 +7,27 @@
     <title>act of the mind</title>
 
     <link rel="stylesheet" href="subpage2nd.css">
+
+    <style>
+        :root {
+            cursor: none;
+            --cursorXPos: 50vw;
+            --cursorYPos: 50vh;
+        }
+    
+        :root:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: radial-gradient(
+            circle 8rem at var(--cursorXPos) var(--cursorYPos),
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.95) 100%
+            );
+            z-index: 11;
+        }
+        </style>
 </head>
 <body>
     <div class="videobg">
@@ -14,10 +35,22 @@
     </div> 
 
     <div class="text">
-        <a onclick='window.open("https://annnabui.github.io/core2/studio/project1/popup/act3.html",
-        "_blank", "width=300, height=300, top=300, left=300");'>
         I believe the poem is an act of the mind. I think it is easier to talk about the end of a poem than it is to talk about its beginning. Because the poem ends on the page, but it begins off the page, it begins in the mind. The mind acts, the mind wills a poem, often against our own will; somehow this happens, somehow a poem gets written in the middle of a chaotic holiday party that has just run out of ice, and it's your house. 
-        </a> 
     </div>
+
+    <script>
+        function trackMouse(event) {
+            document.documentElement.style.setProperty(
+            '--cursorXPos',
+            `${event.clientX}px`
+            )
+            document.documentElement.style.setProperty(
+            '--cursorYPos',
+            `${event.clientY}px`
+            )
+        }
+    
+            document.addEventListener('mousemove', trackMouse)
+    </script>
 </body>
 </html>

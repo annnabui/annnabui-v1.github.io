@@ -11,7 +11,18 @@
 <body onload="myFunction()">
 
     <div id="wrapper">
-        
+        <img src="../imgs/ani0.jpg" class="a">
+        <img src="../imgs/ani1.jpg" class="b">
+        <img src="../imgs/ani2.jpg" class="c">
+        <img src="../imgs/ani3.jpg" class="d">
+        <img src="../imgs/ani4.jpg" class="e">
+        <img src="../imgs/ani5.jpg" class="f">
+        <img src="../imgs/ani6.jpg" class="g">
+        <img src="../imgs/ani7.jpg" class="h">
+        <img src="../imgs/ani8.jpg" class="i">
+        <img src="../imgs/ani9.jpg" class="j">
+        <img src="../imgs/ani10.jpg" class="k">
+        <img src="../imgs/ani11.jpg" class="l">
     </div>
 
     <script>
@@ -19,5 +30,18 @@
             alert("Please resize the viewport to watch animation");
         }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        $(window).resize(function() {
+            var thewidth = $(window).width();
+            $("currentwidth").text(thewidth + "PX");
+            if (thewidth > 1200) {
+                $(wrapper).fadeIn("slow");
+            }
+        });
+    </script>  
 </body>
 </html>

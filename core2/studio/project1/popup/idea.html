@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="subpage.css">
 </head>
-<body onclick="setTimeout(myFunction, 3000);">
+<body onload="setTimeout(myFunction, 3000);">
 
     <div class="videobg">
         <video src="../imgs/bg.mp4" autoplay muted loop class="video"></video>
@@ -19,13 +19,15 @@
          <br>
         I believe many fine poems begin with ideas, but if you tell too many faces this, or tell it too loudly, they will get the wrong idea.<br>
          <br>
-        Now here is something really interesting (to me), something you can use at a standing-up-only party when everyone is tired of hearing there are one million three-thousand-two-hundred-ninety-five words used by the Eskimo for snow. This is what Ezra Pound learned from Ernest Fenollosa: Some languages are so constructed—English among them—that we each only really speak one sentence in our lifetime. That sentence begins with your first words, toddling around the kitchen, and ends with your last words right before you step into the limousine, or in a nursing home, the night-duty attendant vaguely on hand. Or, if you are blessed, they are heard by someone who knows you and loves you and will be sorry to hear the sentence end.
+        Now here is something really interesting (to me), something you can use at a standing-up-only party when everyone is tired of hearing there are one million three-thousand-two-hundred-ninety-five words used by the Eskimo for snow. This is what <a onclick=
+        'window.open("https://www.thenewatlantis.com/text-patterns/pound-and-fenollosa",
+        "_blank", "width=300, height=300, top=300, left=300");'>Ezra Pound learned from Ernest Fenollosa</a>: Some languages are so constructed—English among them—that we each only really speak one sentence in our lifetime. That sentence begins with your first words, toddling around the kitchen, and ends with your last words right before you step into the limousine, or in a nursing home, the night-duty attendant vaguely on hand. Or, if you are blessed, they are heard by someone who knows you and loves you and will be sorry to hear the sentence end.
     </div>
 
     <script>
         function myFunction() {
-            alert('are you 100% sure you want to go with this idea?');
-    }
+          alert("Let's not be so sure of our idea. Everything is a work-in-process.");
+        }
     </script>
 </body>
 </html>

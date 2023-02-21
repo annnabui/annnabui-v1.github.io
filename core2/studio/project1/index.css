@@ -36,18 +36,10 @@ a {
     opacity: 40%;
 }
 
-a:visited{
-    color: red;
+a.visited{
+    color: black;
 }
 
 marquee {
     margin: -3vh;
 }
-
-/*cant make red yet*/
-.red {
-    color: red;
-}
-
-/* semicolon */
-

@@ -17,7 +17,7 @@
 }
 
 html {
-    background-color: #4F9F48;
+    background-color: #E7B04C;
 }
 
 @font-face {
@@ -43,22 +43,23 @@ div {
 }
 
 a:link{
-    color: #E4F099;
+    color: #725C4C;
     text-decoration: none;
 }
 a:visited{
-    color: #E4F099;
+    color: #725C4C;
     text-decoration: none;
 }
 a:hover{
-    color: #E4F099;
+    color: #725C4C;
     text-decoration: none;
 }
 a:focus{
-    color: #E4F099;
+    color: #725C4C;
     text-decoration: none;
 }
 a:active{
-    color: #BCD6A9;
+    color: #725C4C;
     text-decoration: none;
 }
+

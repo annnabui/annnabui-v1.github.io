@@ -7,6 +7,27 @@
     <title>act of the mind</title>
 
     <link rel="stylesheet" href="subpage5th.css">
+
+    <style>
+        :root {
+            cursor: none;
+            --cursorXPos: 50vw;
+            --cursorYPos: 50vh;
+        }
+    
+        :root:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: radial-gradient(
+            circle 8rem at var(--cursorXPos) var(--cursorYPos),
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.95) 100%
+            );
+            z-index: 11;
+        }
+        </style>
 </head>
 <body>
     <div class="videobg">
@@ -16,5 +37,20 @@
     <div class="text">
         As the poet Ralph angel puts it, “The poem is an interpretation of weird theatrical shit.” the weird theatrical shit is what goes on around us every day of our lives; an animal of only instinct, Johnny Ferret, has in his actions drama, but no theater; theater requires that you draw a circle around the action and observe it from outside the circle; in other words, self-consciousness is theatre. 
     </div>
+
+    <script>
+        function trackMouse(event) {
+            document.documentElement.style.setProperty(
+            '--cursorXPos',
+            `${event.clientX}px`
+            )
+            document.documentElement.style.setProperty(
+            '--cursorYPos',
+            `${event.clientY}px`
+            )
+        }
+    
+            document.addEventListener('mousemove', trackMouse)
+    </script>
 </body>
 </html>
