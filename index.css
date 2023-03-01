@@ -12,14 +12,25 @@ span {
     text-decoration-line: underline;
 }
 
+img {
+    width: 200px;
+    height: auto;
+}
+.info {
+    height: 100%;
+}
+
+.about-me {
+    width: 11.9vw;
+}
+
 /* format numbers */
 .number {
     color: #FF005C;
     text-decoration: none;
 }
 
-/* fuck still doesnt work */
-.project:hover ~ .number {
+.prj:hover .number {
     color: #1400FF;
 }
 
@@ -101,6 +112,7 @@ span {
 .hidden {
     text-decoration-line: none;
     color: #C9C9C9;
+    font-size: .7rem;
 }
 
 .hidden {
