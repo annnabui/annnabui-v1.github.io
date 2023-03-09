@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON demo</title>
+
+    <script>
+        fetch("class.json")
+            .then(response => response.json())
+            .then(data => {
+                // Get the list element
+                const list = document.getElementById("list");
+
+                // Loop through the dsta and each items to the list
+                data.forEach(student => {
+                    
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+
+                // Set the text content and href attributes
+                a.textContent = student.Name;
+                a.href = "https://" + student.Github + ".github.io";
+
+                //Add the link to the list
+                li.appendChild(a);
+                list.appendChild(li);
+                });
+            })
+    </script>
+
+    <style>
+        li a {
+            color: blueviolet;
+        }
+        li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list"></ul>
+    <!-- const li creates items in the list (don't have to manually type out) -->
+    <!-- const a creates an a tag because we're dealing with github links -->
+
+    <a href="">whatever</a>
+    <!-- a.textContent fills out "whatever" part -->
+    <!-- a.href fills inside href="" -->
+    <!-- can also do the same with img and audio tags -->
+
+    <!-- li.appendChild(a) + list.appendChild(li) attaches the a tag to each of the list items -->
+</body>
+</html>
