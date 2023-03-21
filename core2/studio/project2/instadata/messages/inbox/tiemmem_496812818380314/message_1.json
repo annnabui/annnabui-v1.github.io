@@ -1,0 +1,39 @@
+{
+  "participants": [
+    {
+      "name": "#\u00f0\u009d\u0096\u0099\u00f0\u009d\u0096\u008e\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "#\u00f0\u009d\u0096\u0099\u00f0\u009d\u0096\u008e\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092",
+      "timestamp_ms": 1613740935867,
+      "content": "D\u00e1\u00ba\u00a1 ti\u00e1\u00ba\u00bfc qu\u00c3\u00a1 m\u00e1\u00ba\u00abu n\u00c3\u00a0y m\u00e1\u00bb\u0081m h\u00e1\u00ba\u00bft r\u00e1\u00bb\u0093i \u00e1\u00ba\u00a1, b\u00e1\u00ba\u00a1n tham kh\u00e1\u00ba\u00a3o m\u00e1\u00bb\u0099t s\u00e1\u00bb\u0091 m\u00e1\u00ba\u00abu c\u00c3\u00b2n h\u00c3\u00a0ng t\u00e1\u00ba\u00a1i Shopee c\u00e1\u00bb\u00a7a m\u00e1\u00bb\u0081m nh\u00c3\u00a9 \u00f0\u009f\u0092\u0093\nLink shopee : https://shopee.vn/tiemmem?smtt=0.0.9",
+      "share": {
+        "link": "https://shopee.vn/tiemmem?smtt=0.0.9",
+        "share_text": "Gh\u00c3\u00a9 th\u00c4\u0083m gian h\u00c3\u00a0ng n\u00c3\u00a0y tr\u00c3\u00aan Shopee ! T\u00e1\u00ba\u00a3i \u00e1\u00bb\u00a9ng d\u00e1\u00bb\u00a5ng ngay t\u00e1\u00ba\u00a1i: http://goo.gl/da2hrd"
+      }
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1613736190302,
+      "content": "Cho em h\u00e1\u00bb\u008fi qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y m\u00c3\u00a0u tr\u00e1\u00ba\u00afng b\u00c3\u00aan m\u00c3\u00acnh c\u00c3\u00b2n k \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1613736173599
+    }
+  ],
+  "title": "#\u00f0\u009d\u0096\u0099\u00f0\u009d\u0096\u008e\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u0092\u00f0\u009d\u0096\u008a\u00f0\u009d\u0096\u0092",
+  "is_still_participant": true,
+  "thread_path": "inbox/tiemmem_496812818380314",
+  "magic_words": [
+    
+  ]
+}

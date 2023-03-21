@@ -1,0 +1,42 @@
+{
+  "participants": [
+    {
+      "name": "\u00e2\u0098\u00863\u00e1\u0096\u0087\u00e2\u0084\u009bO\u00cd\u009bR\u00cc\u0090\u00e2\u0093\u0098S\u00e2\u0083\u0097\u00ea\u0093\u0084\u00cf\u009f"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1601828830958,
+      "content": "V\u00c3\u00a2ng c\u00c3\u00a1m \u00c6\u00a1n b\u00e1\u00ba\u00a1n \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00e2\u0098\u00863\u00e1\u0096\u0087\u00e2\u0084\u009bO\u00cd\u009bR\u00cc\u0090\u00e2\u0093\u0098S\u00e2\u0083\u0097\u00ea\u0093\u0084\u00cf\u009f",
+      "timestamp_ms": 1601828777244,
+      "content": "10-10h b nh\u00c3\u00a9"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00e2\u0098\u00863\u00e1\u0096\u0087\u00e2\u0084\u009bO\u00cd\u009bR\u00cc\u0090\u00e2\u0093\u0098S\u00e2\u0083\u0097\u00ea\u0093\u0084\u00cf\u009f",
+      "timestamp_ms": 1601828766699,
+      "content": "d\u00e1\u00ba\u00a1 cnhanh n\u00c3\u00a0o m\u00c3\u00acnh c\u00c5\u00a9ng c\u00c3\u00b3 \u00c4\u0091\u00e1\u00bb\u00a7 \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1601827926225,
+      "content": "B\u00e1\u00ba\u00a1n \u00c6\u00a1i cho m\u00c3\u00acnh h\u00e1\u00bb\u008fi m\u00e1\u00ba\u00a5y c\u00c6\u00a1 s\u00e1\u00bb\u009f \u00e1\u00bb\u009f hcm c\u00c6\u00a1 s\u00e1\u00bb\u009f n\u00c3\u00a0o b\u00c3\u00aan b\u00e1\u00ba\u00a1n c\u00c3\u00b3 nhi\u00e1\u00bb\u0081u v\u00c3\u00a0 \u00c4\u0091\u00e1\u00bb\u00a7 \u00c4\u0091\u00e1\u00bb\u0093 nh\u00e1\u00ba\u00a5t \u00e1\u00ba\u00a1? Cho m\u00c3\u00acnh xin c\u00e1\u00ba\u00a3 gi\u00e1\u00bb\u009d \u00c4\u0091\u00c3\u00b3ng c\u00e1\u00bb\u00ada v\u00e1\u00bb\u009bi \u00e1\u00ba\u00a1"
+    }
+  ],
+  "title": "\u00e2\u0098\u00863\u00e1\u0096\u0087\u00e2\u0084\u009bO\u00cd\u009bR\u00cc\u0090\u00e2\u0093\u0098S\u00e2\u0083\u0097\u00ea\u0093\u0084\u00cf\u009f",
+  "is_still_participant": true,
+  "thread_path": "inbox/3roris_563545925037353",
+  "magic_words": [
+    
+  ]
+}

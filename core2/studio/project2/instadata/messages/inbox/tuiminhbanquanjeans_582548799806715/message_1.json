@@ -1,0 +1,551 @@
+{
+  "participants": [
+    {
+      "name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1583807678424,
+      "content": "Liked a message"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583807374976,
+      "content": "V\u00c3\u00a2ng em c\u00c3\u00a1m \u00c6\u00a1n \u00e1\u00ba\u00a1",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1583807355670,
+      "content": "C\u00e1\u00ba\u00a3 2 h\u00e1\u00ba\u00bft 26 nha e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583805976800,
+      "content": "C\u00e1\u00ba\u00a3 2 size 26"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583805971008,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/89299096_136246724595360_7395239497326967447_n_402942864447945.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1604875329
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583805959961,
+      "content": "Ch\u00e1\u00bb\u008b \u00c6\u00a1i cho em l\u00e1\u00ba\u00a5y qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y c\u00e1\u00ba\u00a3 2 m\u00c3\u00a0u \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c kh\u00c3\u00b4ng \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1583734186039,
+      "content": "D\u00e1\u00ba\u00a1 r\u00c3\u00b5 \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583729968560,
+      "content": "Kh\u00c3\u00a1c th\u00e1\u00ba\u00bf n\u00c3\u00a0o \u00e1\u00ba\u00a1? C\u00c3\u00b3 kh\u00c3\u00a1c r\u00c3\u00b5 l\u00e1\u00ba\u00afm kh\u00c3\u00b4ng \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1583728816980,
+      "content": "From m\u00c3\u00b5i m\u00e1\u00ba\u00abu kh\u00c3\u00a1c nhau \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583727546621,
+      "content": "Cho em h\u00e1\u00bb\u008fi 2 lo\u00e1\u00ba\u00a1i qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y kh\u00c3\u00a1c nhau \u00e1\u00bb\u009f \u00c4\u0091i\u00e1\u00bb\u0083m n\u00c3\u00a0o \u00e1\u00ba\u00a1? (Ngo\u00c3\u00a0i s\u00e1\u00bb\u0091 n\u00c3\u00bat qu\u00e1\u00ba\u00a7n)"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583727531268,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/89389560_226231931760044_1543117990354576829_n_768292267305398.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1599789357
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1583727529834,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/89376509_3042165822513660_5164595062743034389_n_1032492157186803.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1601078463
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561786285196,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/64759402_2839530332729902_6124511680045321588_n_370357884102913.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1602735518
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561786063840,
+      "content": "D\u00e1\u00ba\u00a1 v\u00c3\u00a2ng \u00e1\u00ba\u00a1 \u00f0\u009f\u0092\u0095"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561786035717,
+      "content": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561786035038,
+      "content": "L\u00c6\u00b0u \u00c3\u00bd: Ship b\u00c3\u00aan shop kh\u00c3\u00b4ng c\u00c3\u00b3 d\u00e1\u00bb\u008bch v\u00e1\u00bb\u00a5 \u00c4\u0091\u00e1\u00bb\u0093ng ki\u00e1\u00bb\u0083m (t\u00e1\u00bb\u00a9c kh\u00c3\u00b4ng xem h\u00c3\u00a0ng tr\u00c6\u00b0\u00e1\u00bb\u009bc), h\u00e1\u00ba\u00b9n giao h\u00c3\u00a0ng \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c 2 l\u00e1\u00ba\u00a7n, l\u00e1\u00ba\u00a7n th\u00e1\u00bb\u00a9 3 l\u00c3\u00a0 ho\u00c3\u00a0n h\u00c3\u00a0ng, n\u00c3\u00aan \u00c4\u0091\u00e1\u00ba\u00b7t h\u00c3\u00a0ng shop s\u00e1\u00ba\u00bd g\u00e1\u00bb\u00adi m\u00c3\u00a3 v\u00e1\u00ba\u00adn \u00c4\u0091\u00c6\u00a1n, c\u00c3\u00b3 th\u00c3\u00b4ng tin giao nh\u00e1\u00ba\u00adn, kh\u00c3\u00a1ch nh\u00e1\u00bb\u009b xem ng\u00c3\u00a0y v\u00c3\u00a0 \u00c4\u0091\u00e1\u00bb\u0083 \u00c3\u00bd \u00c4\u0091t, \u00c4\u0091c \u00c4\u0091\u00e1\u00bb\u0095i size trong v\u00c3\u00b2ng 7 ng\u00c3\u00a0y, ph\u00c3\u00ad ship kh\u00c3\u00a1ch thanh to\u00c3\u00a1n 2 chi\u00e1\u00bb\u0081u, ri\u00c3\u00aang h\u00c3\u00a0ng sale kh\u00c3\u00b4ng \u00c4\u0091\u00e1\u00bb\u0095i tr\u00e1\u00ba\u00a3 trong b\u00e1\u00ba\u00a5t k\u00e1\u00bb\u00b3 tr\u00c6\u00b0\u00e1\u00bb\u009dng h\u00e1\u00bb\u00a3p n\u00c3\u00a0o, shop c\u00e1\u00ba\u00a3m \u00c6\u00a1n \u00e1\u00ba\u00a1",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561786033552,
+      "content": "C ch\u00e1\u00bb\u0091t \u00c4\u0091\u00c6\u00a1n, th\u00e1\u00bb\u009di gian giao h\u00c3\u00a0ng 2-5ng\u00c3\u00a0y, t\u00c3\u00b9y khu v\u00e1\u00bb\u00b1c, khi l\u00c3\u00a0m \u00c4\u0091\u00c6\u00a1n xong c s\u00e1\u00ba\u00bd g\u00e1\u00bb\u00adi m\u00c3\u00a3 v\u00e1\u00ba\u00adn \u00c4\u0091\u00c6\u00a1n \u00c4\u0091\u00e1\u00bb\u0083 e ti\u00e1\u00bb\u0087n theo d\u00c3\u00b5i \u00c4\u0091\u00c6\u00a1n h\u00c3\u00a0ng, c c\u00e1\u00ba\u00a3m \u00c6\u00a1n em",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785792988,
+      "content": "Kho\u00e1\u00ba\u00a3ng bao gi\u00e1\u00bb\u009d th\u00c3\u00ac em nh\u00e1\u00ba\u00adn \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c qu\u00e1\u00ba\u00a7n \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785395286,
+      "content": "\u00c4\u0090\u00c3\u00a2y \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785390371,
+      "content": "\u00f0\u009f\u008f\u0096 B\u00c3\u00b9i Ph\u00c6\u00b0\u00c6\u00a1ng Anh\n\u00f0\u009f\u008f\u0096 Cantavil Ho\u00c3\u00a0n C\u00e1\u00ba\u00a7u, Khu du l\u00e1\u00bb\u008bch V\u00c4\u0083n Th\u00c3\u00a1nh, \u00c4\u0090i\u00e1\u00bb\u0087n Bi\u00c3\u00aan Ph\u00e1\u00bb\u00a7, ph\u00c6\u00b0\u00e1\u00bb\u009dng 22, qu\u00e1\u00ba\u00adn B\u00c3\u00acnh Th\u00e1\u00ba\u00a1nh, HCM \n\u00f0\u009f\u008f\u0096 0943202110"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785343124,
+      "content": "- Th\u00c3\u00b4ng tin giao h\u00c3\u00a0ng g\u00e1\u00bb\u0093m: h\u00e1\u00bb\u008d v\u00c3\u00a0 t\u00c3\u00aan \u00c4\u0091\u00e1\u00ba\u00a7y \u00c4\u0091\u00e1\u00bb\u00a7, s\u00e1\u00bb\u0091 \u00c4\u0091i\u00e1\u00bb\u0087n tho\u00e1\u00ba\u00a1i, \u00c4\u0091\u00e1\u00bb\u008ba ch\u00e1\u00bb\u0089: s\u00e1\u00bb\u0091 nh\u00c3\u00a0, \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u009dng, ph\u00c6\u00b0\u00e1\u00bb\u009dng/x\u00c3\u00a3, tp/huy\u00e1\u00bb\u0087n, t\u00e1\u00bb\u0089nh"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785342134,
+      "content": "C nh\u00e1\u00ba\u00adn r nha e"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785332681,
+      "content": "Shop \u00c6\u00a1i em ck r\u00e1\u00bb\u0093i \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785327107,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/65286378_344571349808253_6209986759961451191_n_1627849660757825.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1600591225
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561785102791,
+      "content": "D\u00e1\u00ba\u00a1 ok \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785091031,
+      "content": "Em chuy\u00e1\u00bb\u0083n kho\u00e1\u00ba\u00a3n r ch\u00e1\u00bb\u00a5p sao k\u00c3\u00aa g\u00e1\u00bb\u00adi c nha"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785090178,
+      "content": "\u00e2\u0096\u00aaCH\u00c3\u009a \u00c3\u009d: Chuy\u00e1\u00bb\u0083n kho\u00e1\u00ba\u00a3n ghi ch\u00c3\u00ba \u00e2\u0080\u0098\u00e2\u0080\u0099T\u00c3\u00aan FB ho\u00e1\u00ba\u00b7c IG + S\u00c4\u0091t\u00e2\u0080\u0099\u00e2\u0080\u0099 \u00c4\u0091\u00e1\u00bb\u0083 tr\u00c3\u00a1nh nh\u00e1\u00ba\u00a7m l\u00e1\u00ba\u00abn. V\u00c3\u00ad d\u00e1\u00bb\u00a5: \u00e2\u0080\u0098\u00e2\u0080\u0099IG anhthu.khau 0939433162\u00e2\u0080\u0099\u00e2\u0080\u0099"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785089229,
+      "content": "0151000541764 Kh\u00c3\u00a2u Th\u00e1\u00bb\u008b Anh Th\u00c6\u00b0 Vietcombank chi nh\u00c3\u00a1nh An Giang"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785088042,
+      "content": "2 qu\u00e1\u00ba\u00a7n 500k \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785082395,
+      "content": "D\u00e1\u00ba\u00a1 2 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y m c\u00c3\u00b2n nha b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785074223,
+      "content": "Liked a message"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561785072282,
+      "content": "Liked a message"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783687855,
+      "content": "S\u00c3\u00a1ng nay em \u00c4\u0091o l\u00e1\u00ba\u00a1i th\u00e1\u00ba\u00a5y c\u00c3\u00b3 63 th\u00c3\u00b4i TT"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783676895,
+      "content": "Hic h\u00c3\u00b4m qua em \u00c4\u0091o eo l\u00c3\u00bac m\u00e1\u00bb\u009bi \u00c4\u0091i u\u00e1\u00bb\u0091ng tr\u00c3\u00a0 s\u00e1\u00bb\u00afa xong n\u00c3\u00aan n\u00c3\u00b3 ra 69"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783662415,
+      "content": "V\u00c3\u00a0 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y size 26 \u00c4\u0091i \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783516364,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/64837238_441315610044290_1607855337523479021_n_3695682633799810.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1602989964
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783426203,
+      "content": "Qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y size 27"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783422373,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/65283320_408576786410462_7434153900156025287_n_816880392455358.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1600485253
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561783406833,
+      "content": "V\u00e1\u00ba\u00ady cho em l\u00e1\u00ba\u00a5y 2 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y \u00c4\u0091i \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561774237267,
+      "content": "B m\u00e1\u00ba\u00b7c 27 nha"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561774232572,
+      "content": "D\u00e1\u00ba\u00a1 c\u00c3\u00b2n nha b\u00e1\u00ba\u00a1n"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561774227231,
+      "content": "Liked a message"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561735350276,
+      "content": "Th\u00c3\u00ac m\u00e1\u00ba\u00b7c size bao nhi\u00c3\u00aau \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561735343862,
+      "content": "S\u00e1\u00bb\u0091 \u00c4\u0091o eo m\u00c3\u00b4ng \u00c4\u0091\u00c3\u00b9i l\u00c3\u00a0 65-91-89"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561735326768,
+      "content": "N\u00c3\u00b3 cao 162cm n\u00e1\u00ba\u00b7ng 49kg"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561735319596,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/65622891_150349186135242_1736702614094234828_n_3380433405384532.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1600851867
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561735314572,
+      "content": "Shop \u00c6\u00a1ii c\u00c3\u00b2n b\u00e1\u00ba\u00a1n em mu\u00e1\u00bb\u0091n mua m\u00e1\u00ba\u00abu n\u00c3\u00a0y"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561731560937,
+      "content": "D\u00e1\u00ba\u00a1 v\u00c3\u00a2ng \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561731253647,
+      "content": "Ch\u00e1\u00bb\u00a9 k \u00c3\u00b4m s\u00c3\u00a1t nha"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561731247727,
+      "content": "Mom th\u00c3\u00ac n\u00c3\u00b3 r\u00e1\u00bb\u0099ng v\u00e1\u00bb\u00aba"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561731243557,
+      "content": "Do eo e 70cm \u00c3\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561730680779,
+      "content": "N\u00c3\u00a3y em c\u00c3\u00b3 l\u00c6\u00b0\u00e1\u00bb\u009bt qua b\u00c3\u00a0i size momjeans th\u00c3\u00ac th\u00e1\u00ba\u00a5y size 27 m\u00c3\u00b4ng \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c t\u00e1\u00bb\u009bi 110cm l\u00e1\u00ba\u00adn th\u00c3\u00ac c\u00c3\u00b3 to qu\u00c3\u00a1 kh\u00c3\u00b4ng \u00e1\u00ba\u00a1? TT em m\u00e1\u00ba\u00b7c 26 c\u00c3\u00b3 \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c kh\u00c3\u00b4ng nh\u00e1\u00bb\u0089?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561730472743,
+      "content": "\u00c4\u0090\u00c3\u00a1y cao 27-30cm nha b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561730023680,
+      "content": "2 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y c\u00e1\u00ba\u00a1p cao t\u00e1\u00bb\u009bi \u00c4\u0091\u00c3\u00a2u \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561721836267,
+      "content": "D\u00e1\u00ba\u00a1 nh\u00c3\u00acn s\u00e1\u00ba\u00bd to ra x\u00c3\u00adu \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561719889570,
+      "content": "Em m\u00c3\u00b4ng h\u00c6\u00a1i nh\u00e1\u00bb\u008f m\u00e1\u00ba\u00b7c 2 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y l\u00c3\u00aan v\u00c3\u00b2ng 3 tr\u00c3\u00b4ng c\u00c3\u00b3 to ra kh\u00c3\u00b4ng \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561719742236,
+      "content": "C\u00e1\u00ba\u00a3 2 \u00c4\u0091\u00e1\u00bb\u0081u l\u00c3\u00a0 size 27 lu\u00c3\u00b4n \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561719456427,
+      "content": "D\u00e1\u00ba\u00a1 k \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561719452262,
+      "content": "B\u00e1\u00ba\u00a1n m\u00e1\u00ba\u00b7c 27 nha"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561718209782,
+      "content": "Mua 1 qu\u00e1\u00ba\u00a7n c\u00c3\u00b3 \u00c4\u0091\u00c6\u00b0\u00e1\u00bb\u00a3c gi\u00e1\u00ba\u00a3m kh\u00c3\u00b4ng \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561718140633,
+      "content": "Eo m\u00c3\u00b4ng \u00c4\u0091\u00c3\u00b9i th\u00e1\u00bb\u00a9 t\u00e1\u00bb\u00b1 l\u00c3\u00a0 69-87-47 \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561718052481,
+      "content": "Em cao 1m58 n\u00e1\u00ba\u00b7ng 45kg \u00e1\u00ba\u00a1"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561718014643,
+      "content": "Ship to\u00c3\u00a0n qu\u00e1\u00bb\u0091c l\u00c3\u00a0 35k / 0,5kg (1 qu\u00e1\u00ba\u00a7n t\u00e1\u00ba\u00a7m 300g), h\u00c6\u00a1n 0.5kg th\u00c3\u00ac m\u00e1\u00bb\u0097i 0.5kg + th\u00c3\u00aam 5k"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561718013121,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/65223678_186054009053638_5969863256412671375_n_357215218726496.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1602974931
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+      "timestamp_ms": 1561718013070,
+      "content": "B\u00e1\u00ba\u00a1n cho shop chi\u00e1\u00bb\u0081u cao, c\u00c3\u00a2n n\u00e1\u00ba\u00b7ng(eo,m\u00c3\u00b4ng,\u00c4\u0091\u00c3\u00b9i). \u00c4\u0090\u00e1\u00bb\u0083 shop t\u00c6\u00b0 v\u00e1\u00ba\u00a5n size cho b\u00e1\u00ba\u00a1n nh\u00c3\u00a9 \u00f0\u009f\u0098\u0098"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561715753023,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/64674958_675632449527190_2198319085152713973_n_439853690334903.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1603493051
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561715751184,
+      "photos": [
+        {
+          "uri": "messages/inbox/tuiminhbanquanjeans_582548799806715/photos/64638542_2407468152650978_5168935615420624003_n_741700426554309.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1604305464
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561715680951,
+      "content": "2 qu\u00e1\u00ba\u00a7n n\u00c3\u00a0y gi\u00c3\u00a1 bao nhi\u00c3\u00aau b\u00e1\u00ba\u00a1n nh\u00e1\u00bb\u0089"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1561715674128,
+      "content": "B\u00e1\u00ba\u00a1n \u00c6\u00a1i"
+    }
+  ],
+  "title": "Tu\u00cc\u00a3i Mi\u00cc\u0080nh Ba\u00cc\u0081n Qua\u00cc\u0082\u00cc\u0080n Jeans",
+  "is_still_participant": true,
+  "thread_path": "inbox/tuiminhbanquanjeans_582548799806715",
+  "magic_words": [
+    
+  ]
+}

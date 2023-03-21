@@ -1,0 +1,37 @@
+{
+  "participants": [
+    {
+      "name": "M O O D Y"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "M O O D Y",
+      "timestamp_ms": 1589094502442,
+      "photos": [
+        {
+          "uri": "messages/inbox/moody_542204753841120/photos/96045378_440168290177525_4900477013875325804_n_245460539900603.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1589094503
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "M O O D Y",
+      "timestamp_ms": 1589094477259,
+      "content": "Hi b\u00e1\u00ba\u00a1n, b\u00e1\u00ba\u00a1n cho m\u00c3\u00acnh xin s\u00e1\u00bb\u0091 \u00c4\u0091o eo, chi\u00e1\u00bb\u0081u cao \u00c4\u0091\u00e1\u00bb\u0083 m\u00c3\u00acnh check size qu\u00e1\u00ba\u00a7n cho b\u00e1\u00ba\u00a1n nha. \u00f0\u009f\u0092\u009c"
+    }
+  ],
+  "title": "M O O D Y",
+  "is_still_participant": true,
+  "thread_path": "inbox/moody_542204753841120",
+  "magic_words": [
+    
+  ]
+}

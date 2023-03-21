@@ -1,0 +1,79 @@
+{
+  "participants": [
+    {
+      "name": "Fervooor Office"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Fervooor Office",
+      "timestamp_ms": 1642043628508,
+      "content": "TYSM for your love\u00f0\u009f\u0098\u0089",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Fervooor Office",
+      "timestamp_ms": 1642043620531,
+      "content": "That\u00e2\u0080\u0099s wonderful\u00ef\u00bc\u0081",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Fervooor Office",
+      "timestamp_ms": 1642043605343,
+      "content": "Liked a message"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1642041062450,
+      "content": "Hello, just want to say that I have received the tracking number! Thanks a lot",
+      "reactions": [
+        {
+          "reaction": "\u00e2\u009d\u00a4\u00ef\u00b8\u008f",
+          "actor": "Fervooor Office"
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1642020054402,
+      "photos": [
+        {
+          "uri": "messages/inbox/fervoooroffice_720741365980950/photos/271813942_205008781775576_776803243301473433_n_300291688718443.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1642020055
+        }
+      ]
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1642020049809,
+      "content": "Hey there, i ordered these items on Jan 3 and i haven\u00e2\u0080\u0099t received any update since then. Is there a tracking number for my order yet? If not, when will I receive a tracking number for my items? I\u00e2\u0080\u0099ve seen your stories and I saw that you\u00e2\u0080\u0099ve been processing a lot of orders so I understand that things could be a bit slow, but i\u00e2\u0080\u0099m just worried because I ordered quite a lot of items from you. Thanks!"
+    }
+  ],
+  "title": "Fervooor Office",
+  "is_still_participant": true,
+  "thread_path": "inbox/fervoooroffice_720741365980950",
+  "magic_words": [
+    
+  ]
+}

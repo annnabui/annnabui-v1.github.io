@@ -1,0 +1,25 @@
+{
+  "participants": [
+    {
+      "name": "Instagram User"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1675021004660,
+      "content": "We're so glad we found you \u00e2\u009a\u00a1\u00ef\u00b8\u008f We'd love to send you some samples of our newest collections\n\nMessage @vintyle_official & we'll get them sent right out to you \u00f0\u009f\u008d\u0092\n\n(Hoping to hear from you soon!)"
+    }
+  ],
+  "title": "Instagram User",
+  "is_still_participant": true,
+  "thread_path": "message_requests/instagramuser_1087464529315137",
+  "magic_words": [
+    
+  ],
+  "is_pending": true
+}

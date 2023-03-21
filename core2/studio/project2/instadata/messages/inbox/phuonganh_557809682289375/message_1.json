@@ -1,0 +1,23 @@
+{
+  "participants": [
+    {
+      "name": "phu\u00cc\u009bo\u00cc\u009bng anh"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "phu\u00cc\u009bo\u00cc\u009bng anh",
+      "timestamp_ms": 1546103827225
+    }
+  ],
+  "title": "phu\u00cc\u009bo\u00cc\u009bng anh",
+  "is_still_participant": true,
+  "thread_path": "inbox/phuonganh_557809682289375",
+  "magic_words": [
+    
+  ]
+}

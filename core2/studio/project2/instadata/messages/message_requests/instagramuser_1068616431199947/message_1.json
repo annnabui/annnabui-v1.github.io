@@ -1,0 +1,36 @@
+{
+  "participants": [
+    {
+      "name": "Instagram User"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1672949675292,
+      "content": "Hi! I'm on the promo team at Gemiful, and we think you'd perfect to wear our sustainable jewellery! If you're interested, we would love to send you 3 pieces for FREE\u00f0\u009f\u00a5\u00b0\n\nMessage our main account @gemifulbrand to apply"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1672949672063,
+      "content": "Instagram User sent an attachment.",
+      "share": {
+        "link": "https://www.instagram.com/_u/gemifulbrand",
+        "profile_share_username": "gemifulbrand",
+        "profile_share_name": "We Are Gemiful"
+      }
+    }
+  ],
+  "title": "Instagram User",
+  "is_still_participant": true,
+  "thread_path": "message_requests/instagramuser_1068616431199947",
+  "magic_words": [
+    
+  ],
+  "is_pending": true
+}

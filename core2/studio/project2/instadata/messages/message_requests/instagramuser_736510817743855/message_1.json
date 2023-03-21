@@ -1,0 +1,35 @@
+{
+  "participants": [
+    {
+      "name": "Instagram User"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1636743875577,
+      "content": "Yooo n\u00e1\u00bb\u0093i! Our team is currently looking for Models/Ambassadors to wear our newest collection \u00e2\u0080\u009cThe Last Shrine\u00e2\u0080\u009d, I think you would be a great fit! \n\nBy being an ambassador, you will get exclusive discounts \u00f0\u009f\u0092\u00b0huge exposure and plus lots of other amazing benefits! DM \"Ambassador\" to the main page @modelgurus within 24 hours to claim your spot!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1636743874034,
+      "share": {
+        "link": "https://www.instagram.com/p/CWJ1-rqPKVA/?feed_type=reshare_chaining&carousel_share_child_media_id=2704930455164855616_3626943407",
+        "share_text": "The \u00e2\u0080\u009cLast Shrine\u00e2\u0080\u009d hoodie collection officially drops today at 6pm PST!\n\nEach piece will be extremely exclusive and will never be restocked. Our hoodies are unlike any other hoodies you\u00e2\u0080\u0099ve ever worn. We are known for making some of the highest quality hoodies for an affordable price.\u00f0\u009f\u0091\u0080\n\nThe hoodies features:\n- 100% Cut and sew\n- French Terry Material\n- High Quality 3D Puff Print\n- High Quality Rhinestones\n- Full Zipper\n- Custom Printed Packaging",
+        "original_content_owner": "modelgurus"
+      }
+    }
+  ],
+  "title": "Instagram User",
+  "is_still_participant": true,
+  "thread_path": "message_requests/instagramuser_736510817743855",
+  "magic_words": [
+    
+  ],
+  "is_pending": true
+}

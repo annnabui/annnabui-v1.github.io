@@ -1,0 +1,46 @@
+{
+  "participants": [
+    {
+      "name": "Bra phong c\u00c3\u00a1ch vintage"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Bra phong c\u00c3\u00a1ch vintage",
+      "timestamp_ms": 1622042048607,
+      "content": "S\u00e1\u00bb\u0091 2 l\u00c3\u00a0 m\u00c3\u00a0u t\u00c3\u00adm nha b"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1622040570038,
+      "content": "\u00c3\u008d m\u00c3\u00acnh nh\u00e1\u00ba\u00a7m s\u00e1\u00bb\u0091 2"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1622040557532,
+      "content": "S\u00e1\u00bb\u0091 1 l\u00c3\u00a0 m\u00c3\u00a0u n\u00c3\u00a0o v\u00e1\u00ba\u00ady \u00e1\u00ba\u00a1?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1622040557140,
+      "share": {
+        "link": "https://www.instagram.com/p/COPOHC1lIyG/?feed_type=reshare_chaining",
+        "share_text": "\u00e2\u009d\u008c \u00c4\u0090\u00e1\u00bb\u0092NG GI\u00c3\u0081 \u00f0\u009d\u009f\u008f\u00f0\u009d\u009f\u0092\u00f0\u009d\u009f\u0097\u00f0\u009d\u0090\u00a4 \u00e2\u009d\u008c\n1. Size M < 55kg SOLD\n2. Size S < 50kg",
+        "original_content_owner": "meovintagebra"
+      }
+    }
+  ],
+  "title": "Bra phong c\u00c3\u00a1ch vintage",
+  "is_still_participant": true,
+  "thread_path": "inbox/braphongcachvintage_787884148539627",
+  "magic_words": [
+    
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "participants": [
+    {
+      "name": "Ledin Asia"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Ledin Asia",
+      "timestamp_ms": 1647710887337,
+      "content": "https://www.ledin.net/collections/jeans/products/plain-high-waist-pearl-bellbottoms-jeans-1\n\nhttps://www.ledin.net/collections/spring-dreamland/products/ruffled-collar-petal-sleeve-solid-knitted-cardigans-with-mesh"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Ledin Asia",
+      "timestamp_ms": 1647710887031,
+      "content": ""
+    }
+  ],
+  "title": "Ledin Asia",
+  "is_still_participant": true,
+  "thread_path": "inbox/ledinasia_830225411705718",
+  "magic_words": [
+    
+  ]
+}

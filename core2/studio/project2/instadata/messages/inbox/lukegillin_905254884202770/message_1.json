@@ -1,0 +1,33 @@
+{
+  "participants": [
+    {
+      "name": "Luke Gillin"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1656333311829,
+      "content": "LMAOO THANK YOUUU"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Luke Gillin",
+      "timestamp_ms": 1656332797717,
+      "content": "This is the cutest thing I\u00e2\u0080\u0099ve ever seen",
+      "share": {
+        "link": "https://instagram.com/stories/hii_nnanaa/2869839436351649920"
+      }
+    }
+  ],
+  "title": "Luke Gillin",
+  "is_still_participant": true,
+  "thread_path": "inbox/lukegillin_905254884202770",
+  "magic_words": [
+    
+  ]
+}

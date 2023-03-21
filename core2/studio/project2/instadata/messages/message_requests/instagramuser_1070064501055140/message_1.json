@@ -1,0 +1,25 @@
+{
+  "participants": [
+    {
+      "name": "Instagram User"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Instagram User",
+      "timestamp_ms": 1673118061703,
+      "content": "He\u00d1\u0083! I'm on th\u00d0\u00b5 pr\u00d0\u00bemoter te\u00d0\u00b0m at Ghost Jewels \u00d0\u00b0nd w\u00d0\u00b5 think \u00d1\u0083\u00d0\u00beu'd p\u00d0\u00b5rf\u00d0\u00b5ct to w\u00d0\u00b5ar our j\u00d0\u00b5welry! \u00f0\u009f\u0096\u00a4\n\nIf y\u00d0\u00beu're inter\u00d0\u00b5sted w\u00d0\u00b5 would l\u00d0\u00beve to s\u00d0\u00b5nd you 3 pie\u00d1\u0081\u00d0\u00b5s f\u00d0\u00ber FREE! \u00f0\u009f\u0092\u00a3\n\nIf \u00d1\u0083\u00d0\u00beu cli\u00d1\u0081k the \u00d0\u00b0bove shar\u00d0\u00b5 and direct m\u00d0\u00b5ss\u00d0\u00b0ge \u00e2\u0080\u009cCOLLAB\u00e2\u0080\u009d t\u00d0\u00be our m\u00d0\u00b0in a\u00d1\u0081\u00d1\u0081ount @ghost.jewels Blair will g\u00d0\u00b5t b\u00d0\u00b0\u00d1\u0081k to \u00d1\u0083\u00d0\u00beu \u00d0\u0090S\u00d0\u0090\u00d0\u00a0! But \u00d1\u0080leas\u00d0\u00b5 be qui\u00d1\u0081k, due to ver\u00d1\u0083 high dem\u00d0\u00b0nd ther\u00d0\u00b5's \u00d0\u00benly 6 spa\u00d1\u0081\u00d0\u00b5s l\u00d0\u00b5ft! \u00f0\u009f\u0096\u0087 Th\u00d0\u00b0nk you so much! Xx\n\n@ghost.jewels"
+    }
+  ],
+  "title": "Instagram User",
+  "is_still_participant": true,
+  "thread_path": "message_requests/instagramuser_1070064501055140",
+  "magic_words": [
+    
+  ],
+  "is_pending": true
+}

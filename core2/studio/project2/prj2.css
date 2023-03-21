@@ -1,0 +1,85 @@
+/* mobile version*/
+
+html {
+    background: #162411;
+    color: #B1FF74;
+    background-size: 18px 18px;
+    background-image:
+    linear-gradient(to right, #243A1E .5px, transparent 1px),
+    linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+}
+
+div {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    padding: 20px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    font-size: 2.5rem;
+    line-height: 98%;
+    font-weight: 500;
+    border-bottom: #B1FF74 1px solid;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.subtitle {
+    font-family: freight-big-pro, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 90%;
+}
+
+.space {
+    height: vw;
+}
+
+.twostar {
+    position: absolute;
+    top: 630px;
+}
+
+.solidstar {
+    position: absolute;
+    top: 780px;
+    left: 60px;
+}
+.h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 98%;
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: -0px;
+}
+
+.daytable {
+    display: flex;
+    border-bottom: #B1FF74 1px solid;
+    align-items: center;
+    justify-content: left;
+}
+
+.top {
+    border-top: #B1FF74 1px solid;
+}
+
+.bottom {
+    border-bottom: #B1FF74 1px solid;
+}
+
+span {
+    font-style: italic;
+    font-weight: 450;
+    color: #24421A;
+}
+

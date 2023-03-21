@@ -1,0 +1,36 @@
+{
+  "participants": [
+    {
+      "name": "Candance Bals"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Candance Bals",
+      "timestamp_ms": 1672085825041,
+      "content": "Hi! I'm on the pr\u00d0\u00bem\u00d0\u00bet\u00d0\u00b5r t\u00d0\u00b5am \u00d0\u00b0t Freya Treasures and w\u00d0\u00b5 think you'd p\u00d0\u00b5rf\u00d0\u00b5\u00d1\u0081t t\u00d0\u00be w\u00d0\u00b5\u00d0\u00b0r our sustainable j\u00d0\u00b5wellery! \u00e2\u009c\u00a8\n\nIf you'r\u00d0\u00b5 inter\u00d0\u00b5st\u00d0\u00b5d w\u00d0\u00b5 w\u00d0\u00beuld love t\u00d0\u00be s\u00d0\u00b5nd y\u00d0\u00beu 3 pi\u00d0\u00b5\u00d1\u0081es f\u00d0\u00ber FREE! \u00f0\u009f\u0095\u008a\n\nIf you \u00d1\u0081li\u00d1\u0081k the above sh\u00d0\u00b0r\u00d0\u00b5 and DM m\u00d0\u00b5ssag\u00d0\u00b5 our main \u00d0\u00b0c\u00d1\u0081\u00d0\u00beunt @freyatreasures Emma will g\u00d0\u00b5t back to y\u00d0\u00beu ASAP! But pl\u00d0\u00b5as\u00d0\u00b5 b\u00d0\u00b5 qui\u00d1\u0081k, du\u00d0\u00b5 to very high d\u00d0\u00b5m\u00d0\u00b0nd ther\u00d0\u00b5's only 5 sp\u00d0\u00b0c\u00d0\u00b5s l\u00d0\u00b5ft! \u00f0\u009f\u0092\u009b Th\u00d0\u00b0nk y\u00d0\u00beu s\u00d0\u00be much! Xx"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "Candance Bals",
+      "timestamp_ms": 1672085822570,
+      "content": "Candance sent an attachment.",
+      "share": {
+        "link": "https://www.instagram.com/_u/freyatreasures",
+        "profile_share_username": "freyatreasures",
+        "profile_share_name": "FREYA TREASURES JEWELRY"
+      }
+    }
+  ],
+  "title": "Candance Bals",
+  "is_still_participant": true,
+  "thread_path": "message_requests/candancebals_1060065568721700",
+  "magic_words": [
+    
+  ],
+  "is_pending": true
+}

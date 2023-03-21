@@ -1,0 +1,63 @@
+{
+  "profile_user": [
+    {
+      "title": "User Information",
+      "media_map_data": {
+        "Profile Photo": {
+          "uri": "media/other/326980009_1274402786756231_3800100278787790182_n_18095336128312988.jpg",
+          "media_path_INTERNAL": "",
+          "type_INTERNAL": "",
+          "creation_timestamp": 1677724648,
+          "title": ""
+        }
+      },
+      "string_map_data": {
+        "Email": {
+          "href": "",
+          "value": "annaanhprivate@gmail.com",
+          "timestamp": 0
+        },
+        "Phone Confirmed": {
+          "href": "",
+          "value": "False",
+          "timestamp": 0
+        },
+        "Username": {
+          "href": "",
+          "value": "hii_nnanaa",
+          "timestamp": 0
+        },
+        "Name": {
+          "href": "",
+          "value": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+          "timestamp": 0
+        },
+        "Bio": {
+          "href": "",
+          "value": "g\u00c3\u00b3c khu\u00e1\u00ba\u00a5t ng\u00c6\u00b0\u00e1\u00bb\u009di h\u00c6\u00b0\u00e1\u00bb\u009bng n\u00e1\u00bb\u0099i",
+          "timestamp": 0
+        },
+        "Pronouns": {
+          "href": "",
+          "value": "she/her",
+          "timestamp": 0
+        },
+        "Gender": {
+          "href": "",
+          "value": "unspecified",
+          "timestamp": 0
+        },
+        "Date of birth": {
+          "href": "",
+          "value": "1994-07-30",
+          "timestamp": 0
+        },
+        "Private Account": {
+          "href": "",
+          "value": "True",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

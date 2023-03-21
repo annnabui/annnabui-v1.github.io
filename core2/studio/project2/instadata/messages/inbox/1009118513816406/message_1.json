@@ -1,0 +1,41 @@
+{
+  "participants": [
+    {
+      "name": "\u00f0\u009f\u008c\u0080\u00f0\u009f\u00a6\u00b7\u00e2\u00ad\u0090\u00ef\u00b8\u008f\u00f0\u009f\u008e\u00a7"
+    },
+    {
+      "name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth"
+    }
+  ],
+  "messages": [
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "\u00f0\u009f\u008c\u0080\u00f0\u009f\u00a6\u00b7\u00e2\u00ad\u0090\u00ef\u00b8\u008f\u00f0\u009f\u008e\u00a7",
+      "timestamp_ms": 1667109574564,
+      "content": "hi yes !!"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1667107675530,
+      "content": "Hey is the 1st one still available?"
+    },
+    {
+      "sender_id_INTERNAL": 0,
+      "sender_name": "n\u00e1\u00bb\u0093i c\u00c6\u00a1m @ pth",
+      "timestamp_ms": 1667107664261,
+      "content": "You sent an attachment.",
+      "share": {
+        "link": "https://www.instagram.com/p/CkU1LtOOTEg/?feed_type=reshare_chaining&carousel_share_child_media_id=2960224751554608486_39457462140",
+        "share_text": "",
+        "original_content_owner": "_pearlessence"
+      }
+    }
+  ],
+  "title": "\u00f0\u009f\u008c\u0080\u00f0\u009f\u00a6\u00b7\u00e2\u00ad\u0090\u00ef\u00b8\u008f\u00f0\u009f\u008e\u00a7",
+  "is_still_participant": true,
+  "thread_path": "inbox/1009118513816406",
+  "magic_words": [
+    
+  ]
+}

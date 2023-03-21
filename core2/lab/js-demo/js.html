@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js demo</title>
+
+    <script>
+        // let & var: can change - kinda like html class
+        // const: only used once - kinda like html id
+
+        // myString: text
+        // myNumber: number 
+        // myConstant: boolean - true or false
+
+
+        // let anyNumber;
+        // const myConst = true;
+
+        // console.log("Hello, World!");
+        // console.log(myConst);
+
+        // let x = 2;
+        // let y = 5;
+        // console.log(x+y);
+
+        // console.log(x==y); 
+        // // should return false
+        // console.log(x!=y);
+        // // should return true 
+
+        // console.log(x > 3 && y < 3);
+        // // && = and
+        // // || = or 
+        // // ! = not
+
+        // let absence = 3;
+        // absence++;
+    
+        // if (absence > 2) {
+        //     console.log("you will fail")
+        // }
+
+        // else if (absence == 2) {
+        //     console.log("danger zone");
+        // }
+        // // can continue saying "else if" if want to add more conditions 
+
+        // else {
+        //     console.log("you're fine");
+        // }
+
+        // // for loop:
+        // // example: want to type from 0 to 4. for loop does it for you don't have to type 0-4 manually
+        // // i is a variable can be named anything
+        // for (let i=0; i < 5; i ++) {
+        //     console.log(i);
+        // }
+
+        // // switch: 
+        // // like boolean but clearer structure
+
+        // // while: 
+        // // execute as long as certain condition is true 
+        // let i = 0;
+        // while (i<5) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // window.onload = () => {
+        //     const paragraph = document.querySelector("p");
+        //     paragraph.textContent = "something new";
+        //     paragraph.innerHTML = Math.random();
+        // }
+
+        window.onload = () => {
+            const btn = document.querySelector("button");
+
+            function random(number) {
+                return Math.floor(Math.random() * num + 1);
+            }
+
+            btn.addEventListener("click", () => {
+                const rndCol = `rbg(${random(255)}, ${random(255)}, ${random(255)})`;
+                document.body.style.backgroundColor = rndCol;
+            });
+        }
+    </script>
+</head>
+<body>
+    <p id="first">this is a paragraph</p>
+    <button id="button">change color</button>
+</body>
+</html>
+
