@@ -83,3 +83,19 @@ span {
     color: #24421A;
 }
 
+/* desktop version */
+@media only screen and (min-width: 800px) {
+    html {
+        background: #162411;
+        color: #B1FF74;
+        background-size: 24px 24px;
+        background-image:
+        linear-gradient(to right, #243A1E .5px, transparent 1px),
+        linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+    }
+
+    div {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        padding: 30px;
+    }
+}
