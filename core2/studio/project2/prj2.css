@@ -27,6 +27,10 @@ div {
     padding: 0;
 }
 
+.circlesub {
+    display: none;
+}
+
 .subtitle {
     font-family: freight-big-pro, serif;
     font-style: italic;
@@ -86,8 +90,6 @@ span {
 /* desktop version */
 @media only screen and (min-width: 800px) {
     html {
-        background: #162411;
-        color: #B1FF74;
         background-size: 24px 24px;
         background-image:
         linear-gradient(to right, #243A1E .5px, transparent 1px),
@@ -95,7 +97,17 @@ span {
     }
 
     div {
-        font-family: neue-haas-grotesk-display, sans-serif;
         padding: 30px;
+    }
+
+    .title {
+        display: block;
+        width: 53.3%;
+    }
+
+    .nopad {
+        font-weight: 450;
+        font-size: 180px;
+        line-height: 98%;
     }
 }
