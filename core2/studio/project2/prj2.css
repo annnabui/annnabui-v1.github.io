@@ -96,18 +96,102 @@ span {
         linear-gradient(to bottom, #243A1E .5px, transparent 1px);
     }
 
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
     div {
         padding: 30px;
     }
 
     .title {
         display: block;
-        width: 53.3%;
+        border-bottom: none;
     }
 
     .nopad {
         font-weight: 450;
         font-size: 180px;
         line-height: 98%;
+    }
+
+    .circlesub {
+        display: block;
+    }
+
+    .bigcircle {
+        position: absolute;
+        width: 413.18px;
+        height: 162.71px;
+        left: 288px;
+        top: 36vw;
+        transform: rotate(10.16deg);
+        background: #B1FF74;
+        border: 1px solid #162411;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circletitle {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 1.875rem;
+        color: #162411;
+        text-align: center;
+    }
+
+    .smallcircle {
+        position: absolute;
+        width: 213.18px;
+        height: 82.71px;
+        left: 10vw;
+        top: 47vw;
+        transform: rotate(-10.16deg);
+        background: #162411;
+        border: 1px solid #B1FF74;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circletext {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    main {
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        left: 0;
+        top: 0;
+        display: flex;
+    }
+
+    main section {
+        text-align: left;
+        flex-grow: 1;
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header {
+        width: 73.3vw;
+        border-right: #B1FF74 1px solid;
+    }
+
+    .subtitle {
+        display: none;
+    }
+    .one {
+        display: none;
     }
 }

@@ -1,826 +1,329 @@
 {
   "ig_custom_audiences_all_types": [
     {
-      "advertiser_name": "Adobe",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe"
     },
     {
-      "advertiser_name": "Shopee Business Account",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Shopee Business Account"
+
     },
     {
-      "advertiser_name": "Mindshare Biddable Digital",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Mindshare Biddable Digital"
     },
     {
-      "advertiser_name": "The New York Times",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The New York Times"
     },
     {
-      "advertiser_name": "Grab",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Grab"
     },
     {
-      "advertiser_name": "Meetsocial HK Digital Marketing Co.\u00ef\u00bc\u008cltd-1",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Mercari"
     },
     {
-      "advertiser_name": "Mercari",
-      "has_data_file_custom_audience": true,
-      "has_remarketing_custom_audience": false,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Document Cloud Japan"
     },
     {
-      "advertiser_name": "Adobe Document Cloud Japan",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Angels and Airwaves"
     },
     {
-      "advertiser_name": "Angels and Airwaves",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe UK"
     },
     {
-      "advertiser_name": "Adobe UK",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "IKEA"
     },
     {
-      "advertiser_name": "IKEA",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Design"
     },
     {
-      "advertiser_name": "Adobe Design",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Highlights for Children"
     },
     {
-      "advertiser_name": "Highlights for Children",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Photoshop Lightroom"
     },
     {
-      "advertiser_name": "Adobe Photoshop Lightroom",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "JADED MAN"
     },
     {
-      "advertiser_name": "JADED MAN",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Gen Create"
     },
     {
-      "advertiser_name": "Adobe Gen Create",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "eBay.com.au"
     },
     {
-      "advertiser_name": "eBay.com.au",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Jaded LDN"
     },
     {
-      "advertiser_name": "Jaded LDN",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Express"
     },
     {
-      "advertiser_name": "Adobe Express",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Jaded Swim"
     },
     {
-      "advertiser_name": "Jaded Swim",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Udemy Korea"
     },
     {
-      "advertiser_name": "Udemy Korea",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Love, The Tillerys"
     },
     {
-      "advertiser_name": "Love, The Tillerys",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Housetohomeatlast"
     },
     {
-      "advertiser_name": "Housetohomeatlast",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Kangnam Aesthetic Hospital"
     },
     {
-      "advertiser_name": "B\u00e1\u00bb\u0087nh vi\u00e1\u00bb\u0087n th\u00e1\u00ba\u00a9m m\u00e1\u00bb\u00b9 Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Greek Theatre"
     },
     {
-      "advertiser_name": "C\u00e1\u00ba\u00aft M\u00c3\u00ad - BVTM Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Kip Moore"
     },
     {
-      "advertiser_name": "Kangnam Aesthetic Hospital",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Brothers Osborne"
     },
     {
-      "advertiser_name": "Greek Theatre",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Tourist"
     },
     {
-      "advertiser_name": "Chuy\u00e1\u00bb\u0087n L\u00c3\u00aan M\u00e1\u00ba\u00a1ng",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Jungle Giants"
     },
     {
-      "advertiser_name": "Kip Moore",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Klarna"
     },
     {
-      "advertiser_name": "Brothers Osborne",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "McHusbands"
     },
     {
-      "advertiser_name": "Tourist",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Lauren Mueller"
     },
     {
-      "advertiser_name": "The Jungle Giants",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "HISTORY"
     },
     {
-      "advertiser_name": "Klarna",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Dom Dolla"
     },
     {
-      "advertiser_name": "McHusbands",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Atlanta United FC"
     },
     {
-      "advertiser_name": "Lauren Mueller",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "AEG Presents"
     },
     {
-      "advertiser_name": "HISTORY",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Blake Shelton"
     },
     {
-      "advertiser_name": "Dom Dolla",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Kenny Chesney"
     },
     {
-      "advertiser_name": "Atlanta United FC",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Live Nation Concerts"
     },
     {
-      "advertiser_name": "AEG Presents",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Gildan"
     },
     {
-      "advertiser_name": "Blake Shelton",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "iVIVU"
     },
     {
-      "advertiser_name": "Kenny Chesney",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Students"
     },
     {
-      "advertiser_name": "Live Nation Concerts",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Alexander 23"
     },
     {
-      "advertiser_name": "Gildan",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "HMI Social"
     },
     {
-      "advertiser_name": "iVIVU",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Visit California"
     },
     {
-      "advertiser_name": "Adobe Students",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Any Alexandra Gonzalez"
     },
     {
-      "advertiser_name": "Alexander 23",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Aeropostale"
     },
     {
-      "advertiser_name": "HMI Social",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Pexmod_"
     },
     {
-      "advertiser_name": "Visit California",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Alone on HISTORY"
     },
     {
-      "advertiser_name": "Any Alexandra Gonzalez",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Brooklyn Steel"
     },
     {
-      "advertiser_name": "Aeropostale",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "eBay.it"
     },
     {
-      "advertiser_name": "Pexmod_",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Goat Agency"
     },
     {
-      "advertiser_name": "Alone on HISTORY",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The English Family"
     },
     {
-      "advertiser_name": "Brooklyn Steel",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hayley Karseras"
     },
     {
-      "advertiser_name": "eBay.it",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "lifeatstaustell"
     },
     {
-      "advertiser_name": "The Goat Agency",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "WALK THE MOON"
     },
     {
-      "advertiser_name": "The English Family",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Mountain Winery"
     },
     {
-      "advertiser_name": "Life with the Busby\u00e2\u0080\u0099s",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Strfkr"
     },
     {
-      "advertiser_name": "Hayley Karseras",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "ENY"
     },
     {
-      "advertiser_name": "\u00c4\u0090i\u00e1\u00bb\u0087n m\u00c3\u00a1y XANH (dienmayxanh.com)",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Chilifest Music Festival"
     },
     {
-      "advertiser_name": "lifeatstaustell",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Farfetch Platform Solutions - FPS"
     },
     {
-      "advertiser_name": "WALK THE MOON",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Thrift"
     },
     {
-      "advertiser_name": "The Mountain Winery",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Los Angeles Chargers"
     },
     {
-      "advertiser_name": "Strfkr",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "TopZone"
     },
     {
-      "advertiser_name": "Gi\u00e1\u00ba\u00a3m m\u00e1\u00bb\u00a1  - BVTM Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "A&E"
     },
     {
-      "advertiser_name": "Tr\u00e1\u00ba\u00bb ho\u00c3\u00a1 H\u00c3\u00a0n Qu\u00e1\u00bb\u0091c - Dr. Hwang",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "LP"
     },
     {
-      "advertiser_name": "ENY",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Joel Corry"
     },
     {
-      "advertiser_name": "Chuy\u00c3\u00aan khoa Ch\u00e1\u00bb\u0089nh h\u00c3\u00acnh H\u00c3\u00a0m m\u00e1\u00ba\u00b7t Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "PayPal"
     },
     {
-      "advertiser_name": "H\u00c3\u00a0nh tr\u00c3\u00acnh l\u00e1\u00bb\u0099t x\u00c3\u00a1c",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Portland State University Admissions"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Vi\u00e1\u00bb\u0087n \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - B\u00c3\u00acnh D\u00c6\u00b0\u00c6\u00a1ng",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Bryan Anthonys"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Vi\u00e1\u00bb\u0087n \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - \u00c4\u0090\u00c3\u00a0 N\u00e1\u00ba\u00b5ng",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Indigo Girls"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "UM Canada"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 V\u00c3\u00b2ng 1 - BVTM Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Tower of Power"
     },
     {
-      "advertiser_name": "B\u00e1\u00bb\u0087nh Vi\u00e1\u00bb\u0087n Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hiatus Kaiyote"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Vi\u00e1\u00bb\u0087n \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - H\u00e1\u00ba\u00a3i Ph\u00c3\u00b2ng",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Boombox Cartel"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Vi\u00e1\u00bb\u0087n \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - C\u00e1\u00ba\u00a7n Th\u00c6\u00a1",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The NorVA"
     },
     {
-      "advertiser_name": "B\u00c3\u00ad Quy\u00e1\u00ba\u00bft L\u00c3\u00a0m \u00c4\u0090\u00e1\u00ba\u00b9p",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "eBay Watches"
     },
     {
-      "advertiser_name": "B\u00e1\u00bb\u0087nh Vi\u00e1\u00bb\u0087n Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - H\u00c3\u00a0 N\u00e1\u00bb\u0099i",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Ace Hotel Brooklyn"
     },
     {
-      "advertiser_name": "Chilifest Music Festival",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Forever21"
     },
     {
-      "advertiser_name": "Farfetch Platform Solutions - FPS",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Levi's"
     },
     {
-      "advertiser_name": "Thrift",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Creative Market"
     },
     {
-      "advertiser_name": "Los Angeles Chargers",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Back Market"
     },
     {
-      "advertiser_name": "\u00c4\u0090i\u00e1\u00bb\u0087n Tho\u00e1\u00ba\u00a1i SI\u00c3\u008aU R\u00e1\u00ba\u00ba",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hartford HealthCare Bone & Joint Institute"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00bf Gi\u00e1\u00bb\u009bi Di \u00c4\u0090\u00e1\u00bb\u0099ng TV",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Connecticut Orthopaedic Institute"
     },
     {
-      "advertiser_name": "TopZone",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hartford HealthCare at Home"
     },
     {
-      "advertiser_name": "A&E",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hartford HealthCare Heart & Vascular Institute"
     },
     {
-      "advertiser_name": "LP",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hartford HealthCare"
     },
     {
-      "advertiser_name": "Joel Corry",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Tallwood Urology & Kidney Institute"
     },
     {
-      "advertiser_name": "PayPal",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Electric Daisy Carnival (EDC)"
     },
     {
-      "advertiser_name": "N\u00c3\u00a2ng m\u00c5\u00a9i - BVTM Kangnam",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Ellis Medicine"
     },
     {
-      "advertiser_name": "Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Vi\u00e1\u00bb\u0087n \u00c4\u0090\u00c3\u00b4ng \u00c3\u0081 - Ngh\u00e1\u00bb\u0087 An",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Ross From Friends"
     },
     {
-      "advertiser_name": "Portland State University Admissions",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Udemy"
     },
     {
-      "advertiser_name": "Bryan Anthonys",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Ancient Aliens"
     },
     {
-      "advertiser_name": "The Indigo Girls",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Wiley In Research"
     },
     {
-      "advertiser_name": "UM Canada",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "John Templeton Foundation"
     },
     {
-      "advertiser_name": "Tower of Power",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Templeton Prize"
     },
     {
-      "advertiser_name": "Hiatus Kaiyote",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Strike Social"
     },
     {
-      "advertiser_name": "Boombox Cartel",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Adobe Video"
     },
     {
-      "advertiser_name": "The NorVA",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Zenith USA"
     },
     {
-      "advertiser_name": "eBay Watches",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Love & Sports"
     },
     {
-      "advertiser_name": "Ace Hotel Brooklyn",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Walmart"
     },
     {
-      "advertiser_name": "Forever21",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Thrive Together OC"
     },
     {
-      "advertiser_name": "Levi's",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "ochealth"
     },
     {
-      "advertiser_name": "Creative Market",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Lifetime Movie Club"
     },
     {
-      "advertiser_name": "Back Market",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Buddy Media Group"
     },
     {
-      "advertiser_name": "Da \u00c4\u0090\u00e1\u00ba\u00b9p M\u00e1\u00bb\u0097i Ng\u00c3\u00a0y",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "SSENSE"
     },
     {
-      "advertiser_name": "Hartford HealthCare Bone & Joint Institute",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "The Gideons International"
     },
     {
-      "advertiser_name": "Connecticut Orthopaedic Institute",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Hai Trieu Watches Company Limited"
     },
     {
-      "advertiser_name": "Hartford HealthCare at Home",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Hartford HealthCare Heart & Vascular Institute",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Hartford HealthCare",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Tallwood Urology & Kidney Institute",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Electric Daisy Carnival (EDC)",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Ellis Medicine",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "K\u00c3\u00adnh H\u00e1\u00ba\u00a3i Tri\u00e1\u00bb\u0081u",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Th\u00e1\u00ba\u00bf gi\u00e1\u00bb\u009bi ph\u00e1\u00bb\u00a5 n\u00e1\u00bb\u00af",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "M\u00e1\u00ba\u00b9 v\u00c3\u00a0 B\u00c3\u00a9",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "M\u00e1\u00ba\u00b9o V\u00e1\u00ba\u00b7t Hay",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Ross From Friends",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Udemy",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "\u00eb\u00a0\u0088\u00eb\u00b2\u00a8\u00ec\u0097\u0085 \u00ed\u0094\u008c\u00eb\u00a0\u0088\u00ec\u009d\u00b4\u00ec\u008a\u00a4",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Ancient Aliens",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Wiley In Research",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "John Templeton Foundation",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "The Templeton Prize",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Strike Social",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Adobe Video",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Zenith USA",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Love & Sports",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Walmart",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Thrive Together OC",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "ochealth",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Lifetime Movie Club",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Buddy Media Group",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "SSENSE",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "The Gideons International",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Hai Trieu Watches Company Limited",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Wet Leg",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
+      "advertiser_name": "Wet Leg"
     },
     {
       "advertiser_name": "Taxback.com",
@@ -943,12 +446,6 @@
       "has_in_person_store_visit": false
     },
     {
-      "advertiser_name": "\u00c4\u0090\u00e1\u00bb\u0093ng H\u00e1\u00bb\u0093 H\u00e1\u00ba\u00a3i Tri\u00e1\u00bb\u0081u",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
       "advertiser_name": "Airbnb",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
@@ -967,12 +464,6 @@
       "has_in_person_store_visit": false
     },
     {
-      "advertiser_name": "YinoLink\u00e5\u0091\u00a85\u00e5\u0087\u00ba\u00e6\u00b5\u00b7",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
       "advertiser_name": "Adobe Photoshop Elements & Premiere Elements",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
@@ -980,24 +471,6 @@
     },
     {
       "advertiser_name": "NPR Shop",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "B\u00c3\u00a1ch H\u00c3\u00b3a XANH",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Cau \u00c4\u0090i\u00e1\u00ba\u00bfc",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Th\u00e1\u00ba\u00bf Gi\u00e1\u00bb\u009bi Di \u00c4\u0090\u00e1\u00bb\u0099ng (thegioididong.com)",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
       "has_in_person_store_visit": false
@@ -1135,12 +608,6 @@
       "has_in_person_store_visit": false
     },
     {
-      "advertiser_name": "Tr\u00c3\u00acnh duy\u00e1\u00bb\u0087t C\u00e1\u00bb\u0091c C\u00e1\u00bb\u0091c",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
       "advertiser_name": "TroyBoi",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
@@ -1261,25 +728,7 @@
       "has_in_person_store_visit": false
     },
     {
-      "advertiser_name": "Ph\u00e1\u00bb\u00a5 Ki\u00e1\u00bb\u0087n Like Auth - Lady Store",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
       "advertiser_name": "Nha Khoa Paris",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Nha Khoa Paris Qu\u00e1\u00ba\u00a3ng Ninh",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Vi\u00e1\u00bb\u0087n R\u00c4\u0083ng S\u00e1\u00bb\u00a9 Th\u00e1\u00ba\u00a9m M\u00e1\u00bb\u00b9 Paris",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
       "has_in_person_store_visit": false
@@ -1352,12 +801,6 @@
     },
     {
       "advertiser_name": "Mialuckieinsta",
-      "has_data_file_custom_audience": false,
-      "has_remarketing_custom_audience": true,
-      "has_in_person_store_visit": false
-    },
-    {
-      "advertiser_name": "Rose\u00e2\u0080\u0099s Cloud",
       "has_data_file_custom_audience": false,
       "has_remarketing_custom_audience": true,
       "has_in_person_store_visit": false
