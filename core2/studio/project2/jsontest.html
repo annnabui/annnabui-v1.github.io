@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON parse test</title>
+
+    <script>
+        fetch ('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const tableone = document.getElementById('tableone');
+
+            data.forEach(item => {
+                const div = document.createElement('div');
+                const p = document.createElement('p');
+                const p2 = document.createElement('p');
+                const p3 = document.createElement('p');
+                const p4 = document.createElement('p');
+                const p5 = document.createElement('p');
+                const p6 = document.createElement('em');
+
+
+                p.textContent = item.Date
+                p2.textContent = 'Screen time: ' + item.screenTime
+                p3.textContent = 'Location: ' + item.Location
+                p4.textContent = '' + item.DeviceID
+                p5.textContent = 'Saved posts: ' + item.realTime + ' ' + + p6
+                p6.textContent = item.Account
+
+
+                div.appendChild(p);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                div.appendChild(p5);
+                div.appendChild(p6);
+                tableone.appendChild(div);
+            });
+        })
+        .catch(error => console.error(error));
+    </script>
+
+    <style>
+        html {
+        background: #162411;
+        color: #B1FF74;
+        background-size: 18px 18px;
+        background-image:
+        linear-gradient(to right, #243A1E .5px, transparent 1px),
+        linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+        }
+
+        div {
+            font-family: neue-haas-grotesk-display, sans-serif;
+            padding: 20px;
+        }
+
+        .table {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: -0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tableone" class="table">
+        <em></em>
+    </div>
+</body>
+</html>
