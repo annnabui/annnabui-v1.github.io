@@ -145,7 +145,8 @@
             });
         })
         .catch(error => console.error(error));
-    
+
+        // JS for navigation bar - mobile
         document.getElementById('mobile-menu').onclick = function() {myFunction()};
 
         function myFunction() {
@@ -266,7 +267,7 @@
             position: absolute;
             width: 88.17px;
             height: 40.355px;
-            left: 261.44px;
+            right: 4em;
             top: 70px;
 
             background: #B1FF74;
@@ -328,6 +329,22 @@
             font-size: 0.625rem;
         }
 
+        .star {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 35px;
+        }
+
+        .size2 {
+            width: 55px;
+        }
+
+        .size3 {
+            width: 80px;
+        }
+
         #footer {
             display: flex;
             justify-content: space-between;
@@ -363,7 +380,7 @@
     <header class="header">
         <div class="title">
             <div class="nopad">THE ELASTIC<br>BACK ROOM</div>
-            <img src="./imgs/headerstar.svg" class="headerstar">
+            <img src="imgs/headerstar.svg" class="headerstar">
             <button class="mobile-menu" id="mobile-menu">
                 =
             </button>
