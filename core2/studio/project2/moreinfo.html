@@ -19,6 +19,10 @@
             font-family: neue-haas-grotesk-display, sans-serif;
         }
 
+        section {
+            overflow: hidden;
+        }
+
         div {
             line-height: 98%;
             font-weight: 300;
@@ -28,10 +32,6 @@
 
         span {
             color: #5C8159;
-        }
-        
-        a {
-            line-height: 320%;
         }
     
         img {
@@ -113,17 +113,82 @@
             padding-bottom: 0;
             padding-top: 2rem;;
         }
+
+        .img-container {
+            position: absolute;
+            width: 90vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .img-container img {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 30px;
+        }
+
+        .size2 {
+            width: 45px;
+        }
+
+        .size3 {
+            width: 55px;
+        }
+
+        a:link{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #162411;
+            text-shadow:
+                -.5px -.5px 0 #B1FF74,  
+                .5px -.5px 0 #B1FF74,
+                -.5px .5px 0 #B1FF74,
+                .5px .5px 0 #B1FF74;
+            text-decoration: none;
+        }
+        a:focus{
+            color: #FFF500;
+            text-decoration: none;
+        }
+        a:active{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        
     </style>
 </head>
-<body>
+<body onload="randomizeImagePositions()">
+
     <!-- project info -->
     <header class="header">
         <div class="title">
-            <div class="nopad">THE ELASTIC<br>BACK ROOM</div>
+            <a href="https://annnabui.github.io/core2/studio/project2/index.html"><div class="nopad">THE ELASTIC<br>BACK ROOM</div></a>
             <img src="imgs/headerstar.svg" class="headerstar">
         </div>
 
     </header>
+
+    <div class="img-container">
+        <img class="size1" id="img1" src="./imgs/starthin.svg">
+        <img class="size2" id="img2" src="./imgs/starthin.svg">
+        <img class="size3" id="img4" src="./imgs/starthin.svg">
+        <img class="size1" id="img5" src="./imgs/starthin.svg">
+        <img class="size1" id="img6" src="./imgs/starthin.svg">
+        <img class="size2" id="img7" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img8" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img9" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img10" src="./imgs/darkgreenstar.svg">
+        <img class="size2" id="img11" src="./imgs/darkgreenstar.svg">
+        <img class="size1" id="img12" src="./imgs/darkgreenstar.svg">
+    </div>
 
     <section>
         <div class="subtitle">
@@ -150,5 +215,20 @@
         </div>
     </section>
 
+    <script>
+        function randomizeImagePositions() {
+            console.log("randomizeImagePositions called");
+			var imgContainer = document.querySelector('.img-container');
+			var imgs = imgContainer.querySelectorAll('img');
+			var containerRect = imgContainer.getBoundingClientRect();
+			imgs.forEach(function(img) {
+				var imgRect = img.getBoundingClientRect();
+				var x = Math.floor(Math.random() * (containerRect.width - imgRect.width));
+				var y = Math.floor(Math.random() * (containerRect.height - imgRect.height));
+				img.style.left = x + "px";
+				img.style.top = y + "px";
+			});
+		}
+    </script>
 </body>
 </html>

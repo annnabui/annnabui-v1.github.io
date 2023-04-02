@@ -126,14 +126,64 @@
             padding-bottom: 0;
             padding-right: 0;
         }
+
+        .img-container {
+            position: absolute;
+            width: 90vw;
+            height: 400vh;
+            overflow-x: hidden;
+        }
+
+        .img-container img {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 30px;
+        }
+
+        .size2 {
+            width: 45px;
+        }
+
+        .size3 {
+            width: 55px;
+        }
     
+        a:link{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #162411;
+            text-shadow:
+                -.5px -.5px 0 #B1FF74,  
+                .5px -.5px 0 #B1FF74,
+                -.5px .5px 0 #B1FF74,
+                .5px .5px 0 #B1FF74;
+            text-decoration: none;
+        }
+        a:focus{
+            color: #FFF500;
+            text-decoration: none;
+        }
+        a:active{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        
     </style>
 </head>
-<body>
+<body onload="randomizeImagePositions()">
+
     <!-- project info -->
     <header class="header">
         <div class="title">
-            <div class="nopad">THE ELASTIC<br>BACK ROOM</div>
+            <a href="https://annnabui.github.io/core2/studio/project2/index.html"><div class="nopad">THE ELASTIC<br>BACK ROOM</div></a>
             <img src="imgs/headerstar.svg" class="headerstar">
         </div>
 
@@ -152,6 +202,19 @@
         </div>
     </section>
 
+    <div class="img-container">
+        <img class="size1" id="img13" src="./imgs/starthin.svg">
+        <img class="size2" id="img14" src="./imgs/starthin.svg">
+        <img class="size3" id="img15" src="./imgs/starthin.svg">
+        <img class="size1" id="img16" src="./imgs/starthin.svg">
+        <img class="size1" id="img17" src="./imgs/starthin.svg">
+        <img class="size2" id="img18" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img19" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img20" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img21" src="./imgs/darkgreenstar.svg">
+        <img class="size2" id="img22" src="./imgs/darkgreenstar.svg">
+        <img class="size1" id="img23" src="./imgs/darkgreenstar.svg">  
+    </div>
     <section>
         <div class="underline">
             <span>The following page displays the</span> personal information Instagram knows about me <span> in addition to my ad topics (ones I actively follow; different from <u>ad interests</u> which are ones Instagram suggested) and saved posts from 1 – 13 March, 2023, and</span> how much an algorithm could infer about me from all of these data<span>. <br>
@@ -212,5 +275,21 @@
             <span>There are a few</span> limitations <span>to this analysis. ChatGPT didn't process all of the information in my JSON file as it was too long, so its assumptions about me were limited to what it could process. </span>
         </div>
     </section>
+
+    <script>
+        function randomizeImagePositions() {
+            console.log("randomizeImagePositions called");
+			var imgContainer = document.querySelector('.img-container');
+			var imgs = imgContainer.querySelectorAll('img');
+			var containerRect = imgContainer.getBoundingClientRect();
+			imgs.forEach(function(img) {
+				var imgRect = img.getBoundingClientRect();
+				var x = Math.floor(Math.random() * (containerRect.width - imgRect.width));
+				var y = Math.floor(Math.random() * (containerRect.height - imgRect.height));
+				img.style.left = x + "px";
+				img.style.top = y + "px";
+			});
+		}
+    </script>
 </body>
 </html>

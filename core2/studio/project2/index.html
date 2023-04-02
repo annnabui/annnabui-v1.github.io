@@ -4,709 +4,457 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>☆ The Elastic Back Room</title>
+    <title> ☆ The Elastic Back Room</title>
 
-    <link rel="stylesheet" href="prj2.css">
     <link rel="stylesheet" href="https://use.typekit.net/tap2pcd.css">
+    <script>
+        fetch ('data.json')
+        .then(response => response.json())
+        .then(data => {
+
+            // define const
+            const tableone = document.getElementById('tableone');
+            const buttonAll = document.getElementById('all');
+            const buttonTat = document.getElementById('tattoo');
+            const buttonDes = document.getElementById('design');
+            const buttonCraft = document.getElementById('craft');
+            const buttonJewelry = document.getElementById('jewelry');
+            const buttonHealthy = document.getElementById('healthy');
+            const buttonKnitting = document.getElementById('knitting');
+            const buttonFashion = document.getElementById('fashion');
+            const buttonVintage = document.getElementById('vintage');
+            const buttonAnime = document.getElementById('anime');
+
+            // loop
+            data.forEach(item => {
+                const div = document.createElement('div');
+                const a = document.createElement('a');
+                a.className = "bold"
+                const img = document.createElement('img');
+                const p2 = document.createElement('p');
+                p2.className = "italic"
+                const p3 = document.createElement('p');
+                p3.className = "normal"
+                const p4 = document.createElement('p');
+                p4.className = "timestamp"
+                const video = document.createElement('video');
+                // const adSuggest = document.createElement('p');
+                // adSuggest.className = "adSuggest"
+
+                a.textContent = "@" + item.Account;
+                a.href = item.Link;
+                p2.textContent = item.Account + ":";
+                p3.textContent = item.Caption;
+                p4.textContent = "[saved " + item.realTime + " – " + item.Date + " Mar 2023" + "]";
+                img.src = "imgs/" + item.Image;
+                video.src = "video/" + item.Video;
+                // adSuggest.textContent = item.adSuggest 
+
+                if (item.Video == "no") {
+                    video.style.display = "none";
+                } else {
+                    video.style.display = "block";
+                    video.autoplay = "true";
+                }
+
+                if (item.Image == "no") {
+                    img.style.display = "none";
+                }
+
+                //button
+                buttonAll.addEventListener('click', function() {
+                    div.style.display = "block";
+                })
+                buttonTat.addEventListener('click', function() {
+                    if (item.adTopics == "Tattoo") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonDes.addEventListener('click', function() {
+                    if (item.adTopics == "Art & Graphic Design") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonCraft.addEventListener('click', function() {
+                    if (item.adTopics == "Crafts") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonJewelry.addEventListener('click', function() {
+                    if (item.adTopics == "Jewelry design") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonHealthy.addEventListener('click', function() {
+                    if (item.adTopics == "Healthy Habits") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonKnitting.addEventListener('click', function() {
+                    if (item.adTopics == "Knitting") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonFashion.addEventListener('click', function() {
+                    if (item.adTopics == "Fashion & Makeup") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonVintage.addEventListener('click', function() {
+                    if (item.adTopics == "Vintage goods") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonAnime.addEventListener('click', function() {
+                    if (item.adTopics == "Anime") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+
+                // display elements
+                div.appendChild(a);
+                div.appendChild(img);
+                div.appendChild(video);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                // div.appendChild(adSuggest);
+                tableone.appendChild(div);
+            });
+        })
+        .catch(error => console.error(error));
+
+        // JS for navigation bar - mobile
+        const navOpen = document.querySelector('nav-mob');
+
+        function navigationDrop() {
+            navOpen.style.display = "block";
+        }
+    </script>
+
+    <style>
+        html {
+            background: #162411;
+            color: #B1FF74;
+            background-size: 18px 18px;
+            background-image:
+            linear-gradient(to right, #243A1E .5px, transparent 1px),
+            linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+            box-sizing: border-box;
+            font-family: neue-haas-grotesk-display, sans-serif;
+        }
+
+        div {
+            line-height: 98%;
+            font-weight: 300;
+            padding: 20px;
+            padding-top: 10px;
+        }
+
+        span {
+            color: #5C8159;
+        }
+        
+        a {
+            line-height: 320%;
+        }
+    
+        img {
+            width:300px;
+        }
+
+        video {
+            width: 300px;
+        }
+
+        button {
+            background-color: #162411;
+            color: #B1FF74;
+            border-radius: 12.5px;
+            border: 1px solid #B1FF74;
+        }
+
+        button:focus {
+            background-color: #B1FF74;
+            color: #162411;
+        }
+
+        /* header styling */
+        .title {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            font-size: 2.3rem;
+            line-height: 98%;
+            font-weight: 300;
+            border-bottom: #B1FF74 1px solid;
+        }
+
+        .headerstar {
+            width:100%;
+        }
+
+        .nopad {
+            padding: 0;
+        }
+
+        .subtitle {
+            width: 65vw;
+            font-size: 1.25rem;
+            font-family: freight-big-pro;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 90%;
+        }
+
+        .o {
+            line-height: 100%;
+        }
+        
+        .o a {
+            color: #5C8159;
+        }
+
+        .circle {
+            position: absolute;
+            width: 88.17px;
+            height: 40.355px;
+            right: 0em;
+            top: 60px;
+
+            background: #B1FF74;
+            border: 1px solid #162411;
+            transform: rotate(7.21deg);
+            border-radius: 50%;
+
+            font-size: .625rem;
+            color: #162411;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            line-height: 98%;
+        }
+
+        .contentTitle {
+            font-weight: 550;
+            font-size: 1.25rem;
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .filter {
+            line-height: 130%;
+        }
+
+        .table {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1vw;
+            margin: 1.25em;
+            align-content: left;
+            padding: -0px;
+        }
+
+        .table div {
+            border-radius: 15px;
+            border: #B1FF74 solid 1px;
+            color: #B1FF74;
+            height:fit-content;
+            width: 300px;
+            overflow-wrap:break-word;
+            vertical-align: middle;
+        }
+
+        .bold {
+            font-weight: 550;
+        }
+
+        .italic {
+            font-weight: 550;
+            font-style: italic;
+        }
+
+        .timestamp {
+            color: #5C8159;
+            font-size: 0.625rem;
+        }
+
+        .star {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 35px;
+        }
+
+        .size2 {
+            width: 55px;
+        }
+
+        .size3 {
+            width: 80px;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: .75rem;
+        }
+
+        a:link{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #162411;
+            text-shadow:
+                -.5px -.5px 0 #B1FF74,  
+                .5px -.5px 0 #B1FF74,
+                -.5px .5px 0 #B1FF74,
+                .5px .5px 0 #B1FF74;
+            text-decoration: none;
+        }
+        a:focus{
+            color: #FFF500;
+            text-decoration: none;
+        }
+        a:active{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+
+        .img-container {
+            position: absolute;
+            width: 90vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .img-container img {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 30px;
+        }
+
+        .size2 {
+            width: 45px;
+        }
+
+        .size3 {
+            width: 55px;
+        }
+
+    </style>
 </head>
-<body>
-    <main>
-        <section class="header">
-            <div class="title">
-                <div class="nopad">THE ELASTIC<br>BACK ROOM</div>
-                <img src="./imgs/headerstar.svg">
-            </div>
-            <div class="circlesub">
-                <div class="bigcircle">
-                    <div class="circletitle">WHAT INSTAGRAM KNOWS ABOUT ME IN 2 WEEKS</div>
-                </div>
-                <div class="smallcircle">
-                    <div class="circletext">a commentary on big data and media consumption</div>
-                </div>
-            </div>
-        </section>
+<body onload="randomizeImagePositions()">
 
-        <section class="calendar-body">
-            <div class="subtitle">
-                what Instagram knows about<br> me in 2 weeks ––– a commentary on big data<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;and contemporary media consumption
-            </div>
-            <div class="space one"></div>
-            <img class="twostar" src="./imgs/2star.svg">
-            <img class="solidstar" src="./imgs/solidstar.svg">
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    05
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="text daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! #diy #nyc<br>
-                    <span><a href="https://annnabui.github.io/core2/studio/project2/adtopics/femcl.html">–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    06
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    07
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    08
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    09
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    10
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    11
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    12
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
+    <!-- project info -->
+    <header class="header">
+        <div class="title">
+            <a href="https://annnabui.github.io/core2/studio/project2/index.html"><div class="nopad">THE ELASTIC<br>BACK ROOM</div></a>
+            <img src="imgs/headerstar.svg" class="headerstar">
+        </div>
 
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    13
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
+    </header>
+
+    <section>
+        <div class="subtitle">
+            <div class="nopad">
+                how Instagram consumer profile-d me through 2 weeks of saved posts<br>
+                <span><a href="https://annnabui.github.io/core2/studio/project2/moreinfo.html" style="color: #5C8159; line-height: 100%;">[learn more]</a></span>
             </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    14
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    15
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    16
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    17
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    18
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    19
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-            <div class="space"></div>
-            <div class="day"> 
-                <!-- this is a grid -->
-                <div class="h1">
-                    20
-                </div>
-                <div class="h2">
-                    03<br>
-                    2023
-                </div>
-                <div class="daytable top">
-                    Screen time:
-                </div>
-                <div class="bar daytable top"></div>
-                <div class="text daytable">
-                    Location:
-                </div>
-                <div class="text daytable bottom">
-                    New York, NY<br>
-                    0c:e4:41:dc:30:0f
-                </div>
-                <div class="text">
-                    Activities:
-                </div>
-                <div class="text">
-                    <u>> liked posts:</u><br>
-                    >> 15:03 | [@_hll] just made a new skirt! <a>#diy</a> <a>#nyc</a><br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>furnitures</a>, <a>IKEA</a>, <a>cyborg</a></span><br>
-                    >> 23:15 | [@k0peng0k] monday<br>
-                    <span><a>–––feminine clothing</a>, <a>accessories</a>, <a>y2k fashion</a>, <a>trendy</a>, <a>grunge makeup</a></span><br>
-                </div>
-                <div class="text"></div>
-                <div class="text ">
-                    <u>>messages:</u><br>
-                    >> 18:45 | to [@greedy.pth]<br>
-                    >> 20:28 | to [@chizuwf]
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <u>>searches:</u>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+        <div class="circle">
+            <br>
+            a commentary on big data and media consumption
+        </div>
+    </section>
+
+    <section>
+        <div class="contentTitle">
+            SAVED POSTS [<a href="https://annnabui.github.io/core2/studio/project2/profile.html" class="o">@hii_nnanaa</a>]:
+        </div>
+        <!-- filter -->
+        <div class="filter">
+            <span>Topics</span><br>
+            
+            <button id="all">All</button>
+            <button id="tattoo">Tattoo</button>
+            <button id="design">Design</button>
+            <button id="craft">Craft</button>
+            <button id="jewelry">Jewelry design</button>
+            <button id="healthy">Healthy habits</button>
+            <button id="knitting">Knitting</button>
+            <button id="fashion">Fashion & Makeup</button>
+            <button id="vintage">Vintage goods</button>
+            <button id="anime">Anime</button>
+        </div>
+
+        <div class="img-container">
+            <img class="size1" id="img1" src="./imgs/starthin.svg">
+            <img class="size2" id="img2" src="./imgs/starthin.svg">
+            <img class="size3" id="img4" src="./imgs/starthin.svg">
+            <img class="size1" id="img5" src="./imgs/starthin.svg">
+            <img class="size1" id="img6" src="./imgs/starthin.svg">
+            <img class="size2" id="img7" src="./imgs/darkgreenstar.svg">
+            <img class="size3" id="img8" src="./imgs/darkgreenstar.svg">
+            <img class="size3" id="img9" src="./imgs/darkgreenstar.svg">
+            <img class="size3" id="img10" src="./imgs/darkgreenstar.svg">
+            <img class="size2" id="img11" src="./imgs/darkgreenstar.svg">
+            <img class="size1" id="img12" src="./imgs/darkgreenstar.svg">
+        </div>
+
+        <!-- content -->
+        <div id="tableone" class="table">
+        </div>
+    </section>
+
+    <footer>
+        <div class="nopad" id="footer">
+            <div> Core 2 Interaction – Elastic Collection</div>
+            <div>© 2023 Anna Bui</div>
+        </div>
+    </footer>
+
+    <script>
+        function randomizeImagePositions() {
+            console.log("randomizeImagePositions called");
+			var imgContainer = document.querySelector('.img-container');
+			var imgs = imgContainer.querySelectorAll('img');
+			var containerRect = imgContainer.getBoundingClientRect();
+			imgs.forEach(function(img) {
+				var imgRect = img.getBoundingClientRect();
+				var x = Math.floor(Math.random() * (containerRect.width - imgRect.width));
+				var y = Math.floor(Math.random() * (containerRect.height - imgRect.height));
+				img.style.left = x + "px";
+				img.style.top = y + "px";
+			});
+		}
+    </script>
 </body>
 </html>
