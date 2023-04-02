@@ -147,10 +147,10 @@
         .catch(error => console.error(error));
 
         // JS for navigation bar - mobile
-        document.getElementById('mobile-menu').onclick = function() {myFunction()};
+        const navOpen = document.querySelector('nav-mob');
 
-        function myFunction() {
-            document.getElementById('mobile-navigation').classList.toggle("show");
+        function navigationDrop() {
+            navOpen.style.display = "block";
         }
     </script>
 
@@ -204,8 +204,8 @@
         /* header styling */
         .title {
             display: grid;
-            grid-template-columns: 4fr 1fr 1fr;
-            font-size: 2rem;
+            grid-template-columns: 3fr 1fr;
+            font-size: 2.3rem;
             line-height: 98%;
             font-weight: 300;
             border-bottom: #B1FF74 1px solid;
@@ -219,35 +219,8 @@
             padding: 0;
         }
 
-        .mobile-menu {
-            background-color: transparent;
-            border: none;
-            font-size: 2.3rem;
-            z-index: 2;
-        }
-
-        .mobile-menu:focus {
-            background-color: transparent;
-            color:#B1FF74;
-        }
-
-        .mobile-navigation {
-            background: rgb(217, 255, 0);
-            min-height: 100vh;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            display: none;
-        }
-
         .subtitle {
-            width: 60vw;
+            width: 65vw;
             font-size: 1.25rem;
             font-family: freight-big-pro;
             font-style: italic;
@@ -267,8 +240,8 @@
             position: absolute;
             width: 88.17px;
             height: 40.355px;
-            right: 2em;
-            top: 70px;
+            right: 0em;
+            top: 60px;
 
             background: #B1FF74;
             border: 1px solid #162411;
@@ -381,14 +354,6 @@
         <div class="title">
             <div class="nopad">THE ELASTIC<br>BACK ROOM</div>
             <img src="imgs/headerstar.svg" class="headerstar">
-            <button class="mobile-menu" id="mobile-menu">
-                =
-            </button>
-            <ul class="mobile-navigation" id="mobile-navigation">
-                <li>About</li>
-                <li>Account Information</li>
-                <li>Contact</li>
-              </ul>
         </div>
 
     </header>
@@ -397,7 +362,7 @@
         <div class="subtitle">
             <div class="nopad">
                 how Instagram consumer profile-d me through 2 weeks of saved posts<br>
-                <span><a href="" class="o">[more info]</a></span>
+                <span><a href="" style="color: #5C8159; line-height: 100%;">[more info]</a></span>
             </div>
         </div>
         <div class="circle">
@@ -408,7 +373,7 @@
 
     <section>
         <div class="contentTitle">
-            SAVED POSTS [<a href="" class="o">@hii_nnanaa</a>]:
+            SAVED POSTS [<a href="https://annnabui.github.io/core2/studio/project2/profile.html" class="o">@hii_nnanaa</a>]:
         </div>
         <!-- filter -->
         <div class="filter">
