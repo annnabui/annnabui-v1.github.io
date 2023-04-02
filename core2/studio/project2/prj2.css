@@ -108,12 +108,13 @@ span {
     .title {
         display: block;
         border-bottom: none;
+        font-weight: 450;
+        font-size: 7.5rem;
+        line-height: 98%;
     }
 
     .nopad {
-        font-weight: 450;
-        font-size: 180px;
-        line-height: 98%;
+        padding:0;
     }
 
     .circlesub {
@@ -159,6 +160,8 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        line-height: 98%;
     }
 
     .circletext {
