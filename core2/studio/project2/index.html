@@ -164,7 +164,9 @@
         }
 
         #footer {
-            display: none;
+            display: flex;
+            justify-content: space-between;
+            font-size: .75rem;
         }
 
         .bigcircle {
@@ -288,10 +290,6 @@
                 display: none;
             }
 
-            footer {
-                display: none;
-            }
-
             .contentTitle {
                 font-size: 2.5rem;
                 padding-left: 12px;
@@ -323,7 +321,7 @@
                 padding: 10px;
                 padding-top: 40px;
                 padding-right: 40px;
-                line-height: 98%;
+                line-height: 110%;
             }
 
             .grid {
@@ -335,19 +333,28 @@
             .about {
                 display: block;
                 position:absolute;
-                top: -80px;
-                left: 550px;
+                top: -140px;
+                left: 520px;
                 z-index: 3;
             }
 
             .navigation {
                 padding-top: 40px;
                 padding-right: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid #B1FF74;
             }
 
             .sp {
                 font-size: 1.563rem;
                 line-height: 120%;
+            }
+
+            #footer {
+                display: flex;
+                justify-content: space-between;
+                font-size: .75rem;
+                margin-left: -20px;
             }
         }
         
@@ -397,10 +404,10 @@
 
         <section>
             <div class="navigation">
-                <a href="https://annnabui.github.io/core2/studio/project2/index.html">About</a>
-                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html" class="sp"><span>Saved Posts</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/index.html" class="sp">About</a>
+                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html"><span>Saved Posts</span></a>
                 <a href="https://annnabui.github.io/core2/studio/project2/analysis.html"><span>Algorithm Analysis</span></a>
-                <a href=""><span>Ad suggestions</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html"><span>Ad suggestions</span></a>
             </div>
             <div class="contentTitle">
                 <br>ABOUT:
@@ -408,18 +415,20 @@
             <div class="underline">
                 <span><em>☆ The Elastic Back Room</em></span> <span>project explores</span> how social media algorithm connects advertisers to their appropriate target audience based on user activity. <span>I chose Instagramas I am most active on this app and specifically focus on data from my </span>Saved Posts <span>because there is a higher chance of me revisiting these Posts in the future than Liked posts, hence </span>more valuable to advertisers. <span>I then ran these data through </span>ChatGPT. <span>ChatGPT is an excellent example of a modern algorithm because it is the</span> most advanced among all the AI tools I can access. <span>I initially considered comparing the analyses between different algorithms/AI bots but quickly found that most existing algorithms use OpenAI’s ChatGPT-3 language model. </span>Data were only collected from 1 - 25 March to produce a more coherent analysis as ChatGPT has a limit to how much information it could go through at once.<br><br>
 
-                <span>Viewers can go through my Saved Posts </span>chronologically <span>or</span> view them by Topics. <span>Topics are tags that I actively follow. I then let ChatGPT predict the kind of ad I would be interested in based on this data, which you can see in my <a href="https://annnabui.github.io/core2/studio/project2/analysis.html">“Algorithm Analysis”</a> section. They could also read ChatGPT’s logical reasoning behind each suggestion, which aims to mirror how Instagram’s algorithm works.<br><br>
+                <span>Viewers can go through my Saved Posts </span>chronologically <span>or</span> view them by Topics. <span>Topics are tags that I actively follow. I then let ChatGPT predict the kind of ad I would be interested in based on this data, which you can see in my <a href="https://annnabui.github.io/core2/studio/project2/analysis.html">“Algorithm Analysis”</a> section. They could also read ChatGPT’s logical reasoning behind each suggestion, which aims to mirror how Instagram’s algorithm works. Finally, viewers can see the type of ads that Instagram suggested to me in <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html">"Ad Suggestions,"</a>where they can see if these algorithms are accurate or not.<br><br>
                 
-                </span>You can read my evaluation of how relevant ChatGPT's ad suggestions are to me in <a href="https://annnabui.github.io/core2/studio/project2/analysis.html">“Algorithm Analysis.”</a>
+                <span>You can read my evaluation of how relevant ChatGPT's ad suggestions are to me in <a href="https://annnabui.github.io/core2/studio/project2/analysis.html">“Algorithm Analysis.”</a><br><br>
+                
+                You can see the ads Instagram suggested to me and a brief comparison of that vs ChatGPT's suggested ads in <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html">"Ad Suggestions."</a></span>
             </div>
+
+            <footer>
+                <div class="nopad" id="footer">
+                    <div> Core 2 Interaction – Elastic Collection</div>
+                    <div>© 2023 Anna Bui</div>
+                </div>
+            </footer>
         </section>
-    
-        <footer>
-            <div class="nopad" id="footer">
-                <div> Core 2 Interaction – Elastic Collection</div>
-                <div>© 2023 Anna Bui</div>
-            </div>
-        </footer>
     </main>
 
     <script>

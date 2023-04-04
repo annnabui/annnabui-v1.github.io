@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☆ Ad Suggestions</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/tap2pcd.css">
+    <script>
+        fetch ('ad.json')
+        .then(response => response.json())
+        .then(data => {
+
+            // define const
+            const tableone = document.getElementById('tableone');
+            const buttonAll = document.getElementById('all');
+            const buttonStory = document.getElementById('story');
+            const buttonPost = document.getElementById('post');
+
+            // loop
+            data.forEach(item => {
+                const div = document.createElement('div');
+                const img = document.createElement('img');
+                const video = document.createElement('video');
+
+                img.src = "imgs/" + item.img;
+                video.src = "video/" + item.video;
+                // adSuggest.textContent = item.adSuggest 
+
+                if (item.video == "no") {
+                    video.style.display = "none";
+                } else {
+                    video.style.display = "block";
+                    video.autoplay = "true";
+                }
+
+                if (item.img == "no") {
+                    img.style.display = "none";
+                }
+
+                //button
+                buttonAll.addEventListener('click', function() {
+                    div.style.display = "block";
+                })
+                buttonStory.addEventListener('click', function() {
+                    if (item.story == 1) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonPost.addEventListener('click', function() {
+                    if (item.post == 1) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+            
+                // display elements
+                div.appendChild(img);
+                div.appendChild(video);
+                // div.appendChild(adSuggest);
+                tableone.appendChild(div);
+            });
+        })
+        .catch(error => console.error(error));
+
+    </script>
+
+    <style>
+        html {
+            background: #162411;
+            color: #B1FF74;
+            background-size: 18px 18px;
+            background-image:
+            linear-gradient(to right, #243A1E .5px, transparent 1px),
+            linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+            box-sizing: border-box;
+            font-family: neue-haas-grotesk-display, sans-serif;
+        }
+
+        div {
+            line-height: 98%;
+            font-weight: 300;
+            padding: 20px;
+            padding-top: 10px;
+        }
+
+        span {
+            color: #5C8159;
+        }
+        
+        a {
+            line-height: 320%;
+        }
+    
+        img {
+            width:300px;
+        }
+
+        video {
+            width: 300px;
+        }
+
+        button {
+            background-color: #162411;
+            color: #B1FF74;
+            border-radius: 12.5px;
+            border: 1px solid #B1FF74;
+        }
+
+        button:focus {
+            background-color: #B1FF74;
+            color: #162411;
+        }
+
+        /* header styling */
+        .title {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            font-size: 2.3rem;
+            line-height: 98%;
+            font-weight: 300;
+            border-bottom: #B1FF74 1px solid;
+        }
+
+        .headerstar {
+            width:100%;
+        }
+
+        .nopad {
+            padding: 0;
+        }
+
+        .subtitle {
+            width: 65vw;
+            font-size: 1.25rem;
+            font-family: freight-big-pro;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 90%;
+        }
+
+        .o {
+            line-height: 100%;
+        }
+        
+        .o a {
+            color: #5C8159;
+        }
+
+        .circle {
+            position: absolute;
+            width: 88.17px;
+            height: 40.355px;
+            right: 0em;
+            top: 60px;
+
+            background: #B1FF74;
+            border: 1px solid #162411;
+            transform: rotate(7.21deg);
+            border-radius: 50%;
+
+            font-size: .625rem;
+            color: #162411;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            line-height: 98%;
+        }
+
+        .bigcircle {
+            display: none;
+        }
+
+        .contentTitle {
+            font-weight: 550;
+            font-size: 1.25rem;
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .filter {
+            line-height: 130%;
+        }
+
+        .table {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1vw;
+            margin: 1.25em;
+            align-content: left;
+            padding: -0px;
+        }
+
+        .table div {
+            border-radius: 15px;
+            border: #B1FF74 solid 1px;
+            color: #B1FF74;
+            height:fit-content;
+            width: 300px;
+            overflow-wrap:break-word;
+            vertical-align: middle;
+        }
+
+        .star {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 35px;
+        }
+
+        .size2 {
+            width: 55px;
+        }
+
+        .size3 {
+            width: 80px;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: .75rem;
+        }
+
+        a:link{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #162411;
+            text-shadow:
+                -.5px -.5px 0 #B1FF74,  
+                .5px -.5px 0 #B1FF74,
+                -.5px .5px 0 #B1FF74,
+                .5px .5px 0 #B1FF74;
+            text-decoration: none;
+        }
+        a:focus{
+            color: #FFF500;
+            text-decoration: none;
+        }
+        a:active{
+            color: #B1FF74;
+            text-decoration: none;
+        }
+
+        .img-container {
+            position: absolute;
+            width: 90vw;
+            height: 100vh;
+            overflow-x: hidden;
+            z-index: -2;
+        }
+
+        .img-container img {
+            position: absolute;
+        }
+
+        .size1 {
+            width: 30px;
+        }
+
+        .size2 {
+            width: 45px;
+        }
+
+        .size3 {
+            width: 55px;
+        }
+
+        .about {
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 0.825rem;
+            align-items: center;
+            padding-bottom: 0px;
+        }
+        .underline {
+            padding-top: 2rem;
+        }
+
+        /* desktop version */
+        @media only screen and (min-width: 800px) {
+            html {
+                background-size: 24px 24px;
+                background-image:
+                linear-gradient(to right, #243A1E .5px, transparent 1px),
+                linear-gradient(to bottom, #243A1E .5px, transparent 1px);
+            }
+
+            body {
+                display: flex;
+                flex-direction: row;
+            }
+
+            div {
+                padding: 30px;
+            }
+
+            img {
+                width: 220px;
+            }
+
+            video {
+                width: 220px;
+            }
+
+            .table div {
+                width: 220px;
+            }
+
+            .title {
+                display: block;
+                border-bottom: none;
+                font-weight: 450;
+                font-size: 10rem;
+                line-height: 98%;
+                width: 50vw;
+            }
+
+            .nopad {
+                padding: 0;
+            }
+
+            .headerstar {
+                display: none;
+            }
+
+            .circle {
+                position: absolute;
+                width: 163.18px;
+                height: 55.71px;
+                left: 15vw;
+                top: 83vh;
+                transform: rotate(-8.16deg);
+                background: #162411;
+                color:#B1FF74;
+                border: .75px solid #B1FF74;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                line-height: 98%;
+                font-size: 1rem;
+                z-index: 1;
+            }
+
+            .bigcircle {
+                position: absolute;
+                width: 300.18px;
+                height:100.71px;
+                left: 25vw;
+                top: 72vh;
+                transform: rotate(10.16deg);
+                background: #B1FF74;
+                color: #162411;
+                border: 1px solid #162411;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                line-height: 98%;
+                font-size: 1.3rem;
+            }
+
+            main {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                display: flex;
+                overflow: hidden;
+                border: none;
+            }
+
+            main section {
+                text-align: left;
+                flex-grow: 2;
+                height: 100vh;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                border: none;
+            }
+
+            .header {
+                width: 73.3vw;
+            }
+
+            .subtitle {
+                display: none;
+            }
+
+            .contentTitle {
+                font-size: 2.5rem;
+                padding-left: 12px;
+            }
+
+            .filter {
+                padding-left: 12px;
+                line-height: 220%;
+            }
+
+            span {
+                font-size: 1.563rem;
+            }
+
+            button {
+                font-size: 1.25rem;
+            }
+
+            .img-container {
+                z-index: -2;
+                width: 94vw;
+                height: 92vh;
+            }
+
+            .size1 {
+                width: 50px;
+            }
+
+            .size2 {
+                width: 80px;
+            }
+            .size3 {
+                width: 100px;
+            }
+
+            .about {
+                display: block;
+                position:absolute;
+                top: -80px;
+                left: 550px;
+                z-index: 3;
+            }
+
+            .navigation {
+                padding-top: 40px;
+                padding-right: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid #B1FF74;
+            }
+
+            .sp {
+                font-size: 1.563rem;
+                line-height: 120%;
+            }
+
+            #footer {
+                display: flex;
+                justify-content: space-between;
+                font-size: .75rem;
+                margin-left: -20px;
+            }
+
+            .underline {
+                font-size: 1.563rem;
+                padding: 10px;
+                padding-top: 40px;
+                padding-right: 40px;
+                line-height: 110%;
+            }
+        }
+    </style>
+</head>
+<body onload="randomizeImagePositions()">
+
+    <div class="img-container">
+        <img class="size1" id="img1" src="./imgs/starthin.svg">
+        <img class="size2" id="img2" src="./imgs/starthin.svg">
+        <img class="size3" id="img4" src="./imgs/starthin.svg">
+        <img class="size1" id="img5" src="./imgs/starthin.svg">
+        <img class="size1" id="img6" src="./imgs/starthin.svg">
+        <img class="size2" id="img7" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img8" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img9" src="./imgs/darkgreenstar.svg">
+        <img class="size3" id="img10" src="./imgs/darkgreenstar.svg">
+        <img class="size2" id="img11" src="./imgs/darkgreenstar.svg">
+        <img class="size1" id="img12" src="./imgs/darkgreenstar.svg">
+    </div>
+
+    <main>
+        <!-- project info -->
+        <header class="header">
+            <div class="title">
+                <a href="https://annnabui.github.io/core2/studio/project2/index.html"><div class="nopad">THE ELASTIC<br>BACK ROOM</div></a>
+                <img src="imgs/headerstar.svg" class="headerstar">
+                <img class="about" src="./imgs/giphy.gif">
+            </div>
+
+        </header>
+
+        <section>
+            <div class="subtitle">
+                <div class="nopad">
+                    how an algorithm analyzed me through 2 weeks of saved posts<br>
+                </div>
+            </div>
+            <div class="circle">
+                <!-- <br> -->
+                a commentary on big data and media consumption
+            </div>
+            <div class="bigcircle">
+                <div class="circletitle">HOW AN ALGORITHM ANALYZED ME THROUGH 2 WEEKS OF SAVED POSTS</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="navigation">
+                <a href="https://annnabui.github.io/core2/studio/project2/index.html" ><span>About</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html"><span>Saved Posts</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/analysis.html"><span>Algorithm Analysis</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html" class="sp">Ad suggestions</a>
+            </div>
+            <div class="contentTitle">
+                AD SUGGESTIONS [<a href="https://annnabui.github.io/core2/studio/project2/analysis.html" class="o">@hii_nnanaa</a>]:
+            </div>
+            <!-- filter -->
+            <div class="filter">
+                <span>By type</span><br>
+                
+                <button id="all">All</button>
+                <button id="story">Story</button>
+                <button id="post">Post</button>
+            </div>
+
+            <!-- content -->
+            <div id="tableone" class="table">
+            </div>
+
+            <div class="contentTitle">
+                ––––––––<br><br>EVALUATION:
+            </div>
+            <div class="underline">
+                <span>ChatGPT's algorithm and my Instagram algorithm are very similar in terms of ad suggestions. The majority of ads (36%) were under the</span> Fashion and beauty <span>category, mostly delivered as a post</span> (61.5%). 14%<span> of all ads belongs to the</span> Music and entertainment <span>category. Interestingly, there were </span>no ads for</span> Fitness and wellness<span>, but there were more ads in the </span>Travel and adventure<span> category than I thought </span>(2 stories)<span>. I also received ads for</span> Animal and pet (8%)<span> which makes sense because ChatGPT did outline it as one of my main interests. </span>Tattoo-related content<span> was also</span> 8%<span> of total ads.</span><br><br>
+
+                <span>Overall, I saw that advertisements which appeared as posts are more relevant to my topics, while ads delivered through stories are more experimental. I received ads for wine and champagne which I don’t really care about. I would say this is due to the structural difference between posts and stories – I go through stories faster than I do with posts, so even if I saw irrelevant content on my stories I wouldn’t mind it as much.<br><br>
+                
+                I was surprised to see that I received no ads on</span> Knitting<span> or </span>Yarn<span>, because I saved a lot of posts under that topic.</span>
+            </div>
+
+            <footer>
+                <div class="nopad" id="footer">
+                    <div> Core 2 Interaction – Elastic Collection</div>
+                    <div>© 2023 Anna Bui</div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script>
+        function randomizeImagePositions() {
+            console.log("randomizeImagePositions called");
+            var imgContainer = document.querySelector('.img-container');
+            var imgs = imgContainer.querySelectorAll('img');
+            var containerRect = imgContainer.getBoundingClientRect();
+            imgs.forEach(function(img) {
+                var imgRect = img.getBoundingClientRect();
+                var x = Math.floor(Math.random() * (containerRect.width - imgRect.width));
+                var y = Math.floor(Math.random() * (containerRect.height - imgRect.height));
+                img.style.left = x + "px";
+                img.style.top = y + "px";
+            });
+        }
+    </script>
+</body>
+</html>

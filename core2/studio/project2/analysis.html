@@ -303,10 +303,6 @@
                 display: none;
             }
 
-            footer {
-                display: none;
-            }
-
             .contentTitle {
                 font-size: 2.5rem;
                 padding-left: 12px;
@@ -338,7 +334,7 @@
                 padding: 10px;
                 padding-top: 40px;
                 padding-right: 40px;
-                line-height: 98%;
+                line-height: 110%;
             }
 
             .grid {
@@ -350,19 +346,28 @@
             .about {
                 display: block;
                 position:absolute;
-                top: -80px;
-                left: 550px;
+                top: -140px;
+                left: 520px;
                 z-index: 3;
             }
 
             .navigation {
                 padding-top: 40px;
                 padding-right: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid #B1FF74;
             }
 
             .sp {
                 font-size: 1.563rem;
                 line-height: 120%;
+            }
+
+            #footer {
+                display: flex;
+                justify-content: space-between;
+                font-size: .75rem;
+                margin-left: -20px;
             }
         }
     </style>
@@ -412,12 +417,12 @@
         <section>
             <div class="navigation">
                 <a href="https://annnabui.github.io/core2/studio/project2/index.html"><span>About</span></a>
-                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html" class="sp"><span>Saved Posts</span></a>
-                <a href="https://annnabui.github.io/core2/studio/project2/analysis.html">Algorithm Analysis</a>
-                <a href=""><span>Ad suggestions</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html"><span>Saved Posts</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/analysis.html" class="sp">Algorithm Analysis</a>
+                <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html"><span>Ad suggestions</span></a>
             </div>
             <div class="underline">
-                <span>The following page displays the</span> personal information Instagram knows about me <span> in addition to my ad topics (ones I actively follow; different from <u>ad interests</u> which are ones Instagram suggested) and saved posts from 1 – 13 March, 2023, and</span> how much an algorithm could infer about me from all of these data<span>. <br>
+                <span>The following page displays the</span> personal information Instagram knows about me <span> in addition to my topics (ones I actively follow) and saved posts from 1 – 13 March, 2023, and</span> how much an algorithm could infer about me from all of these data<span>. <br>
                 <br>
                 I didn't have access to Instagram's algorithm data so I used </span>ChatGPT <span>for demonstration.</span>
             </div>
@@ -474,14 +479,14 @@
 
                 <span>There are a few</span> limitations <span>to this analysis. ChatGPT didn't process all of the information in my JSON file as it was too long, so its assumptions about me were limited to what it could process. </span>
             </div>
-        </section>
 
-        <footer>
-            <div class="nopad" id="footer">
-                <div> Core 2 Interaction – Elastic Collection</div>
-                <div>© 2023 Anna Bui</div>
-            </div>
-        </footer>
+            <footer>
+                <div class="nopad" id="footer">
+                    <div> Core 2 Interaction – Elastic Collection</div>
+                    <div>© 2023 Anna Bui</div>
+                </div>
+            </footer>
+        </section>
     </main>
 
     <script>

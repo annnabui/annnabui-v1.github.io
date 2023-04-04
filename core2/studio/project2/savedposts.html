@@ -141,13 +141,6 @@
             });
         })
         .catch(error => console.error(error));
-
-        // JS for navigation bar - mobile
-        const navOpen = document.querySelector('nav-mob');
-
-        function navigationDrop() {
-            navOpen.style.display = "block";
-        }
     </script>
 
     <style>
@@ -503,10 +496,6 @@
                 display: none;
             }
 
-            footer {
-                display: none;
-            }
-
             .contentTitle {
                 font-size: 2.5rem;
                 padding-left: 12px;
@@ -553,11 +542,20 @@
             .navigation {
                 padding-top: 40px;
                 padding-right: 40px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid #B1FF74;
             }
 
             .sp {
                 font-size: 1.563rem;
                 line-height: 120%;
+            }
+
+            #footer {
+                display: flex;
+                justify-content: space-between;
+                font-size: .75rem;
+                margin-left: -20px;
             }
         }
     </style>
@@ -606,10 +604,10 @@
 
         <section>
             <div class="navigation">
-                <a href="https://annnabui.github.io/core2/studio/project2/index.html"><span>About</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/index.html" ><span>About</span></a>
                 <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html" class="sp">Saved Posts</a>
                 <a href="https://annnabui.github.io/core2/studio/project2/analysis.html"><span>Algorithm Analysis</span></a>
-                <a href=""><span>Ad suggestions</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/adsuggestion.html"><span>Ad suggestions</span></a>
             </div>
             <div class="contentTitle">
                 SAVED POSTS [<a href="https://annnabui.github.io/core2/studio/project2/analysis.html" class="o">@hii_nnanaa</a>]:
@@ -633,14 +631,14 @@
             <!-- content -->
             <div id="tableone" class="table">
             </div>
-        </section>
 
-        <footer>
-            <div class="nopad" id="footer">
-                <div> Core 2 Interaction – Elastic Collection</div>
-                <div>© 2023 Anna Bui</div>
-            </div>
-        </footer>
+            <footer>
+                <div class="nopad" id="footer">
+                    <div> Core 2 Interaction – Elastic Collection</div>
+                    <div>© 2023 Anna Bui</div>
+                </div>
+            </footer>
+        </section>
     </main>
     <script>
         function randomizeImagePositions() {
