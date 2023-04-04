@@ -374,6 +374,19 @@
             width: 55px;
         }
 
+        .about {
+            display: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 0.825rem;
+            align-items: center;
+            padding-bottom: 0px;
+        }
+
         /* desktop version */
         @media only screen and (min-width: 800px) {
             html {
@@ -470,6 +483,7 @@
                 top: 0;
                 display: flex;
                 overflow: hidden;
+                border: none;
             }
 
             main section {
@@ -478,6 +492,7 @@
                 height: 100vh;
                 overflow-y: scroll;
                 overflow-x: hidden;
+                border: none;
             }
 
             .header {
@@ -526,6 +541,24 @@
             .size3 {
                 width: 100px;
             }
+
+            .about {
+                display: block;
+                position:absolute;
+                top: -80px;
+                left: 550px;
+                z-index: 3;
+            }
+
+            .navigation {
+                padding-top: 40px;
+                padding-right: 40px;
+            }
+
+            .sp {
+                font-size: 1.563rem;
+                line-height: 120%;
+            }
         }
     </style>
 </head>
@@ -551,6 +584,7 @@
             <div class="title">
                 <a href="https://annnabui.github.io/core2/studio/project2/index.html"><div class="nopad">THE ELASTIC<br>BACK ROOM</div></a>
                 <img src="imgs/headerstar.svg" class="headerstar">
+                <img class="about" src="./imgs/giphy.gif">
             </div>
 
         </header>
@@ -558,8 +592,7 @@
         <section>
             <div class="subtitle">
                 <div class="nopad">
-                    how Instagram consumer profile-d me through 2 weeks of saved posts<br>
-                    <span><a href="https://annnabui.github.io/core2/studio/project2/moreinfo.html" style="color: #5C8159; line-height: 100%;">[learn more]</a></span>
+                    how an algorithm analyzed me through 2 weeks of saved posts<br>
                 </div>
             </div>
             <div class="circle">
@@ -567,13 +600,19 @@
                 a commentary on big data and media consumption
             </div>
             <div class="bigcircle">
-                <div class="circletitle">HOW INSTAGRAM CONSUMER PROFILE-D ME THROUGH 2 WEEKS OF SAVED POSTS</div>
+                <div class="circletitle">HOW AN ALGORITHM ANALYZED ME THROUGH 2 WEEKS OF SAVED POSTS</div>
             </div>
         </section>
 
         <section>
+            <div class="navigation">
+                <a href="https://annnabui.github.io/core2/studio/project2/index.html"><span>About</span></a>
+                <a href="https://annnabui.github.io/core2/studio/project2/savedposts.html" class="sp">Saved Posts</a>
+                <a href="https://annnabui.github.io/core2/studio/project2/analysis.html"><span>Algorithm Analysis</span></a>
+                <a href=""><span>Ad suggestions</span></a>
+            </div>
             <div class="contentTitle">
-                SAVED POSTS [<a href="https://annnabui.github.io/core2/studio/project2/profile.html" class="o">@hii_nnanaa</a>]:
+                SAVED POSTS [<a href="https://annnabui.github.io/core2/studio/project2/analysis.html" class="o">@hii_nnanaa</a>]:
             </div>
             <!-- filter -->
             <div class="filter">
