@@ -1,0 +1,165 @@
+html {
+    background-color: #000AFF;
+    color: #BFD5EF;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+button {
+    background: none;
+    border: none;
+    margin: 0;
+    color: #BFD5EF;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+/* website css */
+
+.header {
+    margin: 1.25rem;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    width: 21rem;
+}
+
+.viewing-guidelines {
+    position: absolute;
+    bottom: 1.25rem;
+}
+
+#oy {
+    max-width: 3.75rem;
+}
+
+.vg {
+    max-width: 7rem;
+}
+
+.oyster {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+      to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ------------------- nav popup ----------------------*/
+
+.popup {
+    /* setup popup setting for all popups */
+    border: 2px solid #BFD5EF;
+    background:#000AFF;
+    padding: 1.25rem;
+}
+
+#nav-popup {
+    /* specific settings for navigation */
+    max-width: 45vw;
+    max-height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.close {
+    width: 1rem;
+}
+
+.popup-title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.25rem;
+}
+
+.dt-line {
+    border: .5px dashed #BFD5EF;
+    max-width: 9.25rem;
+    transform: rotate(90deg);
+}
+
+.line {
+    border: .5px solid #BFD5EF;
+    margin-top: 1rem;
+}
+
+.text {
+    display: none;
+}
+
+
+/* ------------------- viewing guidelines popup ----------------------*/
+
+#vgpopup {
+    max-width: 45vw;
+    max-height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+
+.vgflex {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.vgcolumn {
+    max-width: 10vw;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #vgpopup {
+        max-width: 30vw;
+    }
+    
+    .vgflex {
+        flex-direction: column;
+    }
+
+    .vgcolumn {
+        max-width: 30vw;
+    }
+}
+
+
+#myDiv {
+    display: none;
+}
