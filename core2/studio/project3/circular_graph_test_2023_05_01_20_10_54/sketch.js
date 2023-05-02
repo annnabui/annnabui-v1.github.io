@@ -1,4 +1,7 @@
 var canvas;
+var strokeOne;
+var strokeOut;
+let strokeOutID = "strokeout";
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight, WEBGL);
@@ -8,6 +11,21 @@ function setup() {
   canvas.position(0,0);
   canvas.style('z-index', '-1');
   strokeCap(SQUARE);
+
+  strokeOne = function() {
+    stroke(68,74,246,120);
+    strokeWeight(150);
+  }
+
+  strokeOut = function() {
+    stroke(68,74,246,120);
+    strokeWeight(150);
+  }
+
+  // let strokeOutObj = {var: strokeOut, id: strokeOutID};
+
+  // console.log(strokeOutObj.var);
+  // console.log(strokeOutObj.id);
 }
 
 function draw() {
@@ -15,8 +33,10 @@ function draw() {
   orbitControl();
 
   noFill();
-  stroke(68,74,246,120);
-  strokeWeight(150); 
+  strokeOne ();
+  arc(0,-10,300,300,PI*3/4, PI*5/4);
+  translate(0,0,150);
+
   arc(0,-10,300,300,0,PI/4);
   
   arc(0,-10,300,300,0,PI/2);
@@ -34,6 +54,16 @@ function draw() {
   arc(0,-10,300,300,0,PI*1/4);
   translate(0,0,150);
   
+
+  strokeOut();
   arc(0,-10,300,300,PI/2,PI*5/4);
   translate(0,0,150);
-}
+};
+
+// var strokeClick = document.getElementById('strokeout');
+// var strokePopup = document.getElementById('myDiv');
+
+// strokeClick.addEventListener("click", function() {
+//   strokePopup.style.display = "block";
+// });
+

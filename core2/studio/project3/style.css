@@ -78,7 +78,9 @@ button {
 #nav-popup {
     /* specific settings for navigation */
     max-width: 45vw;
-    max-height: fit-content;
+    height: fit-content;
+    max-height: 35vw;
+    overflow: auto;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -86,6 +88,7 @@ button {
     right: 0;
     margin: auto;
     display: none;
+    scrollbar-color: #BFD5EF #000AFF;
 }
 
 .close {
@@ -117,6 +120,17 @@ button {
 
 .text {
     display: none;
+    font-weight: 500;
+}
+
+.annotate {
+    font-size: .75rem;
+    text-align: center;
+}
+
+.historyimg {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -162,4 +176,28 @@ button {
 
 #myDiv {
     display: none;
+}
+
+
+/* -------------------links-------------------- */
+
+a:link{
+    color: #BFD5EF;
+    text-decoration: underline;
+}
+a:visited{
+    color: #BFD5EF;
+    text-decoration: underline;
+}
+a:hover{
+    color: #FFE600;
+    text-decoration: none;
+}
+a:focus{
+    color: #FFE600;
+    text-decoration: none;
+}
+a:active{
+    color: #BFD5EF;
+    text-decoration: none;
 }
