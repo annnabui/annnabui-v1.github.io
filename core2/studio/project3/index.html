@@ -43,7 +43,9 @@
             <div class="dt-line"></div>
             <button id="history"><em>History</em></button>
             <div class="dt-line"></div>
-            <button id="data"><em>Data & References</em></button>
+            <button id="data"><em>Data</em></button>
+            <div class="dt-line"></div>
+            <button id="resource"><em>Resources</em></button>
         </div>
         <div class="line"></div><br>
         <div class="text" id="aboutt">
@@ -52,7 +54,7 @@
         <div class="text" id="historyt">
             Oysters have been an important part of the history of New York City, with a legacy dating back to the time of the Lenape Indians who harvested them from the local waters. By the 19th century, oysters had become a cheap and plentiful food source for the working-class residents of the city, with oyster stands and restaurants lining the streets. Oysters were so abundant in New York Harbor that it was known as the "oyster capital of the world."<br>
             <br>
-            <img src="./imgs/Museum-Of-The-City-Of-New-York-NYC-Untapped-Cities-Oysters-New-York-At-Its-Core4.jpg" class="historyimg">
+            <img src="./imgs/Museum-Of-The-City-Of-New-York-NYC-Untapped-Cities-Oysters-New-York-At-Its-Core4.jpg" class="img">
             <br>
             <div class="annotate">
                 <em>Oyster men in their prime</em>
@@ -68,6 +70,18 @@
             Data used in this project is from <a href="https://menus.nypl.org">New York Public Library's <em>"What's on the Menu?"</em></a> collection where they transcribed all historical menu from the 1840s to the present.<br>
             <br>
             Hypotheses and explanation of data come from <a href="https://en.wikipedia.org/wiki/The_Big_Oyster:_History_on_the_Half_Shell">Mark Kurlansky's <em>The Big Oyster: History on the Half Shell</em></a>.
+        </div>
+        <div class="text" id="resourcet">
+            Below are some resources you can look into if you're interested in donating to oyster conservation projects in New York City:<br><br>
+
+            <strong>1. <a href="https://www.billionoysterproject.org">Billion Oyster Project</a></strong><br>
+            <br>
+            A New York City-based nonprofit organization with the goal of engaging one million people in the effort to restore one billion oysters to New York Harbor by 2035.<br>
+            <br>
+            <img src="./20180716-Billion-Oyster-Project.jpeg" class="img"><br>
+            <br>
+            <strong>2. <a href="https://www.dec.ny.gov/outdoor/110939.html">Restore New York Shellfish</a></strong><br><br>
+            <strong>3. <a href="https://hudsonriverpark.org/the-park/parks-river-project/science/current-research/oysters/">The Tribeca Habitat Enhancement Project</a></strong>
         </div>
     </div>
 
@@ -116,10 +130,12 @@
         var aboutBttn = document.getElementById('about');
         var historyBttn = document.getElementById('history');
         var dataBttn = document.getElementById('data');
+        var resBttn = document.getElementById('resource');
 
         var aboutText = document.getElementById('aboutt');
         var historyText = document.getElementById('historyt');
         var dataText = document.getElementById('datat');
+        var resText = document.getElementById('resourcet');
 
         navClick.addEventListener("click", function() {
             navPopup.style.display = "block";
@@ -137,10 +153,12 @@
             }
             historyText.style.display = "none";
             dataText.style.display = "none";
+            resText.style.display = "none";
 
             aboutBttn.style.opacity = "1";
             historyBttn.style.opacity = ".5";
             dataBttn.style.opacity = ".5";
+            resBttn.style.opacity = ".5";
         });
 
         historyBttn.addEventListener("click", function() {
@@ -151,10 +169,12 @@
             }
             aboutText.style.display = "none";
             dataText.style.display = "none";
+            resText.style.display = "none";
 
             aboutBttn.style.opacity = ".5";
             historyBttn.style.opacity = "1";
             dataBttn.style.opacity = ".5";
+            resBttn.style.opacity = ".5";
         });
 
         dataBttn.addEventListener("click", function() {
@@ -165,10 +185,28 @@
             }
             aboutText.style.display = "none";
             historyText.style.display = "none";
+            resText.style.display = "none";
 
             historyBttn.style.opacity = ".5";
             aboutBttn.style.opacity = ".5";
             dataBttn.style.opacity = "1";
+            resBttn.style.opacity = ".5";
+        });
+
+        resBttn.addEventListener("click", function() {
+            if (resText.style.display === "none") {
+                resText.style.display = "block";
+            } else {
+                resText.style.display = "none";
+            }
+            aboutText.style.display = "none";
+            historyText.style.display = "none";
+            dataText.style.display = "none";
+
+            historyBttn.style.opacity = ".5";
+            aboutBttn.style.opacity = ".5";
+            dataBttn.style.opacity = ".5";
+            resBttn.style.opacity = "1";
         });
 
         

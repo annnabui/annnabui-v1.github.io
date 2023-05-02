@@ -30,6 +30,7 @@ function setup() {
 
 function draw() {
   background(0,10,255);
+  // background(000)
   orbitControl();
 
   noFill();
@@ -37,7 +38,13 @@ function draw() {
   arc(0,-10,300,300,PI*3/4, PI*5/4);
   translate(0,0,150);
 
+
+  arc(0,-10,300,300,PI*5/3,PI*3/4);
+  arc(0,-10,300,300,PI*7/6,PI*3/2);
+  translate(0,0,150);
+
   arc(0,-10,300,300,0,PI/4);
+  arc(0,-10,300,300,PI,PI*3/2);
   
   arc(0,-10,300,300,0,PI/2);
   translate(0,0,150);
