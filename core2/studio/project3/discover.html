@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oyster @ nyc</title>
+    <title>Discover Data</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ssz6abi.css">
-
-    <script src="./circular_graph_test_2023_05_01_20_10_54/p5.js">
-    </script>
-    <script src="./circular_graph_test_2023_05_01_20_10_54/sketch.js"></script>
-
 </head>
 <body>
     <!-- header -->
@@ -26,9 +21,6 @@
             <div id="oyster">
                 <img id="oy" src="./imgs/oyster.jpg" class="oyster">
             </div>
-        </div>
-        <div class="viewing-guidelines">
-            <img id="vg" class="vg" src="./imgs/vg.svg">
         </div>
     </header>
 
@@ -85,48 +77,20 @@
             <strong>2. <a href="https://www.dec.ny.gov/outdoor/110939.html">Restore New York Shellfish</a></strong><br><br>
             <strong>3. <a href="https://hudsonriverpark.org/the-park/parks-river-project/science/current-research/oysters/">The Tribeca Habitat Enhancement Project</a></strong>
         </div>
+    </div>  
+
+    <!-- search bar -->
+    <div class="searchbar">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a specific dish or filter by year" title="search">
     </div>
 
-    <!-- viewing guideline -->
-    <div class="popup" id="vgpopup">
-        <div class="popup-title-flex">
-            <div class="popup-title"><u>Viewing Guidelines</u> – When different Oyster dishes First appeared in NYC menus<br><br></div>
-            <div>
-                <img src="./imgs/close.svg" id="vgclose" class="close">
-            </div>
-        </div>
-        <div class="vgflex">
-            <div class="vgcolumn">
-                <img src="./imgs/vg.svg" class="vg">
-            </div>
-            <div class="vgcolumn">
-                z <br>
-                <br>
-                <em>timeline</em>
-                – goes further in time the higher a ring’s z-index is
-            </div>
-            <div class="vgcolumn">
-                d<br>
-                <br>
-                <em>ring’s diameter</em>
-                – the total number of menus recorded in that period
-            </div>
-            <div class="vgcolumn">
-                r<br>
-                <br>
-                <em>ring’s radius/sector size</em>
-                – how frequently a dish appears in that period 
-            </div>
-        </div>
-    </div>
+    <!-- filter -->
+    <div class="filter"></div>
 
-    <!-- discover data -->
-    <button class="discover" id="discover">
-        Discover Data >
-    </button>
+    <!-- data display -->
+    <div id="tableone" class="tableone"></div>
 
     <script>
-
         // interaction for navigation pop up
         var navClick = document.getElementById('oy');
         var navPopup = document.getElementById('nav-popup');
@@ -212,20 +176,6 @@
             aboutBttn.style.opacity = ".5";
             dataBttn.style.opacity = ".5";
             resBttn.style.opacity = "1";
-        });
-
-        
-        // interaction for viewing guidelines popup 
-        var vgClick = document.getElementById('vg');
-        var vgPopup = document.getElementById('vgpopup');
-        var closeVg = document.getElementById('vgclose');
-
-        vgClick.addEventListener("click", function() {
-            vgPopup.style.display = "block";
-        });
-
-        closeVg.addEventListener("click", function() {
-            vgPopup.style.display = "none";
         });
     </script>
 </body>
