@@ -8,6 +8,126 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ssz6abi.css">
+
+    <script>
+        fetch ('oyster.json')
+        .then(response => response.json())
+        .then(data => {
+
+            // define const
+            const tableone = document.getElementById('tableone');
+            const buttonSeg8 = document.getElementById('seg8');
+            const buttonSeg7 = document.getElementById('seg7');
+            const buttonSeg6 = document.getElementById('seg6');
+            const buttonSeg5 = document.getElementById('seg5');
+            const buttonSeg4 = document.getElementById('seg4');
+            const buttonSeg3 = document.getElementById('seg3');
+            const buttonSeg2 = document.getElementById('seg2');
+            const buttonSeg1 = document.getElementById('seg1');
+
+            // loop
+            data.forEach(item => {
+                const div = document.createElement('div');
+                div.classname = 'table'
+                const p1 = document.createElement('p');
+                p1.classname = 'title'
+                const img = document.createElement('img');
+                const p2 = document.createElement('p');
+                p2.className = "details"
+                const p3 = document.createElement('p');
+                p3.className = "description"
+                const p4 = document.createElement('p');
+                p4.className = "analysis"
+
+                p1.textContent = item.name;
+                p2.textContent = item.first_appeared + " – " + item.last_appeared + Environment.NewLine + item.lowest_price + " – " + item.highest_price + Environment.NewLine + item.menus_appeared + "/" + item.total;
+                p3.textContent = "Description" + Environment.NewLine + item.description;
+                p4.textContent = "Analysis" + Environment.NewLine + item.analysis;
+                img.src = "imgs/" + item.Image;
+
+                if (item.Image == "no") {
+                    img.style.display = "none";
+                }
+
+                //button
+                buttonAll.addEventListener('click', function() {
+                    div.style.display = "block";
+                })
+                buttonTat.addEventListener('click', function() {
+                    if (item.adTopics == "Tattoo") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonDes.addEventListener('click', function() {
+                    if (item.adTopics == "Art & Graphic Design") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonCraft.addEventListener('click', function() {
+                    if (item.adTopics == "Crafts") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonJewelry.addEventListener('click', function() {
+                    if (item.adTopics == "Jewelry design") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonHealthy.addEventListener('click', function() {
+                    if (item.adTopics == "Healthy Habits") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonKnitting.addEventListener('click', function() {
+                    if (item.adTopics == "Knitting") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonFashion.addEventListener('click', function() {
+                    if (item.adTopics == "Fashion & Makeup") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonVintage.addEventListener('click', function() {
+                    if (item.adTopics == "Vintage goods") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonAnime.addEventListener('click', function() {
+                    if (item.adTopics == "Anime") {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+
+                // display elements
+                div.appendChild(p1);
+                div.appendChild(img);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                tableone.appendChild(div);
+            });
+        })
+        .catch(error => console.error(error));
+    </script>
 </head>
 <body>
     <!-- header -->
@@ -85,7 +205,16 @@
     </div>
 
     <!-- filter -->
-    <div class="filter"></div>
+    <div class="filtersystem">
+        <button class="filter" id="seg1">1851 – 1859</button>
+        <button class="filter" id="seg2">1860 – 1880</button>
+        <button class="filter" id="seg3">1881 – 1981</button>
+        <button class="filter" id="seg4">1902 – 1922</button>
+        <button class="filter" id="seg5">1923 – 1943</button>
+        <button class="filter" id="seg6">1944 – 1964</button>
+        <button class="filter" id="seg7">1965 – 1985</button>
+        <button class="filter" id="seg8">1986 – 2006</button>
+    </div>
 
     <!-- data display -->
     <div id="tableone" class="tableone"></div>

@@ -22,6 +22,11 @@ button {
     font-size: 1rem;
 }
 
+button:focus {
+    background-color: #BFD5EF;
+    color: #000AFF;
+}
+
 /* website css */
 
 .header {
@@ -208,4 +213,32 @@ a:focus{
 a:active{
     color: #BFD5EF;
     text-decoration: none;
+}
+
+/* --------------------------- Discover Data page ------------------------ */
+
+.searchbar {
+    margin: 1.25rem;
+}
+
+#myInput {
+    width: 93vw;
+    max-width: 100vw;
+    background-color: #BFD5EF;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    color: #000AFF;
+    border: none;
+}
+
+.filtersystem {
+    margin: 1.25rem;
+}
+.filter {
+    background: #000AFF;
+    border: 1px solid #BFD5EF;
+    border-radius: 10em;
+    color: #BFD5EF;
 }
