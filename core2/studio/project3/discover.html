@@ -33,17 +33,29 @@
                 const p1 = document.createElement('p');
                 p1.className = 'titletable'
                 const img = document.createElement('img');
-                const p2 = document.createElement('div');
-                p2.className = "details"
+                const p2 = document.createElement('p');
+                p2.className = "appeared"
+                const p2two = document.createElement('p');
+                p2two.className = "price"
+                const p2three = document.createElement('p');
+                p2three.className = "menu"
                 const p3 = document.createElement('p');
-                p3.className = "description"
+                p3.className = "description-title"
+                const p3two = document.createElement('p');
+                p3two.className = "description"
                 const p4 = document.createElement('p');
-                p4.className = "analysis"
+                p4.className = "analysis-title"
+                const p4two = document.createElement('p');
+                p4two.className = "analysis"
 
                 p1.textContent = item.name;
-                p2.textContent = item.firstAppeared + " – " + item.lastAppeared + "<br>" + item.lowestPrice + " – " + item.highestPrice + " " + item.menusAppeared + "/" + item.total;
-                p3.textContent = "Description " + item.description;
-                p4.textContent = "Analysis " + item.analysis;
+                p2.textContent = item.firstAppeared + " – " + item.lastAppeared;
+                p2two.textContent = item.lowestPrice + " – " + item.highestPrice;
+                p2three.textContent = item.menusAppeared + "/" + item.total;
+                p3.textContent = "Description";
+                p3two.textContent = item.description;
+                p4.textContent = "Analysis";
+                p4two.textContent = item.analysis;
                 img.src = "imgs/" + item.image;
 
                 if (item.Image == "no") {
@@ -115,8 +127,12 @@
                 div.appendChild(p1);
                 div.appendChild(img);
                 div.appendChild(p2);
+                div.appendChild(p2two);
+                div.appendChild(p2three);
                 div.appendChild(p3);
+                div.appendChild(p3two);
                 div.appendChild(p4);
+                div.appendChild(p4two);
                 tableone.appendChild(div);
             });
         })
