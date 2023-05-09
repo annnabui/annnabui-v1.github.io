@@ -35,30 +35,30 @@ function setup() {
   let dataLength = Object.keys(data).length
   for (let i=0; i < dataLength; i++) {
     let currentEntry = data[i];
-    let currentEntryYear = currentEntry['first_appeared'];
+    let currentEntryYear = currentEntry['firstAppeared'];
     if (currentEntryYear <= 1859 && currentEntryYear >= 1851) {
-      seg1 += currentEntry['menus_appeared']
+      seg1 += currentEntry['menusAppeared']
       
     } else if(currentEntryYear <= 1880 && currentEntryYear >= 1860) {
-      seg2 += currentEntry['menus_appeared']
+      seg2 += currentEntry['menusAppeared']
 
     } else if(currentEntryYear <= 1901 && currentEntryYear >= 1881) {
-      seg3 += currentEntry['menus_appeared']
+      seg3 += currentEntry['menusAppeared']
 
     } else if(currentEntryYear <= 1922 && currentEntryYear >= 1902) {
-      seg4 += currentEntry['menus_appeared']
+      seg4 += currentEntry['menusAppeared']
       
     } else if(currentEntryYear <= 1943 && currentEntryYear >= 1923) {
-      seg5 += currentEntry['menus_appeared']
+      seg5 += currentEntry['menusAppeared']
       
     } else if(currentEntryYear <= 1964 && currentEntryYear >= 1944) {
-      seg6 += currentEntry['menus_appeared']
+      seg6 += currentEntry['menusAppeared']
       
     } else if(currentEntryYear <= 1985 && currentEntryYear >= 1965) {
-      seg7 += currentEntry['menus_appeared'] 
+      seg7 += currentEntry['menusAppeared'] 
       
     } else if(currentEntryYear <= 2006 && currentEntryYear >= 1986) {
-      seg8 += currentEntry['menus_appeared'] 
+      seg8 += currentEntry['menusAppeared'] 
     }
   }  
   
