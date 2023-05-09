@@ -121,7 +121,7 @@
     </div>
 
     <!-- discover data -->
-    <button class="discover" id="discover" href="https://annnabui.github.io/core2/studio/project3/discover.html">
+    <button class="discover" id="discover">
         Discover Data >
     </button>
 
@@ -226,6 +226,14 @@
 
         closeVg.addEventListener("click", function() {
             vgPopup.style.display = "none";
+        });
+
+
+        // discover data button 
+        const discover = document.getElementById('discover');
+
+        discover.addEventListener('click', function() {
+            window.location.href = 'discover.html';
         });
     </script>
 </body>
