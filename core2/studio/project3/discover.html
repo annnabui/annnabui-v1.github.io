@@ -193,12 +193,12 @@
         </div>
     </div>  
 
-    <!-- search bar -->
+    <!-- search bar
     <div class="searchbar">
         <input type="text" id="searchInput" onkeyup="myFunction()" placeholder="Search a specific dish or filter by year" title="search">
     </div>
 
-    <ul id="searchResults"></ul>
+    <ul id="searchResults"></ul> -->
 
     <!-- filter -->
     <div class="filtersystem">
@@ -304,41 +304,41 @@
             resBttn.style.opacity = "1";
         });
 
-        // search bar
-        fetch('oyster.json')
-        .then(response => response.json())
-        .then(data => {
-        // Store the JSON data in a variable
-        const jsonData = data;
+        // // search bar
+        // fetch('oyster.json')
+        // .then(response => response.json())
+        // .then(data => {
+        // // Store the JSON data in a variable
+        // const jsonData = data;
 
-        // Get the search input and search results elements
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
+        // // Get the search input and search results elements
+        // const searchInput = document.getElementById('searchInput');
+        // const searchResults = document.getElementById('searchResults');
 
-        // Add event listener for search input
-        searchInput.addEventListener('input', function() {
-            // Clear previous search results
-            searchResults.innerHTML = '';
+        // // Add event listener for search input
+        // searchInput.addEventListener('input', function() {
+        //     // Clear previous search results
+        //     searchResults.innerHTML = '';
 
-            // Get the search query
-            const query = this.value.toLowerCase();
+        //     // Get the search query
+        //     const query = this.value.toLowerCase();
 
-            // Filter the JSON data based on the search query
-            const filteredData = jsonData.filter(item =>
-            item.name.toLowerCase().includes(query)
-            );
+        //     // Filter the JSON data based on the search query
+        //     const filteredData = jsonData.filter(item =>
+        //     item.name.toLowerCase().includes(query)
+        //     );
 
-            // Display the search results
-            filteredData.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = item.name;
-            searchResults.appendChild(li);
-            });
-        });
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
+        //     // Display the search results
+        //     filteredData.forEach(item => {
+        //     const li = document.createElement('li');
+        //     li.textContent = item.name;
+        //     searchResults.appendChild(li);
+        //     });
+        // });
+    // })
+    // .catch(error => {
+    //     console.error('Error:', error);
+    // });
     </script>
 </body>
 </html>
