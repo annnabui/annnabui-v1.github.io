@@ -216,7 +216,7 @@ a:active{
 
 /* --------------------------- Discover Data page ------------------------ */
 
-.searchbar {
+/* .searchbar {
     margin: 1.25rem;
 }
 
@@ -230,12 +230,13 @@ a:active{
     font-size: 1rem;
     color: #000AFF;
     border: none;
-}
+} */
 
 .filtersystem {
     margin: 1.25rem;
     width: 21rem;
 }
+
 .filter {
     background: #000AFF;
     border: 1px solid #BFD5EF;
@@ -248,18 +249,44 @@ a:active{
     top: 0;
     padding: 1.25rem;
     right: 1.25rem;
-    width: 60vw;
+    width: 64vw;
     height: fit-content;
     z-index: -10;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    gap: 1.25rem;
 }
 
 .tableone div {
-    width: 50vw;
+    width: 28vw;
+    border: 1px solid #BFD5EF;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .titletable {
     text-decoration: underline;
+    width: 25vw;
+}
+
+/* .table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+/* filters */
+
+.mainfilter {
+    background: #BFD5EF;
+    color:#000AFF;
+}
+
+.subfilters {
+    display: none;
+}
+
+.empty {
+    opacity: .3;
 }

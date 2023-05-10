@@ -71,79 +71,122 @@ function draw() {
   // background(000)
 
   orbitControl();
-  let scaledSeg1 = map(seg1, 2, 4160, 60, 360);
-  let scaledSeg2 = map(seg2, 2, 4160, 60, 360);
-  let scaledSeg3 = map(seg3, 2, 4160, 60, 360);
-  let scaledSeg4 = map(seg4, 2, 4160, 60, 360);
-  let scaledSeg5 = map(seg5, 2, 4160, 60, 360);
-  let scaledSeg6 = map(seg6, 2, 4160, 60, 360);
-  let scaledSeg7 = map(seg7, 2, 4160, 60, 360);
-  let scaledSeg8 = map(seg8, 2, 4160, 60, 360);
+  let scaledSeg1 = map(seg1, 2, 4160, 90, 360);
+  let scaledSeg2 = map(seg2, 2, 4160, 90, 360);
+  let scaledSeg3 = map(seg3, 2, 4160, 90, 360);
+  let scaledSeg4 = map(seg4, 2, 4160, 90, 360);
+  let scaledSeg5 = map(seg5, 2, 4160, 90, 360);
+  let scaledSeg6 = map(seg6, 2, 4160, 90, 360);
+  let scaledSeg7 = map(seg7, 2, 4160, 90, 360);
+  let scaledSeg8 = map(seg8, 2, 4160, 90, 360);
   
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1851 - 1859', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1851 - 1859', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,135, 135 + scaledSeg1)
   translate(0,0,200);
 
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1860 - 1880', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1860 - 1880', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,300,300 + scaledSeg2);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,300 + scaledSeg2 + 5, 125);
+  stroke(68,200,246,120);
+  arc(0,-10,300,300,130, 136);
   translate(0,0,200);
   
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1881 - 1901', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1881 - 1901', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,210,210 + scaledSeg3);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,210 + scaledSeg3 + 5, 195);
+  stroke(68,200,246,120);
+  arc(0,-10,300,300,200, 205);
   translate(0,0,200);
 
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1902 - 1922', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1902 - 1922', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,0, 0 + scaledSeg4);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,0 + scaledSeg4 + 5, 215);
+  stroke(150,200,200,200);
+  arc(0,-10,300,300,220, 225);
   translate(0,0,200);
   
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1923 - 1943', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1923 - 1943', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,275, 275 + scaledSeg5);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,275 + scaledSeg5 + 5, 37);
   translate(0,0,200);
   
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1944 - 1964', -100, -250)
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1944 - 1964', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,200, 200 + scaledSeg6);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,200 + scaledSeg6 + 5, 333);
+  stroke(68,200,246,120);
+  arc(0,-10,300,300,338, 343);
+  stroke(0,250,0,120);
+  arc(0,-10,300,300,348, 358);
   translate(0,0,200);
 
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1965 - 1985', -100, -250)
+  // 1965 - 1985
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1965 - 1985', -100, -250)
   noFill();
+  stroke(68,74,246,120);
   arc(0,-10,300,300,300,300 + scaledSeg7);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,300 + scaledSeg7 + 5, 60);
+  stroke(0,250,0,120);
+  arc(0,-10,300,300,65, 75);
+  stroke(0,0,200,120); 
+  arc(0,-10,300,300,80, 85);
+  stroke(200,0,0,120);
+  arc(0,-10,300,300,90, 100);
   translate(0,0,200);
 
-  fill(68,74,246,200);
-  textFont(myFont);
-  textSize(36);
-  text('1986 - 2006', -100, -250)
+  // 1986 - 2006
+  // fill(68,74,246,200);
+  // textFont(myFont);
+  // textSize(36);
+  // text('1986 - 2006', -100, -250)
   noFill();
-  arc(0,-10,300,300,300,300 + scaledSeg8);
+  stroke(68,74,246,120);
+  arc(0,-10,300,300,200,200 + scaledSeg8);
+  stroke(200,74,246,120);
+  arc(0,-10,300,300,200 + scaledSeg8 + 5, 320);
+  stroke(0,250,0,120);
+  arc(0,-10,300,300,325, 330);
+  stroke(150,150,0,120); 
+  arc(0,-10,300,300,335, 349);
   translate(0,0,200);
-
 }
 
 function windowResized () {

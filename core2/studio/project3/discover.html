@@ -13,18 +13,48 @@
         fetch ('oyster.json')
         .then(response => response.json())
         .then(data => {
-
-            // define const
+            
             const tableone = document.getElementById('tableone');
             const buttonAll = document.getElementById('all');
-            const buttonSeg8 = document.getElementById('seg8');
-            const buttonSeg7 = document.getElementById('seg7');
-            const buttonSeg6 = document.getElementById('seg6');
-            const buttonSeg5 = document.getElementById('seg5');
-            const buttonSeg4 = document.getElementById('seg4');
-            const buttonSeg3 = document.getElementById('seg3');
-            const buttonSeg2 = document.getElementById('seg2');
-            const buttonSeg1 = document.getElementById('seg1');
+
+            // french year buttons
+            const buttonSeg8French = document.getElementById('seg8french');
+            const buttonSeg7French = document.getElementById('seg7french');
+            const buttonSeg6French = document.getElementById('seg6french');
+            const buttonSeg5French = document.getElementById('seg5french');
+            const buttonSeg4French = document.getElementById('seg4french');
+            const buttonSeg3French = document.getElementById('seg3french');
+            const buttonSeg2French = document.getElementById('seg2french');
+
+            // italian year buttons
+            const buttonSeg8Italian = document.getElementById('seg8italian');
+            const buttonSeg4Italian = document.getElementById('seg4italian');
+
+            // irish year buttons
+            const buttonSeg6Irish = document.getElementById('seg6irish');
+            const buttonSeg3Irish = document.getElementById('seg3irish');
+            const buttonSeg2Irish = document.getElementById('seg2irish');
+
+            // portuguese year buttons 
+            const buttonSeg8Port = document.getElementById('seg8portuguese');
+            const buttonSeg7Port = document.getElementById('seg7portuguese');
+            const buttonSeg6Port = document.getElementById('seg6portuguese');
+
+            // dutch year buttons 
+            const buttonSeg7Dutch = document.getElementById('seg7dutch');
+
+            // japanese year buttons
+            const buttonSeg7Jap = document.getElementById('seg7japanese');
+
+            // american year buttons 
+            const buttonSeg8Am = document.getElementById('seg8american');
+            const buttonSeg7Am = document.getElementById('seg7american');
+            const buttonSeg6Am = document.getElementById('seg6american');
+            const buttonSeg5Am = document.getElementById('seg5american');
+            const buttonSeg4Am = document.getElementById('seg4american');
+            const buttonSeg3Am = document.getElementById('seg3american');
+            const buttonSeg2Am = document.getElementById('seg2american');
+            const buttonSeg1Am = document.getElementById('seg1american');
 
             // loop
             data.forEach(item => {
@@ -49,12 +79,12 @@
                 p4two.className = "analysis"
 
                 p1.textContent = item.name;
-                p2.textContent = item.firstAppeared + " – " + item.lastAppeared;
-                p2two.textContent = item.lowestPrice + " – " + item.highestPrice;
-                p2three.textContent = item.menusAppeared + "/" + item.total;
-                p3.textContent = "Description";
+                p2.textContent = "First – Last Appeared: " + item.firstAppeared + " – " + item.lastAppeared;
+                p2two.textContent = "Lowest – Highest Price per unit ($): " + item.lowestPrice + " – " + item.highestPrice;
+                p2three.textContent = "# of menus appeared in: " + item.menusAppeared + "/" + item.total;
+                p3.textContent = "Description:";
                 p3two.textContent = item.description;
-                p4.textContent = "Analysis";
+                p4.textContent = "Analysis:";
                 p4two.textContent = item.analysis;
                 img.src = "imgs/" + item.image;
 
@@ -62,61 +92,193 @@
                     img.style.display = "none";
                 }
 
-                //button
                 buttonAll.addEventListener('click', function() {
                     div.style.display = "block";
                 })
-                buttonSeg1.addEventListener('click', function() {
-                    if (item.firstAppeared == "1851" || item.firstAppeared == "1856" || item.firstAppeared == "1858" || item.firstAppeared == "1859") {
+
+                //button (french)
+                buttonSeg2French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg2.addEventListener('click', function() {
-                    if (item.firstAppeared == "1862" || item.firstAppeared == "1864" || item.firstAppeared == "1865" || item.firstAppeared == "1870") {
+                buttonSeg3French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg3.addEventListener('click', function() {
-                    if (item.firstAppeared == "1901" || item.firstAppeared == "1881" || item.firstAppeared == "1884" || item.firstAppeared == "1887" || item.firstAppeared == "1889" || item.firstAppeared == "1890" || item.firstAppeared == "1891" || item.firstAppeared == "1892" || item.firstAppeared == "1893" || item.firstAppeared == "1894" || item.firstAppeared == "1895" || item.firstAppeared == "1897" || item.firstAppeared == "1898" || item.firstAppeared == "1899" || item.firstAppeared == "1900") {
+                buttonSeg4French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg4.addEventListener('click', function() {
-                    if (item.firstAppeared == "1905" || item.firstAppeared == "1906" || item.firstAppeared == "1907" || item.firstAppeared == "1908" || item.firstAppeared == "1910" || item.firstAppeared == "1912" || item.firstAppeared == "1913" || item.firstAppeared == "1914" || item.firstAppeared == "1915" || item.firstAppeared == "1916" || item.firstAppeared == "1917" || item.firstAppeared == "1918" || item.firstAppeared == "1919" || item.firstAppeared == "1920" || item.firstAppeared == "1921") {
+                buttonSeg5French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg5.addEventListener('click', function() {
-                    if (item.firstAppeared == "1926" || item.firstAppeared == "1930" || item.firstAppeared == "1931" || item.firstAppeared == "1933" || item.firstAppeared == "1937" || item.firstAppeared == "1938" || item.firstAppeared == "1939" || item.firstAppeared == "1940" || item.firstAppeared == "1941" || item.firstAppeared == "1943") {
+                buttonSeg6French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg6.addEventListener('click', function() {
-                    if (item.firstAppeared == "1944" || item.firstAppeared == "1945" || item.firstAppeared == "1946" || item.firstAppeared == "1947" || item.firstAppeared == "1948" || item.firstAppeared == "1949" || item.firstAppeared == "1950" || item.firstAppeared == "1952" || item.firstAppeared == "1953" || item.firstAppeared == "1954" || item.firstAppeared == "1955" || item.firstAppeared == "1956" || item.firstAppeared == "1957" || item.firstAppeared == "1958" || item.firstAppeared == "1959" || item.firstAppeared == "1961" || item.firstAppeared == "1962" || item.firstAppeared == "1963" || item.firstAppeared == "1964") {
+                buttonSeg7French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg7.addEventListener('click', function() {
-                    if (item.firstAppeared == "1965" || item.firstAppeared == "1966" || item.firstAppeared == "1967" || item.firstAppeared == "1968" || item.firstAppeared == "1969" || item.firstAppeared == "1970" || item.firstAppeared == "1971" || item.firstAppeared == "1972" || item.firstAppeared == "1974" || item.firstAppeared == "1975" || item.firstAppeared == "1976" || item.firstAppeared == "1977" || item.firstAppeared == "1979" || item.firstAppeared == "1980" || item.firstAppeared == "1981" || item.firstAppeared == "1983" || item.firstAppeared == "1985") {
+                buttonSeg8French.addEventListener('click', function() {
+                    if (item.tag == "french" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
-                buttonSeg8.addEventListener('click', function() {
-                    if (item.firstAppeared == "1986" || item.firstAppeared == "1987" || item.firstAppeared == "1990" || item.firstAppeared == "1998" || item.firstAppeared == "2001" || item.firstAppeared == "2003" || item.firstAppeared == "2006") {
+
+                //button (italian)
+                buttonSeg4Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg8Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+
+                //button (irish)
+                buttonSeg2Irish.addEventListener('click', function() {
+                    if (item.tag == "irish" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg3Irish.addEventListener('click', function() {
+                    if (item.tag == "irish" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg6Irish.addEventListener('click', function() {
+                    if (item.tag == "irish" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                
+                //button (portuguese)
+                buttonSeg6Port.addEventListener('click', function() {
+                    if (item.tag == "portuguese" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg7Port.addEventListener('click', function() {
+                    if (item.tag == "portuguese" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg8Port.addEventListener('click', function() {
+                    if (item.tag == "portuguese" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+
+                //button (dutch)
+                buttonSeg7Dutch.addEventListener('click', function() {
+                    if (item.tag == "dutch" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                
+                //button (japanese)
+                buttonSeg7Jap.addEventListener('click', function() {
+                    if (item.tag == "japanese" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                
+                //button (american)
+                buttonSeg1Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1859 && item.firstAppeared >= 1851) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg2Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg3Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg4Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg5Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg6Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg7Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg8Am.addEventListener('click', function() {
+                    if (item.tag == "american" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
@@ -216,18 +378,92 @@
 
     <ul id="searchResults"></ul> -->
 
-    <!-- filter -->
     <div class="filtersystem">
-        <button class="filter" id="all">All</button>
-        <button class="filter" id="seg1">1851 – 1859</button>
-        <button class="filter" id="seg2">1860 – 1880</button>
-        <button class="filter" id="seg3">1881 – 1901</button>
-        <button class="filter" id="seg4">1902 – 1922</button>
-        <button class="filter" id="seg5">1923 – 1943</button>
-        <button class="filter" id="seg6">1944 – 1964</button>
-        <button class="filter" id="seg7">1965 – 1985</button>
-        <button class="filter" id="seg8">1986 – 2006</button>
-    </div>
+        <button class="filter mainfilter" id="all">All</button>
+        <br><br><button class="filter mainfilter" id="french">French</button>
+        <div class="subfilters" id="subFrench">
+            <button class="filter empty" id="seg1french">1851 – 1859</button>
+            <button class="filter" id="seg2french">1860 – 1880</button>
+            <button class="filter" id="seg3french">1881 – 1901</button>
+            <button class="filter" id="seg4french">1902 – 1922</button>
+            <button class="filter" id="seg5french">1923 – 1943</button>
+            <button class="filter" id="seg6french">1944 – 1964</button>
+            <button class="filter" id="seg7french">1965 – 1985</button>
+            <button class="filter" id="seg8french">1986 – 2006</button>
+        </div>
+
+        <br><br><button class="filter mainfilter" id="italian">Italian</button>
+        <div class="subfilters" id="subItalian">
+            <button class="filter empty" id="seg1italian">1851 – 1859</button>
+            <button class="filter empty" id="seg2italian">1860 – 1880</button>
+            <button class="filter empty" id="seg3italian">1881 – 1901</button>
+            <button class="filter" id="seg4italian">1902 – 1922</button>
+            <button class="filter empty" id="seg5italian">1923 – 1943</button>
+            <button class="filter empty" id="seg6italian">1944 – 1964</button>
+            <button class="filter empty" id="seg7italian">1965 – 1985</button>
+            <button class="filter" id="seg8italian">1986 – 2006</button>
+        </div><br><br>
+    
+        <button class="filter mainfilter" id="irish">Irish</button>
+        <div class="subfilters" id="subIrish">
+            <button class="filter empty" id="seg1irish">1851 – 1859</button>
+            <button class="filter" id="seg2irish">1860 – 1880</button>
+            <button class="filter" id="seg3irish">1881 – 1901</button>
+            <button class="filter empty" id="seg4irish">1902 – 1922</button>
+            <button class="filter empty" id="seg5irish">1923 – 1943</button>
+            <button class="filter" id="seg6irish">1944 – 1964</button>
+            <button class="filter empty" id="seg7irish">1965 – 1985</button>
+            <button class="filter empty" id="seg8irish">1986 – 2006</button>
+        </div><br><br>
+
+        <button class="filter mainfilter" id="portuguese">Portuguese</button>
+        <div class="subfilters" id="subPort">
+            <button class="filter empty" id="seg1portuguese">1851 – 1859</button>
+            <button class="filter empty" id="seg2portuguese">1860 – 1880</button>
+            <button class="filter empty" id="seg3portuguese">1881 – 1901</button>
+            <button class="filter empty" id="seg4portuguese">1902 – 1922</button>
+            <button class="filter empty" id="seg5portuguese">1923 – 1943</button>
+            <button class="filter" id="seg6portuguese">1944 – 1964</button>
+            <button class="filter" id="seg7portuguese">1965 – 1985</button>
+            <button class="filter" id="seg8portuguese">1986 – 2006</button>
+        </div><br><br>
+
+        <button class="filter mainfilter" id="dutch">Dutch</button>
+        <div class="subfilters" id="subDutch">
+            <button class="filter empty" id="seg1dutch">1851 – 1859</button>
+            <button class="filter empty" id="seg2dutch">1860 – 1880</button>
+            <button class="filter empty" id="seg3dutch">1881 – 1901</button>
+            <button class="filter empty" id="seg4dutch">1902 – 1922</button>
+            <button class="filter empty" id="seg5dutch">1923 – 1943</button>
+            <button class="filter empty" id="seg6dutch">1944 – 1964</button>
+            <button class="filter" id="seg7dutch">1965 – 1985</button>
+            <button class="filter empty" id="seg8dutch">1986 – 2006</button>
+        </div><br><br>
+
+        <button class="filter mainfilter" id="japanese">Japanese</button>
+        <div class="subfilters" id="subJap">
+            <button class="filter empty" id="seg1japanese">1851 – 1859</button>
+            <button class="filter empty" id="seg2japanese">1860 – 1880</button>
+            <button class="filter empty" id="seg3japanese">1881 – 1901</button>
+            <button class="filter empty" id="seg4japanese">1902 – 1922</button>
+            <button class="filter empty" id="seg5japanese">1923 – 1943</button>
+            <button class="filter empty" id="seg6japanese">1944 – 1964</button>
+            <button class="filter" id="seg7japanese">1965 – 1985</button>
+            <button class="filter empty" id="seg8japanese">1986 – 2006</button>
+        </div><br><br>
+
+        <button class="filter mainfilter" id="american">American</button>
+        <div class="subfilters" id="subAm">
+            <button class="filter" id="seg1american">1851 – 1859</button>
+            <button class="filter" id="seg2american">1860 – 1880</button>
+            <button class="filter" id="seg3american">1881 – 1901</button>
+            <button class="filter" id="seg4american">1902 – 1922</button>
+            <button class="filter" id="seg5american">1923 – 1943</button>
+            <button class="filter" id="seg6american">1944 – 1964</button>
+            <button class="filter" id="seg7american">1965 – 1985</button>
+            <button class="filter" id="seg8american">1986 – 2006</button>
+        </div><br><br>
+    </div>   
 
     <!-- data display -->
     <div id="tableone" class="tableone"></div>
@@ -320,6 +556,86 @@
             resBttn.style.opacity = "1";
         });
 
+    
+        // filters
+
+        var bttnFrench = document.getElementById('french');
+        var yearsFrench = document.getElementById('subFrench');
+
+        var bttnItalian = document.getElementById('italian');
+        var yearsItalian = document.getElementById('subItalian');
+
+        var bttnIrish = document.getElementById('irish');
+        var yearsIrish = document.getElementById('subIrish');
+
+        var bttnPort = document.getElementById('portuguese');
+        var yearsPort = document.getElementById('subPort');
+
+        var bttnDutch = document.getElementById('dutch');
+        var yearsDutch = document.getElementById('subDutch');
+
+        var bttnJap = document.getElementById('japanese');
+        var yearsJap = document.getElementById('subJap');
+
+        var bttnAm = document.getElementById('american');
+        var yearsAm = document.getElementById('subAm');
+
+        bttnFrench.addEventListener('click', function() {
+            if (yearsFrench.style.display === "none") {
+                yearsFrench.style.display = "block";
+            } else {
+                yearsFrench.style.display = "none";
+            }
+        });
+
+        bttnItalian.addEventListener('click', function() {
+            if (yearsItalian.style.display === "none") {
+                yearsItalian.style.display = "block";
+            } else {
+                yearsItalian.style.display = "none";
+            }
+        });
+
+        bttnIrish.addEventListener('click', function() {
+            if (yearsIrish.style.display === "none") {
+                yearsIrish.style.display = "block";
+            } else {
+                yearsIrish.style.display = "none";
+            }
+        });
+
+        bttnPort.addEventListener('click', function() {
+            if (yearsPort.style.display === "none") {
+                yearsPort.style.display = "block";
+            } else {
+                yearsPort.style.display = "none";
+            }
+        });
+
+        bttnDutch.addEventListener('click', function() {
+            if (yearsDutch.style.display === "none") {
+                yearsDutch.style.display = "block";
+            } else {
+                yearsDutch.style.display = "none";
+            }
+        });
+
+        bttnJap.addEventListener('click', function() {
+            if (yearsJap.style.display === "none") {
+                yearsJap.style.display = "block";
+            } else {
+                yearsJap.style.display = "none";
+            }
+        });
+
+        bttnAm.addEventListener('click', function() {
+            if (yearsAm.style.display === "none") {
+                yearsAm.style.display = "block";
+            } else {
+                yearsAm.style.display = "none";
+            }
+        });
+
         // // search bar
         // fetch('oyster.json')
         // .then(response => response.json())
@@ -355,6 +671,8 @@
     // .catch(error => {
     //     console.error('Error:', error);
     // });
+
+
     </script>
 </body>
 </html>
