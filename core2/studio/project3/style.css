@@ -20,6 +20,7 @@ button {
     font-weight: 600;
     font-style: normal;
     font-size: 1rem;
+    border-radius: 10em;
 }
 
 button:focus {
@@ -244,7 +245,6 @@ a:active{
 .filter {
     background: #000AFF;
     border: 1px solid #BFD5EF;
-    border-radius: 10em;
     color: #BFD5EF;
 }
 
