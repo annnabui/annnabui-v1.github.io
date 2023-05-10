@@ -17,6 +17,29 @@
             const tableone = document.getElementById('tableone');
             const buttonAll = document.getElementById('all');
 
+
+            // filters
+            var bttnFrench = document.getElementById('french');
+            var yearsFrench = document.getElementById('subFrench');
+
+            var bttnItalian = document.getElementById('italian');
+            var yearsItalian = document.getElementById('subItalian');
+
+            var bttnIrish = document.getElementById('irish');
+            var yearsIrish = document.getElementById('subIrish');
+
+            var bttnPort = document.getElementById('portuguese');
+            var yearsPort = document.getElementById('subPort');
+
+            var bttnDutch = document.getElementById('dutch');
+            var yearsDutch = document.getElementById('subDutch');
+
+            var bttnJap = document.getElementById('japanese');
+            var yearsJap = document.getElementById('subJap');
+
+            var bttnAm = document.getElementById('american');
+            var yearsAm = document.getElementById('subAm');
+
             // french year buttons
             const buttonSeg8French = document.getElementById('seg8french');
             const buttonSeg7French = document.getElementById('seg7french');
@@ -32,8 +55,8 @@
 
             // irish year buttons
             const buttonSeg6Irish = document.getElementById('seg6irish');
+            const buttonSeg4Irish = document.getElementById('seg4irish');
             const buttonSeg3Irish = document.getElementById('seg3irish');
-            const buttonSeg2Irish = document.getElementById('seg2irish');
 
             // portuguese year buttons 
             const buttonSeg8Port = document.getElementById('seg8portuguese');
@@ -62,41 +85,146 @@
                 div.className = 'table'
                 const p1 = document.createElement('p');
                 p1.className = 'titletable'
-                const img = document.createElement('img');
+                // const img = document.createElement('img');
                 const p2 = document.createElement('p');
                 p2.className = "appeared"
                 const p2two = document.createElement('p');
                 p2two.className = "price"
                 const p2three = document.createElement('p');
                 p2three.className = "menu"
-                const p3 = document.createElement('p');
-                p3.className = "description-title"
-                const p3two = document.createElement('p');
-                p3two.className = "description"
-                const p4 = document.createElement('p');
-                p4.className = "analysis-title"
-                const p4two = document.createElement('p');
-                p4two.className = "analysis"
+                // const p3 = document.createElement('p');
+                // p3.className = "description-title"
+                // const p3two = document.createElement('p');
+                // p3two.className = "description"
+                // const p4 = document.createElement('p');
+                // p4.className = "analysis-title"
+                // const p4two = document.createElement('p');
+                // p4two.className = "analysis"
 
                 p1.textContent = item.name;
                 p2.textContent = "First – Last Appeared: " + item.firstAppeared + " – " + item.lastAppeared;
                 p2two.textContent = "Lowest – Highest Price per unit ($): " + item.lowestPrice + " – " + item.highestPrice;
                 p2three.textContent = "# of menus appeared in: " + item.menusAppeared + "/" + item.total;
-                p3.textContent = "Description:";
-                p3two.textContent = item.description;
-                p4.textContent = "Analysis:";
-                p4two.textContent = item.analysis;
-                img.src = "imgs/" + item.image;
+                // p3.textContent = "Description:";
+                // p3two.textContent = item.description;
+                // p4.textContent = "Analysis:";
+                // p4two.textContent = item.analysis;
+                // img.src = "imgs/" + item.image;
 
-                if (item.Image == "no") {
-                    img.style.display = "none";
-                }
+                // if (item.Image == "no") {
+                //     img.style.display = "none";
+                // }
 
                 buttonAll.addEventListener('click', function() {
                     div.style.display = "block";
                 })
 
-                //button (french)
+                bttnFrench.addEventListener('click', function() {
+                if (item.tag == "french") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnFrench.addEventListener('click', function() {
+                    if (yearsFrench.style.display === "none") {
+                        yearsFrench.style.display = "block";
+                    } else {
+                        yearsFrench.style.display = "none";
+                    }
+                });
+
+                bttnItalian.addEventListener('click', function() {
+                if (item.tag == "italian") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnItalian.addEventListener('click', function() {
+                    if (yearsItalian.style.display === "none") {
+                        yearsItalian.style.display = "block";
+                    } else {
+                        yearsItalian.style.display = "none";
+                    }
+                });
+
+                bttnIrish.addEventListener('click', function() {
+                if (item.tag == "irish") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnIrish.addEventListener('click', function() {
+                    if (yearsIrish.style.display === "none") {
+                        yearsIrish.style.display = "block";
+                    } else {
+                        yearsIrish.style.display = "none";
+                    }
+                });
+
+                bttnPort.addEventListener('click', function() {
+                if (item.tag == "portuguese") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnPort.addEventListener('click', function() {
+                    if (yearsPort.style.display === "none") {
+                        yearsPort.style.display = "block";
+                    } else {
+                        yearsPort.style.display = "none";
+                    }
+                });
+
+                bttnDutch.addEventListener('click', function() {
+                if (item.tag == "dutch") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnDutch.addEventListener('click', function() {
+                    if (yearsDutch.style.display === "none") {
+                        yearsDutch.style.display = "block";
+                    } else {
+                        yearsDutch.style.display = "none";
+                    }
+                });
+
+                bttnJap.addEventListener('click', function() {
+                if (item.tag == "japanese") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnJap.addEventListener('click', function() {
+                    if (yearsJap.style.display === "none") {
+                        yearsJap.style.display = "block";
+                    } else {
+                        yearsJap.style.display = "none";
+                    }
+                });
+
+                bttnAm.addEventListener('click', function() {
+                if (item.tag == "american") {;
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+                });
+                bttnAm.addEventListener('click', function() {
+                    if (yearsAm.style.display === "none") {
+                        yearsAm.style.display = "block";
+                    } else {
+                        yearsAm.style.display = "none";
+                    }
+                });
+
+                //years button (french)
                 buttonSeg2French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
                         div.style.display = "block";
@@ -147,7 +275,7 @@
                     }
                 })
 
-                //button (italian)
+                //years button (italian)
                 buttonSeg4Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
@@ -163,14 +291,7 @@
                     }
                 })
 
-                //button (irish)
-                buttonSeg2Irish.addEventListener('click', function() {
-                    if (item.tag == "irish" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
-                        div.style.display = "block";
-                    } else {
-                        div.style.display = "none";
-                    }
-                })
+                //years button (irish)
                 buttonSeg3Irish.addEventListener('click', function() {
                     if (item.tag == "irish" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
                         div.style.display = "block";
@@ -178,15 +299,22 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg4Irish.addEventListener('click', function() {
+                    if (item.tag == "irish" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
                 buttonSeg6Irish.addEventListener('click', function() {
-                    if (item.tag == "irish" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
+                    if (item.tag == "irish" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
                 })
                 
-                //button (portuguese)
+                //years button (portuguese)
                 buttonSeg6Port.addEventListener('click', function() {
                     if (item.tag == "portuguese" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
                         div.style.display = "block";
@@ -209,7 +337,7 @@
                     }
                 })
 
-                //button (dutch)
+                //years button (dutch)
                 buttonSeg7Dutch.addEventListener('click', function() {
                     if (item.tag == "dutch" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -218,7 +346,7 @@
                     }
                 })
                 
-                //button (japanese)
+                //years button (japanese)
                 buttonSeg7Jap.addEventListener('click', function() {
                     if (item.tag == "japanese" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -227,7 +355,7 @@
                     }
                 })
                 
-                //button (american)
+                //years button (american)
                 buttonSeg1Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1859 && item.firstAppeared >= 1851) {
                         div.style.display = "block";
@@ -287,14 +415,14 @@
 
                 // display elements
                 div.appendChild(p1);
-                div.appendChild(img);
+                // div.appendChild(img);
                 div.appendChild(p2);
                 div.appendChild(p2two);
                 div.appendChild(p2three);
-                div.appendChild(p3);
-                div.appendChild(p3two);
-                div.appendChild(p4);
-                div.appendChild(p4two);
+                // div.appendChild(p3);
+                // div.appendChild(p3two);
+                // div.appendChild(p4);
+                // div.appendChild(p4two);
                 tableone.appendChild(div);
             });
         })
@@ -407,9 +535,9 @@
         <button class="filter mainfilter" id="irish">Irish</button>
         <div class="subfilters" id="subIrish">
             <button class="filter empty" id="seg1irish">1851 – 1859</button>
-            <button class="filter" id="seg2irish">1860 – 1880</button>
+            <button class="filter empty" id="seg2irish">1860 – 1880</button>
             <button class="filter" id="seg3irish">1881 – 1901</button>
-            <button class="filter empty" id="seg4irish">1902 – 1922</button>
+            <button class="filter" id="seg4irish">1902 – 1922</button>
             <button class="filter empty" id="seg5irish">1923 – 1943</button>
             <button class="filter" id="seg6irish">1944 – 1964</button>
             <button class="filter empty" id="seg7irish">1965 – 1985</button>
@@ -556,85 +684,7 @@
             resBttn.style.opacity = "1";
         });
 
-    
-        // filters
 
-        var bttnFrench = document.getElementById('french');
-        var yearsFrench = document.getElementById('subFrench');
-
-        var bttnItalian = document.getElementById('italian');
-        var yearsItalian = document.getElementById('subItalian');
-
-        var bttnIrish = document.getElementById('irish');
-        var yearsIrish = document.getElementById('subIrish');
-
-        var bttnPort = document.getElementById('portuguese');
-        var yearsPort = document.getElementById('subPort');
-
-        var bttnDutch = document.getElementById('dutch');
-        var yearsDutch = document.getElementById('subDutch');
-
-        var bttnJap = document.getElementById('japanese');
-        var yearsJap = document.getElementById('subJap');
-
-        var bttnAm = document.getElementById('american');
-        var yearsAm = document.getElementById('subAm');
-
-        bttnFrench.addEventListener('click', function() {
-            if (yearsFrench.style.display === "none") {
-                yearsFrench.style.display = "block";
-            } else {
-                yearsFrench.style.display = "none";
-            }
-        });
-
-        bttnItalian.addEventListener('click', function() {
-            if (yearsItalian.style.display === "none") {
-                yearsItalian.style.display = "block";
-            } else {
-                yearsItalian.style.display = "none";
-            }
-        });
-
-        bttnIrish.addEventListener('click', function() {
-            if (yearsIrish.style.display === "none") {
-                yearsIrish.style.display = "block";
-            } else {
-                yearsIrish.style.display = "none";
-            }
-        });
-
-        bttnPort.addEventListener('click', function() {
-            if (yearsPort.style.display === "none") {
-                yearsPort.style.display = "block";
-            } else {
-                yearsPort.style.display = "none";
-            }
-        });
-
-        bttnDutch.addEventListener('click', function() {
-            if (yearsDutch.style.display === "none") {
-                yearsDutch.style.display = "block";
-            } else {
-                yearsDutch.style.display = "none";
-            }
-        });
-
-        bttnJap.addEventListener('click', function() {
-            if (yearsJap.style.display === "none") {
-                yearsJap.style.display = "block";
-            } else {
-                yearsJap.style.display = "none";
-            }
-        });
-
-        bttnAm.addEventListener('click', function() {
-            if (yearsAm.style.display === "none") {
-                yearsAm.style.display = "block";
-            } else {
-                yearsAm.style.display = "none";
-            }
-        });
 
         // // search bar
         // fetch('oyster.json')
