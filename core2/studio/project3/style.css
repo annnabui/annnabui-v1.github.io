@@ -27,6 +27,10 @@ button:focus {
     color: #000AFF;
 }
 
+span {
+    font-weight: 500;
+}
+
 /* website css */
 
 .header {
@@ -244,7 +248,7 @@ a:active{
     color: #BFD5EF;
 }
 
-.tableone {
+.data-display {
     position: absolute;
     top: 0;
     padding: 1.25rem;
@@ -252,6 +256,31 @@ a:active{
     width: 64vw;
     height: fit-content;
     z-index: -10;
+}
+
+#overviewFrench {
+    display: none;
+}
+#overviewItalian {
+    display: none;
+}
+#overviewIrish {
+    display: none;
+}
+#overviewPort {
+    display: none;
+}
+#overviewDutch {
+    display: none;
+}
+#overviewJap {
+    display: none;
+}
+#overviewAm {
+    display: none;
+}
+
+.tableone {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -259,6 +288,8 @@ a:active{
 }
 
 .tableone div {
+    display: flex;
+    flex-wrap: wrap;
     width: 28vw;
     border: 1px solid #BFD5EF;
     padding-left: 1.25rem;

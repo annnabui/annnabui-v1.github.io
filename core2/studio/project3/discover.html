@@ -51,7 +51,11 @@
 
             // italian year buttons
             const buttonSeg8Italian = document.getElementById('seg8italian');
+            const buttonSeg7Italian = document.getElementById('seg7italian');
+            const buttonSeg6Italian = document.getElementById('seg6italian');
+            const buttonSeg5Italian = document.getElementById('seg5italian');
             const buttonSeg4Italian = document.getElementById('seg4italian');
+            const buttonSeg3Italian = document.getElementById('seg3italian');
 
             // irish year buttons
             const buttonSeg6Irish = document.getElementById('seg6irish');
@@ -78,6 +82,15 @@
             const buttonSeg3Am = document.getElementById('seg3american');
             const buttonSeg2Am = document.getElementById('seg2american');
             const buttonSeg1Am = document.getElementById('seg1american');
+
+            // define overview 
+            const oFrench = document.getElementById('overviewFrench');
+            const oItalian = document.getElementById('overviewItalian');
+            const oIrish = document.getElementById('overviewIrish');
+            const oPort = document.getElementById('overviewPort');
+            const oDutch = document.getElementById('overviewDutch');
+            const oJap = document.getElementById('overviewJap');
+            const oAm = document.getElementById('overviewAm');
 
             // loop
             data.forEach(item => {
@@ -120,6 +133,19 @@
                 })
 
                 bttnFrench.addEventListener('click', function() {
+                    if (oFrench.style.display = "none") {
+                        oFrench.style.display = "block";
+                    } else {
+                        oFrench.style.display = "none";
+                    }
+                    oItalian.style.display = "none";
+                    oIrish.style.display = "none";
+                    oPort.style.display = "none";
+                    oDutch.style.display = "none";
+                    oJap.style.display = "none";
+                    oAm.style.display = "none";
+                })
+                bttnFrench.addEventListener('click', function() {
                 if (item.tag == "french") {;
                     div.style.display = "block";
                 } else {
@@ -127,13 +153,32 @@
                 }
                 });
                 bttnFrench.addEventListener('click', function() {
-                    if (yearsFrench.style.display === "none") {
+                    if (yearsFrench.style.display = "none") {
                         yearsFrench.style.display = "block";
                     } else {
                         yearsFrench.style.display = "none";
                     }
+                    yearsItalian.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnItalian.addEventListener('click', function() {
+                    if (oItalian.style.display = "none") {
+                        oItalian.style.display = "block";
+                    } else {
+                        oItalian.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oIrish.style.display = "none";
+                    oPort.style.display = "none";
+                    oDutch.style.display = "none";
+                    oJap.style.display = "none";
+                    oAm.style.display = "none";
+                })
                 bttnItalian.addEventListener('click', function() {
                 if (item.tag == "italian") {;
                     div.style.display = "block";
@@ -142,13 +187,32 @@
                 }
                 });
                 bttnItalian.addEventListener('click', function() {
-                    if (yearsItalian.style.display === "none") {
+                    if (yearsItalian.style.display = "none") {
                         yearsItalian.style.display = "block";
                     } else {
                         yearsItalian.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnIrish.addEventListener('click', function() {
+                    if (oIrish.style.display = "none") {
+                        oIrish.style.display = "block";
+                    } else {
+                        oIrish.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oItalian.style.display = "none";
+                    oPort.style.display = "none";
+                    oDutch.style.display = "none";
+                    oJap.style.display = "none";
+                    oAm.style.display = "none";
+                })
                 bttnIrish.addEventListener('click', function() {
                 if (item.tag == "irish") {;
                     div.style.display = "block";
@@ -157,13 +221,32 @@
                 }
                 });
                 bttnIrish.addEventListener('click', function() {
-                    if (yearsIrish.style.display === "none") {
+                    if (yearsIrish.style.display = "none") {
                         yearsIrish.style.display = "block";
                     } else {
                         yearsIrish.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsItalian.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnPort.addEventListener('click', function() {
+                    if (oPort.style.display = "none") {
+                        oPort.style.display = "block";
+                    } else {
+                        oPort.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oIrish.style.display = "none";
+                    oItalian.style.display = "none";
+                    oDutch.style.display = "none";
+                    oJap.style.display = "none";
+                    oAm.style.display = "none";
+                })
                 bttnPort.addEventListener('click', function() {
                 if (item.tag == "portuguese") {;
                     div.style.display = "block";
@@ -172,13 +255,32 @@
                 }
                 });
                 bttnPort.addEventListener('click', function() {
-                    if (yearsPort.style.display === "none") {
+                    if (yearsPort.style.display = "none") {
                         yearsPort.style.display = "block";
                     } else {
                         yearsPort.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsItalian.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnDutch.addEventListener('click', function() {
+                    if (oDutch.style.display = "none") {
+                        oDutch.style.display = "block";
+                    } else {
+                        oDutch.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oIrish.style.display = "none";
+                    oPort.style.display = "none";
+                    oItalian.style.display = "none";
+                    oJap.style.display = "none";
+                    oAm.style.display = "none";
+                })
                 bttnDutch.addEventListener('click', function() {
                 if (item.tag == "dutch") {;
                     div.style.display = "block";
@@ -187,13 +289,32 @@
                 }
                 });
                 bttnDutch.addEventListener('click', function() {
-                    if (yearsDutch.style.display === "none") {
+                    if (yearsDutch.style.display = "none") {
                         yearsDutch.style.display = "block";
                     } else {
                         yearsDutch.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsItalian.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnJap.addEventListener('click', function() {
+                    if (oJap.style.display = "none") {
+                        oJap.style.display = "block";
+                    } else {
+                        oJap.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oIrish.style.display = "none";
+                    oPort.style.display = "none";
+                    oDutch.style.display = "none";
+                    oItalian.style.display = "none";
+                    oAm.style.display = "none";
+                })
                 bttnJap.addEventListener('click', function() {
                 if (item.tag == "japanese") {;
                     div.style.display = "block";
@@ -202,13 +323,32 @@
                 }
                 });
                 bttnJap.addEventListener('click', function() {
-                    if (yearsJap.style.display === "none") {
+                    if (yearsJap.style.display = "none") {
                         yearsJap.style.display = "block";
                     } else {
                         yearsJap.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsItalian.style.display = "none";
+                    yearsAm.style.display = "none";
                 });
 
+                bttnAm.addEventListener('click', function() {
+                    if (oAm.style.display = "none") {
+                        oAm.style.display = "block";
+                    } else {
+                        oAm.style.display = "none";
+                    }
+                    oFrench.style.display = "none";
+                    oIrish.style.display = "none";
+                    oPort.style.display = "none";
+                    oDutch.style.display = "none";
+                    oJap.style.display = "none";
+                    oItalian.style.display = "none";
+                })
                 bttnAm.addEventListener('click', function() {
                 if (item.tag == "american") {;
                     div.style.display = "block";
@@ -217,11 +357,17 @@
                 }
                 });
                 bttnAm.addEventListener('click', function() {
-                    if (yearsAm.style.display === "none") {
+                    if (yearsAm.style.display = "none") {
                         yearsAm.style.display = "block";
                     } else {
                         yearsAm.style.display = "none";
                     }
+                    yearsFrench.style.display = "none";
+                    yearsIrish.style.display = "none";
+                    yearsPort.style.display = "none";
+                    yearsDutch.style.display = "none";
+                    yearsJap.style.display = "none";
+                    yearsItalian.style.display = "none";
                 });
 
                 //years button (french)
@@ -276,8 +422,36 @@
                 })
 
                 //years button (italian)
+                buttonSeg3Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
                 buttonSeg4Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg5Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg6Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
+                        div.style.display = "block";
+                    } else {
+                        div.style.display = "none";
+                    }
+                })
+                buttonSeg7Italian.addEventListener('click', function() {
+                    if (item.tag == "italian" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
@@ -439,7 +613,7 @@
                 Exploring sociological changes in NYC through variations of oyster dishes from the 1840s to the present.
             </div>
             <div id="oyster">
-                <img id="oy" src="./imgs/oyster.jpg" class="oyster">
+                <img id="oy" src="./imgs/oyster.png" class="oyster">
             </div>
         </div>
     </header>
@@ -524,11 +698,11 @@
         <div class="subfilters" id="subItalian">
             <button class="filter empty" id="seg1italian">1851 – 1859</button>
             <button class="filter empty" id="seg2italian">1860 – 1880</button>
-            <button class="filter empty" id="seg3italian">1881 – 1901</button>
+            <button class="filter" id="seg3italian">1881 – 1901</button>
             <button class="filter" id="seg4italian">1902 – 1922</button>
-            <button class="filter empty" id="seg5italian">1923 – 1943</button>
-            <button class="filter empty" id="seg6italian">1944 – 1964</button>
-            <button class="filter empty" id="seg7italian">1965 – 1985</button>
+            <button class="filter" id="seg5italian">1923 – 1943</button>
+            <button class="filter" id="seg6italian">1944 – 1964</button>
+            <button class="filter" id="seg7italian">1965 – 1985</button>
             <button class="filter" id="seg8italian">1986 – 2006</button>
         </div><br><br>
     
@@ -594,7 +768,49 @@
     </div>   
 
     <!-- data display -->
-    <div id="tableone" class="tableone"></div>
+    <div class="data-display">
+        <div class="overview">
+            <div id="overviewFrench">
+                <u>Overview:</u><br><br>
+                <span>French immigrants have made significant contributions to New York City's food culture, particularly in the realm of oyster dishes. They introduced beloved classics like <u>Oysters Rockefeller</u>, a baked oyster dish topped with a rich mixture of breadcrumbs, herbs, butter, and other ingredients. Another French-inspired dish is <u>Oysters Mignonette</u>, which features a tangy sauce made with vinegar, shallots, and cracked black pepper, providing a contrast to the oysters' brininess. French immigrants also brought expertise in oyster shucking and <u>popularized serving raw oysters on the half shell</u> with accompaniments like lemon wedges, cocktail sauce, and mignonette sauce. Their influence has enriched the city's culinary landscape, making French-inspired oyster dishes and preparation methods integral to New York City's oyster traditions.<br><br>
+
+                French immigration to New York City began in the 17th century but saw significant growth in <u>the 19th and early 20th centuries</u>. Factors like political instability and economic changes in France drove French individuals to seek opportunities in America. The peak of French immigration occurred between the <u>1850s and the early 1900s</u>, with many settling in neighborhoods like Greenwich Village and the Lower East Side. <br><br>
+
+                The result of this migration is evident, with most French oyster dishes being introduced to NYC's culinary scene around the 1880s to the mid 1900s.<br><br></span>
+            </div>
+            <div id="overviewItalian">
+                <u>Overview:</u><br><br>
+                <span>Italian immigrants in New York City introduced various oyster dishes that have become an integral part of the city's culinary landscape. One notable dish is <u>Oysters Casino</u>, where fresh oysters are topped with a flavorful mixture of breadcrumbs, herbs, garlic, and peppers. Their expertise in seafood preparation extended to grilling or frying oysters, incorporating Italian seasonings and techniques. These contributions have enriched the oyster culture in NYC, showcasing the enduring influence of Italian cuisine on the city's diverse culinary traditions.<br><br>
+                
+                Italian immigration to New York City began in the late 19th century and reached its peak in the early 20th century. The largest wave of Italian immigrants arrived between <u>1880 and 1920</u>, driven by economic hardships, political instability, and the search for better opportunities. Many Italians settled in neighborhoods like Little Italy in Manhattan and Carroll Gardens in Brooklyn, forming vibrant communities. These immigrants brought their rich culinary traditions to the city, including their love for seafood and oyster dishes. Italian immigrants significantly contributed to the cultural, social, and economic fabric of New York City, leaving a lasting impact on its culinary scene.<br><br>
+
+                The result of this migration is evident, with most Italian oyster dishes being introduced to NYC's culinary scene a few years after their settlement.<br><br>
+                </span>
+            </div>
+            <div id="overviewIrish">
+                <u>Overview:</u><br><br>
+                <span>
+                    Irish immigrants have made notable contributions to the culinary scene in New York City, including introducing various oyster dishes. When Irish immigrants arrived in NYC, they brought their cultural traditions and a fondness for seafood, including oysters. While specific oyster dishes directly attributed to Irish immigrants are not widely documented, they played a significant role in popularizing the consumption of oysters in the city. Irish immigrants worked in the bustling oyster industry, serving as oystermen, shuckers, and cooks, helping to establish oyster saloons and bars. Their involvement in the industry and their affinity for oysters shaped the oyster culture of New York City during that time.<br><br></span>
+            </div>
+            <div id="overviewPort">
+                <u>Overview:</u><br><br>
+                <span>Portuguese immigrants have made notable contributions to the culinary scene in New York City, introducing various oyster dishes. While specific oyster dishes directly attributed to Portuguese immigrants are not widely documented, their culinary traditions heavily feature seafood, including oysters. Portuguese immigrants brought their expertise in seafood preparation and a love for fresh, flavorful dishes to the city. They contributed to the popularity of raw oyster consumption, often serving them with simple accompaniments like lemon or a vinaigrette. Portuguese immigrants also embraced grilling or frying oysters, incorporating their traditional flavors and techniques. Their influence on the oyster culture of New York City reflects the enduring legacy of Portuguese cuisine.<br><br></span>
+            </div>
+            <div id="overviewDutch">
+                <u>Overview:</u><br><br>
+                <span>The Dutch, being early settlers in New York City, have made notable contributions to the culinary scene, including introducing various oyster dishes. While specific oyster dishes directly attributed to the Dutch are not extensively documented, their culinary traditions heavily featured seafood, including oysters. The Dutch settlers likely brought with them techniques for preparing oysters, such as stewing or frying. Oysters were a common ingredient in Dutch cuisine, and their influence on the oyster culture in New York City can be seen in the continued appreciation for oyster-based dishes. The Dutch heritage remains an important part of the city's diverse culinary tapestry.<br><br></span>
+            </div>
+            <div id="overviewJap">
+                <u>Overview:</u><br><br>
+                <span>Japanese immigrants have made notable contributions to the culinary landscape of New York City, introducing various oyster dishes. While specific oyster dishes directly attributed to Japanese immigrants are not widely documented, their culinary traditions and expertise in seafood preparation have influenced the oyster culture in the city. Japanese cuisine showcases a deep appreciation for fresh and raw seafood, including oysters. Japanese immigrants likely contributed to the popularity of raw oyster consumption and the art of delicately preparing oysters for sushi and sashimi. Their mastery of seafood techniques and flavors have enriched the oyster traditions in New York City, leaving a lasting impact on its diverse culinary scene.<br><br></span>
+            </div>
+            <div id="overviewAm">
+                <u>Overview:</u><br><br>
+                <span>In addition to its own diverse oyster culture, New York City also embraces oyster dishes from various other states across the United States. Oyster dishes from states like Louisiana, Massachusetts, and Maryland have found their way onto the menus of NYC's seafood restaurants. Examples include Louisiana-style Oysters Bienville or Oysters Orleans, featuring rich and flavorful toppings like shrimp, mushrooms, and cheese. Massachusetts-inspired Oyster Stuffing, a traditional Thanksgiving dish, has gained popularity during the holiday season. Maryland's famous Oysters Chesapeake, served with a luscious crabmeat topping, have become a favorite among seafood enthusiasts. These out-of-state oyster dishes add depth and diversity to the thriving oyster culinary scene in New York City.<br><br></span>
+            </div>
+        </div>
+        <div id="tableone" class="tableone"></div>
+    </div>      
 
     <script>
         // interaction for navigation pop up
@@ -621,7 +837,7 @@
         });
 
         aboutBttn.addEventListener("click", function() {
-            if (aboutText.style.display === "none") {
+            if (aboutText.style.display = "none") {
                 aboutText.style.display = "block";
             } else {
                 aboutText.style.display = "none";
@@ -637,7 +853,7 @@
         });
 
         historyBttn.addEventListener("click", function() {
-            if (historyText.style.display === "none") {
+            if (historyText.style.display = "none") {
                 historyText.style.display = "block";
             } else {
                 historyText.style.display = "none";
@@ -653,7 +869,7 @@
         });
 
         dataBttn.addEventListener("click", function() {
-            if (dataText.style.display === "none") {
+            if (dataText.style.display = "none") {
                 dataText.style.display = "block";
             } else {
                 dataText.style.display = "none";
@@ -669,7 +885,7 @@
         });
 
         resBttn.addEventListener("click", function() {
-            if (resText.style.display === "none") {
+            if (resText.style.display = "none") {
                 resText.style.display = "block";
             } else {
                 resText.style.display = "none";
