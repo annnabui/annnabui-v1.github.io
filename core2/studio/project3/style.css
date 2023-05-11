@@ -363,6 +363,8 @@ a:active{
 
 .subfilters {
     display: none;
+    background: #000AFF;
+    color: #BFD5EF;
 }
 
 .empty {
