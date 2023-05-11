@@ -92,6 +92,16 @@
             const oJap = document.getElementById('overviewJap');
             const oAm = document.getElementById('overviewAm');
 
+            // define graphs
+            const grSeg1 = document.getElementById('graphseg1');
+            const grSeg2 = document.getElementById('graphseg2');
+            const grSeg3 = document.getElementById('graphseg3');
+            const grSeg4 = document.getElementById('graphseg4');
+            const grSeg5 = document.getElementById('graphseg5');
+            const grSeg6 = document.getElementById('graphseg6');
+            const grSeg7 = document.getElementById('graphseg7');
+            const grSeg8 = document.getElementById('graphseg8');
+
             // loop
             data.forEach(item => {
                 const div = document.createElement('div');
@@ -378,6 +388,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg2French.addEventListener('click', function() {
+                    if (grSeg2.style.display = "none") {
+                        grSeg2.style.display = "block"
+                    } else {
+                        grSeg2.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg3French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
                         div.style.display = "block";
@@ -385,6 +410,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg3French.addEventListener('click', function() {
+                    if (grSeg3.style.display = "none") {
+                        grSeg3.style.display = "block"
+                    } else {
+                        grSeg3.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg4French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
@@ -392,6 +432,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg4French.addEventListener('click', function() {
+                    if (grSeg4.style.display = "none") {
+                        grSeg4.style.display = "block"
+                    } else {
+                        grSeg4.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg5French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
                         div.style.display = "block";
@@ -399,6 +454,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg5French.addEventListener('click', function() {
+                    if (grSeg5.style.display = "none") {
+                        grSeg5.style.display = "block"
+                    } else {
+                        grSeg5.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg6French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
                         div.style.display = "block";
@@ -406,6 +476,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg6French.addEventListener('click', function() {
+                    if (grSeg6.style.display = "none") {
+                        grSeg6.style.display = "block"
+                    } else {
+                        grSeg6.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg7French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -413,12 +498,41 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg7French.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg8French.addEventListener('click', function() {
                     if (item.tag == "french" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg8French.addEventListener('click', function() {
+                    if (grSeg8.style.display = "none") {
+                        grSeg8.style.display = "block"
+                    } else {
+                        grSeg8.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
                 })
 
                 //years button (italian)
@@ -429,6 +543,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg3Italian.addEventListener('click', function() {
+                    if (grSeg3.style.display = "none") {
+                        grSeg3.style.display = "block"
+                    } else {
+                        grSeg3.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg4Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
@@ -436,6 +565,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg4Italian.addEventListener('click', function() {
+                    if (grSeg4.style.display = "none") {
+                        grSeg4.style.display = "block"
+                    } else {
+                        grSeg4.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg5Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
                         div.style.display = "block";
@@ -443,6 +587,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg5Italian.addEventListener('click', function() {
+                    if (grSeg5.style.display = "none") {
+                        grSeg5.style.display = "block"
+                    } else {
+                        grSeg5.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg6Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
                         div.style.display = "block";
@@ -450,6 +609,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg6Italian.addEventListener('click', function() {
+                    if (grSeg6.style.display = "none") {
+                        grSeg6.style.display = "block"
+                    } else {
+                        grSeg6.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg7Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -457,12 +631,41 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg7Italian.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg8Italian.addEventListener('click', function() {
                     if (item.tag == "italian" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg8Italian.addEventListener('click', function() {
+                    if (grSeg8.style.display = "none") {
+                        grSeg8.style.display = "block"
+                    } else {
+                        grSeg8.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg3.style.display = "none";
                 })
 
                 //years button (irish)
@@ -473,6 +676,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg3Irish.addEventListener('click', function() {
+                    if (grSeg3.style.display = "none") {
+                        grSeg3.style.display = "block"
+                    } else {
+                        grSeg3.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg4Irish.addEventListener('click', function() {
                     if (item.tag == "irish" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
@@ -480,12 +698,41 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg4Irish.addEventListener('click', function() {
+                    if (grSeg4.style.display = "none") {
+                        grSeg4.style.display = "block"
+                    } else {
+                        grSeg4.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg6Irish.addEventListener('click', function() {
                     if (item.tag == "irish" && item.firstAppeared <= 1964 && item.firstAppeared >= 1944) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg6Irish.addEventListener('click', function() {
+                    if (grSeg6.style.display = "none") {
+                        grSeg6.style.display = "block"
+                    } else {
+                        grSeg6.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
                 })
                 
                 //years button (portuguese)
@@ -496,6 +743,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg6Port.addEventListener('click', function() {
+                    if (grSeg6.style.display = "none") {
+                        grSeg6.style.display = "block"
+                    } else {
+                        grSeg6.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg7Port.addEventListener('click', function() {
                     if (item.tag == "portuguese" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -503,12 +765,41 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg7Port.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg8Port.addEventListener('click', function() {
                     if (item.tag == "portuguese" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg8Port.addEventListener('click', function() {
+                    if (grSeg8.style.display = "none") {
+                        grSeg8.style.display = "block"
+                    } else {
+                        grSeg8.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg7.style.display = "none";
+                    grSeg6.style.display = "none";
                 })
 
                 //years button (dutch)
@@ -519,6 +810,20 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg7Dutch.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
                 
                 //years button (japanese)
                 buttonSeg7Jap.addEventListener('click', function() {
@@ -527,6 +832,20 @@
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg7Jap.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
                 })
                 
                 //years button (american)
@@ -537,6 +856,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg1Am.addEventListener('click', function() {
+                    if (grSeg1.style.display = "none") {
+                        grSeg1.style.display = "block"
+                    } else {
+                        grSeg1.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg2Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1880 && item.firstAppeared >= 1860) {
                         div.style.display = "block";
@@ -544,6 +878,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg2Am.addEventListener('click', function() {
+                    if (grSeg2.style.display = "none") {
+                        grSeg2.style.display = "block"
+                    } else {
+                        grSeg2.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg1.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg3Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1901 && item.firstAppeared >= 1881) {
                         div.style.display = "block";
@@ -551,6 +900,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg3Am.addEventListener('click', function() {
+                    if (grSeg3.style.display = "none") {
+                        grSeg3.style.display = "block"
+                    } else {
+                        grSeg3.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg1.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg4Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1922 && item.firstAppeared >= 1902) {
                         div.style.display = "block";
@@ -558,6 +922,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg4Am.addEventListener('click', function() {
+                    if (grSeg4.style.display = "none") {
+                        grSeg4.style.display = "block"
+                    } else {
+                        grSeg4.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg1.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg5Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1943 && item.firstAppeared >= 1923) {
                         div.style.display = "block";
@@ -565,6 +944,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg5Am.addEventListener('click', function() {
+                    if (grSeg5.style.display = "none") {
+                        grSeg5.style.display = "block"
+                    } else {
+                        grSeg5.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg1.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg6Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1964 && item.firstAppeared >= 1924) {
                         div.style.display = "block";
@@ -572,6 +966,21 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg6Am.addEventListener('click', function() {
+                    if (grSeg6.style.display = "none") {
+                        grSeg6.style.display = "block"
+                    } else {
+                        grSeg6.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg1.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg7Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 1985 && item.firstAppeared >= 1965) {
                         div.style.display = "block";
@@ -579,12 +988,41 @@
                         div.style.display = "none";
                     }
                 })
+                buttonSeg7Am.addEventListener('click', function() {
+                    if (grSeg7.style.display = "none") {
+                        grSeg7.style.display = "block"
+                    } else {
+                        grSeg7.style.display = "none"
+                    }
+                    grSeg1.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg8.style.display = "none";
+                })
+
                 buttonSeg8Am.addEventListener('click', function() {
                     if (item.tag == "american" && item.firstAppeared <= 2006 && item.firstAppeared >= 1986) {
                         div.style.display = "block";
                     } else {
                         div.style.display = "none";
                     }
+                })
+                buttonSeg8Am.addEventListener('click', function() {
+                    if (grSeg8.style.display = "none") {
+                        grSeg8.style.display = "block"
+                    } else {
+                        grSeg8.style.display = "none"
+                    }
+                    grSeg7.style.display = "none";
+                    grSeg2.style.display = "none";
+                    grSeg4.style.display = "none";
+                    grSeg5.style.display = "none";
+                    grSeg3.style.display = "none";
+                    grSeg6.style.display = "none";
+                    grSeg1.style.display = "none";
                 })
 
                 // display elements
@@ -681,8 +1119,18 @@
     <ul id="searchResults"></ul> -->
 
     <div class="filtersystem">
-        <button class="filter mainfilter" id="all">All</button>
-        <br><br><button class="filter mainfilter" id="french">French</button>
+        <button class="filter mainfilter" id="all">All</button><br><br>
+        <div class="graph">
+            <img class="graphimg" id="graphseg1" src="./imgs/seg1.png">
+            <img class="graphimg" id="graphseg2" src="./imgs/seg2.png">
+            <img class="graphimg" id="graphseg3" src="./imgs/seg3.png">
+            <img class="graphimg" id="graphseg4" src="./imgs/seg4.png">
+            <img class="graphimg" id="graphseg5" src="./imgs/seg5.png">
+            <img class="graphimg" id="graphseg6" src="./imgs/seg6.png">
+            <img class="graphimg" id="graphseg7" src="./imgs/seg7.png">
+            <img class="graphimg" id="graphseg8" src="./imgs/seg8.png">
+        </div>
+        <button class="filter mainfilter" id="french">French</button>
         <div class="subfilters" id="subFrench">
             <button class="filter empty" id="seg1french">1851 – 1859</button>
             <button class="filter" id="seg2french">1860 – 1880</button>
@@ -692,9 +1140,9 @@
             <button class="filter" id="seg6french">1944 – 1964</button>
             <button class="filter" id="seg7french">1965 – 1985</button>
             <button class="filter" id="seg8french">1986 – 2006</button>
-        </div>
+        </div><br><br>
 
-        <br><br><button class="filter mainfilter" id="italian">Italian</button>
+        <button class="filter mainfilter" id="italian">Italian</button>
         <div class="subfilters" id="subItalian">
             <button class="filter empty" id="seg1italian">1851 – 1859</button>
             <button class="filter empty" id="seg2italian">1860 – 1880</button>

@@ -94,7 +94,9 @@
     <!-- viewing guideline -->
     <div class="popup" id="vgpopup">
         <div class="popup-title-flex">
-            <div class="popup-title"><u>Viewing Guidelines</u> – When different Oyster dishes First appeared in NYC menus<br><br></div>
+            <div class="popup-title">
+                <u>Visualization</u><br><br>
+                <span>Composition of the Origin of NYC Oyster dishes every 20 years, from 1851 to 2006.<br><br></span></div>
             <div>
                 <img src="./imgs/close.svg" id="vgclose" class="close">
             </div>
@@ -107,22 +109,56 @@
                 z <br>
                 <br>
                 <em>timeline</em>
-                – goes further in time the higher a ring’s z-index is
+                <span>– goes further in time the higher a ring’s z-index is</span>
             </div>
             <div class="vgcolumn">
                 d<br>
                 <br>
                 <em>ring’s diameter</em>
-                – the total number of menus recorded in that period
+                <span>– the total number of menus recorded in that period</span>
             </div>
             <div class="vgcolumn">
                 r<br>
                 <br>
-                <em>ring’s radius/sector size</em>
-                – how frequently a dish appears in that period 
+                <em>ring’s sector</em>
+                <span>– how frequently dishes of an origin appears in that period </span>
+            </div><br>
+        </div>
+        <div class="popup-title">
+            <u>Colors</u>
+        </div><br>
+        <div class="vgflex" id="color">
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cAm"></div><br>
+                Origin: USA
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cFr"></div><br>
+                Origin: France
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cIt"></div><br>
+                Origin: Italy
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cIr"></div><br>
+                Origin: Ireland
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cPort"></div><br>
+                Origin: Portugal
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cDu"></div><br>
+                Origin: Dutch
+            </div>
+            <div class="vgcolumn colorcolumn">
+                <div class="colorblock" id="cJp"></div><br>
+                Origin: Japan
             </div>
         </div>
     </div>
+
 
     <!-- discover data -->
     <button class="discover" id="discover">
@@ -155,7 +191,7 @@
         });
 
         aboutBttn.addEventListener("click", function() {
-            if (aboutText.style.display === "none") {
+            if (aboutText.style.display = "none") {
                 aboutText.style.display = "block";
             } else {
                 aboutText.style.display = "none";
@@ -171,7 +207,7 @@
         });
 
         historyBttn.addEventListener("click", function() {
-            if (historyText.style.display === "none") {
+            if (historyText.style.display = "none") {
                 historyText.style.display = "block";
             } else {
                 historyText.style.display = "none";
@@ -187,7 +223,7 @@
         });
 
         dataBttn.addEventListener("click", function() {
-            if (dataText.style.display === "none") {
+            if (dataText.style.display = "none") {
                 dataText.style.display = "block";
             } else {
                 dataText.style.display = "none";
@@ -203,7 +239,7 @@
         });
 
         resBttn.addEventListener("click", function() {
-            if (resText.style.display === "none") {
+            if (resText.style.display = "none") {
                 resText.style.display = "block";
             } else {
                 resText.style.display = "none";

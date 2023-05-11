@@ -144,7 +144,7 @@ span {
 }
 
 
-/* ------------------- viewing guidelines popup ----------------------*/
+/* ------------------- viz info popup ----------------------*/
 
 #vgpopup {
     max-width: 45vw;
@@ -168,6 +168,48 @@ span {
     max-width: 10vw;
 }
 
+#color {
+    justify-content: center;
+}
+
+.colorcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorblock {
+    width: 6vw;
+    height: 6vw;
+}
+
+#cAm {
+    background-color: #2028FB;
+}
+
+#cFr {
+    background-color: #A690FE;
+}
+
+#cIr {
+    background-color: #3173FA;
+}
+
+#cIt {
+    background-color: #D46CFE;
+}
+
+#cPort {
+    background-color: #954AFB;
+}
+
+#cDu {
+    background-color: #A758B0;
+}
+
+#cJp {
+    background-color: #A33D46;
+}
 #discover {
     background: #BFD5EF;
     border: 1px solid #BFD5EF;
@@ -180,6 +222,11 @@ span {
     position: absolute;
     right: 1.25rem;
     bottom: 1.25rem;
+}
+
+#discover:focus {
+    background-color: #000AFF;
+    color: #BFD5EF;
 }
 
 @media only screen and (max-width: 800px) {
@@ -207,11 +254,11 @@ a:visited{
     text-decoration: underline;
 }
 a:hover{
-    color: #FFE600;
+    color: #FF79FF;
     text-decoration: none;
 }
 a:focus{
-    color: #FFE600;
+    color: #FF79FF;
     text-decoration: none;
 }
 a:active{
@@ -320,4 +367,9 @@ a:active{
 
 .empty {
     opacity: .3;
+}
+
+.graphimg {
+    max-width: 20vw;
+    display: none;
 }
