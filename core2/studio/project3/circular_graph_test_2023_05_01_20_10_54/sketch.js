@@ -84,14 +84,14 @@ function draw() {
   // Seg1
   noFill();
   // Am 
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,135, 135 + scaledSeg1)
   translate(0,0,200);
 
   // Seg2
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,300,300 + scaledSeg2);
   // Fr
   stroke(180,155,255,120);
@@ -104,7 +104,7 @@ function draw() {
   // Seg3
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,210,210 + scaledSeg3);
   // Fr
   stroke(180,155,255,120);
@@ -117,7 +117,7 @@ function draw() {
   // Seg4
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,0, 0 + scaledSeg4);
   // Fr
   stroke(180,155,255,120);
@@ -130,7 +130,7 @@ function draw() {
   // Seg5
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,275, 275 + scaledSeg5);
   // Fr
   stroke(180,155,255,120);
@@ -140,7 +140,7 @@ function draw() {
   // Seg6
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,200, 200 + scaledSeg6);
   // Fr
   stroke(180,155,255,120);
@@ -156,7 +156,7 @@ function draw() {
   // Seg7
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,300,300 + scaledSeg7);
   // Fr
   stroke(180,155,255,120);
@@ -175,7 +175,7 @@ function draw() {
   // Seg8
   noFill();
   // Am
-  stroke(68,74,246,120);
+  stroke(68,74,246,170);
   arc(0,-10,300,300,200,200 + scaledSeg8);
   // Fr
   stroke(180,155,255,120);
