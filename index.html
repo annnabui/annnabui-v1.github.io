@@ -7,243 +7,185 @@
     <title>anna's portfolio</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ssz6abi.css">
+
+    <script>
+        fetch('index.json')
+        .then(response => response.json())
+        .then(data => {
+            const jsonData = data;
+            const div2021 = document.getElementById('div2021');
+            const div2022 = document.getElementById('div2022');
+            const jsonColor = [
+                { "color": "#138B00" },
+                { "color": "#1100CF" },
+                { "color": "#FAB400" },
+                { "color": "#DF0000" },
+                { "color": "#8F00B2" }
+            ];
+
+            // Function to generate a random index
+            function getRandomIndex(max) {
+                return Math.floor(Math.random() * max);
+            }
+
+            jsonData.forEach(project => {
+                const randomIndex = getRandomIndex(jsonColor.length);
+                project.name = `<span style="color: ${jsonColor[randomIndex].color}">${project.name}</span>`;
+            });
+
+            jsonData.forEach(item => {
+                if (item.year === "2021") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                div2021.appendChild(div);
+
+
+
+            } else if (item.year === "2022") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                div2022.appendChild(div);
+
+
+
+            } else if (item.year === "2023") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                div2023.appendChild(div);
+            }
+            });
+        })
+        .catch(error => console.error(error));
+    </script>
 </head>
 <body>
-   <div class="grid">
-        <div class="info">
-            <div class="info-top">
-                <p>ANNA BUI<br>
-                <span class="grey">designer, web enthusiast</span></p>
-            </div>
-            <div class="footer">
-                <p>contacts:<br>
-                <a href="https://drive.google.com/file/d/1FvDaxwSVxTFBir5ZY5tZFEWMEwrhnm0F/view?usp=sharing">/resume</a><br>
-                <a href="mailto:buip150@newschool.edu">/email</a><br>
-                <a href="https://www.linkedin.com/in/phuong-anh-bui-48177b21b">/linkedin</a><br>
-                <a href="https://github.com/annnabui">/github</a><br>
-            </div>
-        </div>
-
-        <div class="about-me">
-            <p>/about-me<br>
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-            Anna Bui <span class="grey">is a graphic designer from</span> <span>Vietnam</span> <span class="grey">whose interest lies in the intersectionality of art, socio-political science, and the natural science.<br>
-             <br>
-            She is currently pursuing a BFA in</span> <span>Communication Design @Parsons NYC</span> <span class="grey">with a minor in</span> <span>Interdisciplinary Science</span>.
-        </p>
-        </div>
-
-        <div class="web">
-            <p>
-                /projects<br>
-                /web-based<br>
-                 <br>
-            </p>
-             <br>
-            <div class="prj one">
-                <p>
-                    <span class="number">(1)</span><br>
-                    <span class="grey">
-                        <a href="">extracurricular</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2023</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/1.html">The New School University Student Senate's website.</a>
-                    <span class="hidden">
-                        <img src="./tns.png">
-                        Optimizing the USS' website on Wix by updating design and streamline accessibility.
-                    </span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj two">
-                <p>
-                    <span class="number">(2)</span><br>
-                    <span class="grey">
-                        <a href="">core 1: interaction</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/2.html">Dream/Reality Harmonic Collection</a>
-                    <span class="hidden">Description</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj three">
-                <p>
-                    <span class="number">(3)</span><br>
-                    <span class="grey">
-                        <a href="">core 2: interaction</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2023</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/core2/studio/project1/index.html">Stories as Network</a>
-                    <span class="hidden">Description</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj four">
-                <p>
-                    <span class="number">(4)</span><br>
-                    <span class="grey">
-                        <a href="">core 2: interaction</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2023</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/core2/studio/project2/index.html">Elastic Collection</a>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj five">
-                <span class="number">(5)</span><br>
-                <span class="grey">
-                    <a href="">core 2: interaction:</a>
-                </span><br>
-                <span class="grey">
-                    <a href="">2023</a>
-                </span><br>
-                <a class="project" href="https://annnabui.github.io/core2/studio/project3/index.html">Oysters @ NYC</a>
-            </div>
-        </div>
-
-        <div class="print">
-            <p>/projects<br>
-            /print-based<br>
-             <br>
-            </p>
-            <br>
-            <div class="prj five">
-                <p>
-                    <span class="number">(5)</span><br>
-                    <span class="grey">
-                        <a href="">core 1: typography</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/5.html">Amazon Staten Island Warehouse Protest Poster</a>
-                    <span class="hidden">Description</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj six">
-                <p>
-                    <span class="number">(6)</span><br>
-                    <span class="grey">
-                        <a href="">core 1: typography</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/6.html">The Architecture of Fear Editorial</a>
-                    <span class="hidden">Description</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj seven">
-                <p>
-                    <span class="number">(7)</span><br>
-                    <span class="grey">
-                        <a href="">core 2: typography</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2023</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/7.html">Periodic Table Poster</a>
-                    <span class="hidden">Description</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj eight">
-                <p>
-                    <span class="number">(8)</span><br>
-                    <span class="grey">
-                        <a href="">core 2: typography</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2023</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/8.html">Multiplicity/Home Booklet</a>
-                    <span class="hidden">(coming-soon)</span>
-                </p>
-            </div>
-        </div>
-        <div class="branding">
-            <p>/projects<br>
-            /branding<br>
-             <br>
-            </p>
-            <br>
-            <div class="prj nine">
-                <p>
-                    <span class="number">(9)</span><br>
-                    <span class="grey">
-                        <a href="">extracurricular</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/9.html">VYVOICE Competition Visual Identity System</a>
-                    <span class="hidden">(coming-soon)</span>
-                </p>
-            </div>
-        </div>
-        <div class="miscellaneous">
-            <p>/projects<br>
-            /miscellaneous<br>
-            <br>
-            </p>
-            <br>
-            <div class="prj ten">
-                <p>
-                    <span class="number">(10)</span><br>
-                    <span class="grey">
-                        <a href="">extracurricular</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/10.html">Parsons x IBM Quantum Design Jam: Game Design System</a>
-                    <span class="hidden">(coming-soon)</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj eleven">
-                <p>
-                    <span class="number">(11)</span><br>
-                    <span class="grey">
-                        <a href="">extracurricular</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2022</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/11.html">E-coli Comprehensive Guide for Beginners</a>
-                    <span class="hidden">(coming-soon)</span>
-                </p>
-            </div>
-            <div class="space"></div>
-            <div class="prj twelve">
-                <p>
-                    <span class="number">(12)</span><br>
-                    <span class="grey">
-                        <a href="">extracurricular</a>
-                    </span><br>
-                    <span class="grey">
-                        <a href="">2020</a>
-                    </span><br>
-                    <a class="project" href="https://annnabui.github.io/index-projects/12.html">Nana the Little Monkey Children's Book Charity Project</a>
-                    <span class="hidden">(coming-soon)</span>
-                </p>
-            </div>
-        </div>
-   </div>
+    <div class="intro">
+        <span class="green"><u>Anna Bui</u></span> is a Graphic and Interaction designer based in <span class="blue">NYC</span> whose interest lies in the intersectionality of art, socio-political science, and the natural science. She is currently pursuing a BFA in <span class="yellow">Communication Design</span> <span class="red">@Parsons</span> with a minor in <span class="purple">Interdisciplinary Science</span>.
+    </div><br>
+    <marquee class="wow" direction="right" scrollamount="3">
+        <img src="./imgs/Human-Character1copy.gif">
+    </marquee>
+    <section class="ec-title">
+        <u>Works:</u>
+        <div class="ecflex">
+            <button id="bttnYear">by Year</button>
+            <button id="bttnAlphabet">by Alphabetical order</button>
+            <button id="bttnMedium">by Medium</button>
+        </div><br>
+        <div class="yellow year"><u>2021</u></div>
+        <div id="div2021" class="div2021"></div><br><br>
+        <div class="red year"><u>2022</u></div>
+        <div id="div2022" class="div2022"></div><br><br>
+        <div class="blue year"><u>2023</u></div>
+        <div id="div2023" class="div2023"></div>
+    </section>
 </body>
 </html>
