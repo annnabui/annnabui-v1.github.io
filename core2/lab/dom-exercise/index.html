@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM exercise</title>
+
+    <style>
+        body {
+            background-color: #FAB400;
+        }
+    </style>
+</head>
+<body id="background">
+    click button to change the website's background :P<br>
+    <button id="changeColor">yayayay</button>
+
+    <script>
+        const bttnColor = document.getElementById('changeColor');
+        const bg = document.getElementById('background');
+
+        bttnColor.addEventListener('click', function() {
+            const randomColor = getRandomColor();
+            bg.style.backgroundColor = randomColor;
+        });
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i=0; i<6; i++) {
+                color += letters[Math.floor(Math.random() *16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
