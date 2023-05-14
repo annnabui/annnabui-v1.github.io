@@ -7,20 +7,17 @@ html {
 
 button {
     background-color: transparent;
-    border: .09em solid #000;
+    border: .1em solid #000;
     border-radius: 30px;
     padding-top: .2rem;
     padding-bottom: .2rem;
     padding-left: .5rem;
     padding-right: .5rem;
-    font-family: helvetica;
+    font-family: neue-haas-grotesk-display, sans-serif;
     font-style: normal;
     font-size: .7em;
 }
 
-.one {
-    height: 100vh;
-}
 .green {
     color: #138B00;
 }
@@ -38,11 +35,19 @@ button {
 }
 
 #bttnYear {
-    background-color: #FF7676;
+    background-color: #DF0000;
 }
 
 .year {
     margin-bottom: 1em;
+}
+
+.title2022 {
+    padding-top: .5em;
+}
+
+.title2023 {
+    padding-top: .5em;
 }
 
 img {
@@ -70,18 +75,8 @@ a:active{
     display: flex;
     overflow: hidden;
     margin-top: .5em;
-    animation: marquee 10s linear infinite;
 }
-
-@keyframes marquee {
-    0% {
-      transform: translateX(100%); /* Start position off-screen */
-    }
-    100% {
-      transform: translateX(-100%); /* End position off-screen */
-    }
-}
-
+  
 #swflex img {
     max-height: 31vw;
 }
@@ -92,4 +87,16 @@ a:active{
 
 .ecflex {
     margin-top: .5em;
+}
+
+.ec-title {
+    margin-top: .5em;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    border-top: .1em solid #000;
+    padding-top: .5em;
+    font-size: .7em;
 }
