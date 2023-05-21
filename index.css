@@ -35,6 +35,14 @@ button {
     color: #8F00B2;
 }
 
+.intro {
+    width: 80%;
+}
+
+.description {
+    width: 80%;
+}
+
 #bttnYear {
     background-color: #DF0000;
 }
