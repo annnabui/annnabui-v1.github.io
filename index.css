@@ -43,6 +43,10 @@ button {
     margin-bottom: 1em;
 }
 
+.medium {
+    margin-bottom: 1em;
+}
+
 img {
     max-height: 18vw;
     margin-right: .625rem;
