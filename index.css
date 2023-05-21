@@ -72,8 +72,12 @@ a:active{
     margin-top: .5em;
 }
 
-.ec-title {
+.by-year {
     margin-top: .5em;
+}
+
+.by-medium {
+    display: none;
 }
 
 .footer-flex {

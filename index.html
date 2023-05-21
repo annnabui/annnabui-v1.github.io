@@ -172,21 +172,34 @@
         <span class="green"><a class="green" href="https://drive.google.com/file/d/1FvDaxwSVxTFBir5ZY5tZFEWMEwrhnm0F/view?usp=sharing"><u>Anna Bui</u></a></span> is a Graphic and Interaction designer based in <span class="blue">NYC</span> whose interest lies in the intersectionality of art, socio-political science, and the natural science. She is currently pursuing a BFA in <span class="yellow">Communication Design</span> <span class="red">@Parsons</span> with a minor in <span class="purple">Interdisciplinary Science</span>.
     </div><br>
     <marquee class="wow" direction="right" scrollamount="3">
-        <img src="./imgs/Human-Character1copy.gif">
+        <img src="./imgs/Human-Character1copy.gif"><br><br>
     </marquee>
-    <section class="ec-title">
+    <section>
         <u>Works:</u>
         <div class="ecflex">
             <button id="bttnYear">by Year</button>
-            <button id="bttnAlphabet">by Alphabetical order</button>
             <button id="bttnMedium">by Medium</button>
         </div><br>
+    </section>
+    <section class="by-year" id="byYear">
         <div class="yellow year title2021">☆ <u>2021</u></div>
         <div id="div2021" class="div2021"></div><br><br>
         <div class="red year title2022">☆ <u>2022</u></div>
         <div id="div2022" class="div2022"></div><br><br>
         <div class="blue year title2023">☆ <u>2023</u></div>
         <div id="div2023" class="div2023"></div>
+    </section>
+    <section class="by-medium" id="byMedium">
+        <div class="red medium">☆ <u>Animation/Illustration</u></div>
+        <div id="divAniIllu" class="divAniIllu"></div><br><br>
+        <div class="green medium">☆ <u>Web/Interaction</u></div>
+        <div id="divWebInt" class="divWebInt"></div><br><br>
+        <div class="yellow medium">☆ <u>Editorial</u></div>
+        <div id="divEd" class="divEd"></div><br><br>
+        <div class="blue medium">☆ <u>Branding</u></div>
+        <div id="divBrand" class="divBrand"></div><br><br>
+        <div class="purple medium">☆ <u>Photography</u></div>
+        <div id="divPhoto" class="divPhoto"></div><br><br>
     </section>
     <footer>
         <div class="footer-flex">
@@ -198,5 +211,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var bttnMedium = document.getElementById('bttnMedium');
+        var bttnYear = document.getElementById('bttnYear');
+
+        var divYear = document.getElementById('byYear');
+        var divMedium = document.getElementById('byMedium');
+
+        bttnMedium.addEventListener('click', function() {
+            if(divMedium.style.display = 'none') {
+                divMedium.style.display = 'block';
+                bttnMedium.style.backgroundColor = '#DF0000';
+                bttnYear.style.backgroundColor = 'transparent'
+            } else {
+                divMedium.style.display = 'none';
+                bttnMedium.style.backgroundColor = 'transparent';
+            }
+            divYear.style.display = 'none';
+        })
+
+        bttnYear.addEventListener('click', function() {
+            if(divYear.style.display = 'none') {
+                divYear.style.display = 'block';
+                bttnMedium.style.backgroundColor = 'transparent';
+            } else {
+                divYear.style.display = 'none';
+            }
+            divMedium.style.display = 'none';
+        })
+    </script>
 </body>
 </html>
