@@ -34,6 +34,11 @@ button {
 .purple {
     color: #8F00B2;
 }
+.gray {
+    color: #9E9CBA;
+}
+
+/* landing page */
 
 .intro {
     display: flex;
@@ -118,4 +123,39 @@ a:active{
         object-fit: contain;
         max-height: calc(100vh - 2rem); /* Adjust the value if needed */
     }
+}
+
+/* parsons x ibm*/
+
+.subpage-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subpage-text {
+    width: 88vw;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .625rem;
+}
+.first {
+    margin-top: 2.5rem;
+}
+
+.wow {
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+}
+
+.subpage-tag-flex {
+    display: flex;
+    margin-bottom: .625rem;
+}
+
+.tag {
+    width: 50vw;
 }
