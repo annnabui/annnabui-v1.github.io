@@ -49,7 +49,7 @@
         "img3": "imgs/fear-img3.png",
         "img4": "imgs/fear-img4.png",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/3.html"
+        "link": "https://annnabui.github.io/index-projects/fear.html"
     },
     {
         "name": "↗Parsons x IBM Quantum Design Jam: Dice or Die (UI/Game Design)",
@@ -62,7 +62,7 @@
         "img3": "imgs/quantum-img3.png",
         "img4": "imgs/quantum-img4.jpeg",
         "img5": "imgs/quantum-img5.gif",
-        "link": "https://annnabui.github.io/index-projects/4.html"
+        "link": "https://annnabui.github.io/index-projects/dice-or-die.html"
     },
     {
         "name": "↗VYVOICE (Branding/Identity)",
@@ -75,7 +75,7 @@
         "img3": "imgs/vyvoice-img3.png",
         "img4": "",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/5.html"
+        "link": "https://annnabui.github.io/index-projects/vyvoice.html"
     },
     {
         "name": "↗Lab Assignments",
@@ -140,7 +140,7 @@
         "img3": "",
         "img4": "",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/6.html"
+        "link": "https://annnabui.github.io/index-projects/periodic-map.html"
     },
     {
         "name": "↗Musée de l’Occulte (Branding/Identity)",
@@ -153,7 +153,7 @@
         "img3": "imgs/occult-img3.gif",
         "img4": "imgs/occult-img4.png",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/7.html"
+        "link": "https://annnabui.github.io/index-projects/musee-de-locculte.html"
     },
     {
         "name": "↗eye, i (Editorial/Graphic Design)",
@@ -166,7 +166,7 @@
         "img3": "imgs/eye-img3.png",
         "img4": "imgs/eye-img4.png",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/8.html"
+        "link": "https://annnabui.github.io/index-projects/eye-i.html"
     },
     {
         "name": "↗The 7 Deadly Sins (Photography)",
@@ -179,7 +179,7 @@
         "img3": "imgs/7sin-img3.png",
         "img4": "imgs/7sin-img4.png",
         "img5": "imgs/7sin-img5.png",
-        "link": "https://annnabui.github.io/index-projects/9.html"
+        "link": "https://annnabui.github.io/index-projects/7-sins.html"
     },
     {
         "name": "↗RED (Photography)",
@@ -192,6 +192,6 @@
         "img3": "imgs/red-img3.jpg",
         "img4": "imgs/red-img4.jpg",
         "img5": "",
-        "link": "https://annnabui.github.io/index-projects/10.html"
+        "link": "https://annnabui.github.io/index-projects/red.html"
     }
 ]
