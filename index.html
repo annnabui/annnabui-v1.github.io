@@ -16,6 +16,7 @@
             const jsonData = data;
             const div2021 = document.getElementById('div2021');
             const div2022 = document.getElementById('div2022');
+            const div2023 = document.getElementById('div2023');
 
             const divAni = document.getElementById('divAniIllu');
             const divWeb = document.getElementById('divWebInt');
@@ -172,6 +173,7 @@
 
 
             }
+        });
 
             jsonData.forEach(item => {
                 if (item.tag1 === "Animation") {
@@ -214,10 +216,178 @@
                 div.appendChild(p2);
                 div.appendChild(imgflex);
                 divAni.appendChild(div);
-                }
-            })
-        });
+
+
+            } else if (item.tag1 === "Web/Interaction") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                divWeb.appendChild(div);
+
+
+            } else if (item.tag1 === "Editorial") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                divEd.appendChild(div);
+
+
+            } else if (item.tag1 === "Branding") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                divBrand.appendChild(div);
+
+
+
+            } else if (item.tag1 === "Photography") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                divPhoto.appendChild(div);
+            }
         })
+    })
         .catch(error => console.error(error));
     </script>
 </head>
