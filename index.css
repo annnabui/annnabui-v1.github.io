@@ -64,16 +64,6 @@ a:active{
     text-decoration: none;
 }
 
-#swflex {
-    display: flex;
-    overflow: hidden;
-    margin-top: .5em;
-}
-  
-#swflex img {
-    max-height: 31vw;
-}
-
 .imgcontainer {
     overflow: hidden;
 }
@@ -92,4 +82,23 @@ a:active{
     border-top: .1em solid #000;
     padding-top: .5em;
     font-size: .7em;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 1.25rem;
+    }
+
+    .imgcontainer {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    img.image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: calc(100vh - 2rem); /* Adjust the value if needed */
+    }
 }
