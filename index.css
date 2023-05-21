@@ -36,11 +36,12 @@ button {
 }
 
 .intro {
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .description {
-    width: 80%;
+    width: 85%;
 }
 
 #bttnYear {
