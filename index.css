@@ -20,22 +20,22 @@ button {
 }
 
 .green {
-    color: #138B00;
+    color: #138B00 !important;
 }
 .blue {
-    color: #1100CF;
+    color: #1100CF !important;
 }
 .yellow {
-    color: #FAB400;
+    color: #FAB400 !important;
 }
 .red {
-    color: #DF0000;
+    color: #DF0000 !important;
 }
 .purple {
-    color: #8F00B2;
+    color: #8F00B2 !important;
 }
 .gray {
-    color: #9E9CBA;
+    color: #9E9CBA !important;
 }
 
 /* landing page */
@@ -141,6 +141,16 @@ a:active{
     justify-content: center;
     align-items: center;
     margin-top: .625rem;
+}
+
+.lol {
+    width: 80vw;
+    margin-top: 1rem;
+}
+
+.lol video {
+    
+    width: 100%;
 }
 .first {
     margin-top: 2.5rem;
