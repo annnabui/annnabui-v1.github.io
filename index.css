@@ -169,3 +169,16 @@ a:active{
 .tag {
     width: 50vw;
 }
+
+/* periodic map */
+
+.pm {
+    object-fit: contain;
+    width: 80vw;
+}
+
+.pm img {
+    width: 80vw;
+    height: auto;
+}
+/* image still not scaled properly */
