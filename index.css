@@ -45,6 +45,11 @@ button {
     justify-content: space-between;
 }
 
+.intro-contact {
+    text-align: right;
+    width: 10vw;
+}
+
 .description {
     width: 85%;
 }
