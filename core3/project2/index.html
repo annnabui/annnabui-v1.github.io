@@ -12,7 +12,7 @@
 <body>
     <!-- project name -->
     <div class="header">
-        <div class="header-section">
+        <div class="header-section section">
             <div class="grid" id="header">
                 <div></div>
                 <div class="header-title-1">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="navigation">
+        <div class="navigation section" id="nav">
             <div class="nav-title">CARRY ON</div>
             <div class="nav-list">
                 <div>About</div>
@@ -62,10 +62,10 @@
     <!-- main content -->
     <main class="main-content">
         <!-- about -->
-        <div class="section">
+        <div class="section red" id="about">
             <div class="grid">
                 <h3>About</h3>
-                <p class="section-text">
+                <p class="section-text about">
                     Asian immigrants often bring sentimental objects with them when immigrating to the US. These cherished items, ranging from family heirlooms to cultural artifacts, serve as tangible connections to their roots and provide comfort in the face of a new and unfamiliar environment. 
                     <br><br>
                     <em><strong>CARRY ON</strong></em> features 4 objects, the stories surrounding them, and a 3D interactive reiteration of their context as shared by the owners. 
@@ -75,67 +75,94 @@
 
         <!-- exhibition -->
         <div class="section">
-            <div class="grid">
-                <h3>Exhibition</h3>
+            <div class="grid exhibition">
+                <h3 class="exh">Exhibition</h3>
 
                 <!-- coin -->
-                <div class="exh-entry"> 
-                    <div class="exh-entry-title-grid">
-                        <div class="exh-entry-name">
-                            福
-                        </div>
-                        <div class="exh-entry-index">
-                            01
-                        </div>
-                    </div>
-                    <p class="exh-entry-statement"></p>
+                <div class="exh-entry-name" id="coinTitle">
+                    福
                 </div>
+                <div class="exh-entry-index" id="coinIndex">
+                    01
+                </div>
+                <div class="exh-entry-statement" id="coinText">
+                    ↓
+                    <br><br>
+                    I received this special coin from my grandma as a Lunar New Year gift in 2021. It's a cherished tradition in our family for elders to give children money in a red envelope for luck as the lunar year begins. 
+                    <br><br>
+                    When I made the move to New York, I took the coin with me. Although the red envelope suffered some damages from being stored in my bag, the coin remained untouched.
+                    <br><br>
+                    The initial days in this new city were filled with loneliness. Being far away from my family and friends, with limited knowledge of the language, customs, and traditions, I felt lost. During those moments of doubt and uncertainty, I held the coin close to my heart.
+                    <br><br>
+                    It became a source of solace, a constant reminder that things would eventually fall into place. Carrying my grandma's blessing with me provided strength and reassurance during those challenging times.
+                    <br><br>
+                    The red envelope containing the coin bears the Chinese character “fu,” which translates to “good fortune.” Every time I caught sight of the envelope, the prominent “fu” symbol served as a beacon of hope and prosperity. It symbolized the positive energy and blessings that my grandma wished for me. This simple yet powerful character became a constant reminder of the goodness that awaited me on my new journey.
+                    <br><br>
+                    As weeks turned into months,I gradually found my footing in this unfamiliar environment. The coin and its accompanying red envelope transformed into cherished mementos, representing not only the cultural traditions of my family but also the unwavering love and support that transcends distance and time.
+                </div>
+                
 
                 <!-- book -->
-                <div class="exh-entry">
-                    <div class="exh-entry-title-grid">
-                        <div class="exh-entry-name">
-                            Bướm Trắng
-                        </div>
-                        <div class="exh-entry-index">
-                            02
-                        </div>
-                    </div>
-                    <p class="exh-entry-statement"></p>
+                <div class="exh-entry-name" id="bookTitle">
+                    Bướm Trắng
+                </div>
+                <div class="exh-entry-index" id="bookIndex">
+                    02
+                </div>
+                <div class="exh-entry-statement" id="bookText">
+                    ↓
+                    <br><br>
+                    <span><em><strong>Bướm Trắng</strong> tells the story of Trương, a law student who faced a life-altering diagnosis of tuberculosis, forcing him to leave school. He meets Thu, a kind and ambitious woman, who becomes his inspiration and briefly his girlfriend. However, as Trương's health declines, he turns to addiction, leading to their separation. 
+                    <br><br>
+                    Realizing the need to confront his circumstances, he reaches out to Thu for a final meeting but decides to return to his mother's house in the countryside, where he eventually settles down with a girl from his village. Trương's journey is one of resilience, hardship, and difficult choices.</em></span>
+                    <br><br><br>
+                    To Trương, Thu was a white butterfly. He had been on the high of chasing this butterfly because he saw in her his life before tuberculosis, before he lost his future to the disease. 
+                    <br><br>
+                    I brought this book from home, one of the few I had purchased but hadn't yet read. After spend- ing two years in New York City, I finally read it and discovered how profoundly relatable it was to my personal journey. Coming from a privileged background, I had everything I needed at home. However, upon arriving in New York City, I found myself with nothing—no friends, no money, and a feeling of emptiness.
+                    <br><br>
+                    For a long time, I was in denial, placing blame on circumstanc- es and immersing myself in revenge fantasy books as a form of escapism. Although I don't wish to settle as Trương did, I do aspire to learn how to accept the present, much like Trương did at the end of his story.
+                    <br><br>
+                    I should look forward to new journeys this life-changing opportunity has offered me and grieve the past as there's no use in holding onto something that has long gone.
                 </div>
 
                 <!-- pin -->
-                <div class="exh-entry">
-                    <div class="exh-entry-title-grid">
-                        <div class="exh-entry-name">
-                            SHANGHAI
-                        </div>
-                        <div class="exh-entry-index">
-                            03
-                        </div>
-                    </div>
-                    <p class="exh-entry-statement"></p>
+                <div class="exh-entry-name" id="pinTitle">
+                    SHANGHAI
+                </div>
+                <div class="exh-entry-index" id="pinIndex">
+                    03
+                </div>
+                <div class="exh-entry-statement" id="pinText">
+                    ↓
+                    <br><br>
+                    The year 2021 would have been completely different without my friend Zhao Zhao. I treasure the metal badge she gave me, which reminds me of the days we spent biking around Shanghai. It was a last-minute addition to my luggage before leaving for college in New York City. The badge, with “SHANGHAI” in red font on a navy blue background, gleamed under the sun, symbolizing the vibrant days I had experienced there.
+                    <br><br>
+                    I took photos of the badge in different places, using them to explore the memories it held. Placing it in unexpected locations in my dorm, I created metaphorical meanings behind the backgrounds. Each placement sparked connections and stories. At night, I placed the badge on my dorm windowsill, where its met- al outlines shimmered against the New York cityscape. It reminded me of the skyscrapers that lit up the night sky in Shanghai.In my drawings, I tried to capture the enchanting scenes of both cities, finding more similarities between them.
+                    <br><br>
+                    I pinned the badge to my tote bag and took it with me on my first visit to Central Park. Surrounded by green canopies and the sounds of laughter, I was transported back to the verdant streets of Shanghai. While walking, I stumbled upon a monument that read, <em>“In appreciation of many happy hours in the Park, this landscape and its paths have been restored.”</em> It reminded me of a bumpy road Zhao Zhao often took me on, which had later been repaired. I longed to revisit it and share my stories and souvenirs of New York City with her, expressing my gratitude in ways words could not convey.
                 </div>
 
                 <!-- letters -->
-                <div class="exh-entry">
-                    <div class="exh-entry-title-grid">
-                        <div class="exh-entry-name">
-                            Letters from home
-                        </div>
-                        <div class="exh-entry-index">
-                            04
-                        </div>
-                    </div>
-                    <p class="exh-entry-statement"></p>
+                <div class="exh-entry-name" id="letterTitle">
+                    Letters from home
+                </div>
+                <div class="exh-entry-index" id="letterIndex">
+                    04
+                </div>
+                <div class="exh-entry-statement" id="letterText">
+                    ↓
+                    <br><br>
+                    Letter writing holds a special place in my heart, even though I saw my closest friends every day during high school. I have developed a collection of letters back home in Hong Kong, each letter holds a treasure trove of memories and emotions, serving as a testament to the power of written words and their ability to transcend time and distance.
+                    <br><br>
+                    One memorable letter that holds a significant place in my heart is the envelope my sister gave me on the day I left Hong Kong for college in New York City in August 2021. The envelope came with clear instructions to be opened only when I was on the plane. Inside, I found a heartfelt note from my sister and a package of tissues, knowing well that I am a bit of a crybaby and may need them during the journey. Since then, this envelope has become a repository for all the letters I have received from my friends and family.
                 </div>
             </div>
         </div>
 
         <!-- comment -->
-        <div class="section">
+        <div class="section red">
             <div class="grid" id="commentGrid">
-                <h3 id="yourTurn">Your turn</h3>
+                <h3 id="yourTurn">Your<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;turn</h3>
                 <p class="section-text">
                     Share with us the story behind your special memory object :) Your story will live among others that has been shared with us underneath the comment box below.
                 </p>

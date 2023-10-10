@@ -15,5 +15,10 @@ $(document).ready(function () {
         } else {
             navigation.hide();
         }
-        });
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+   const navBar = document.getElementById("nav");
+   const sections = document.querySelectorAll(".section");
+})
