@@ -24,7 +24,7 @@
                     <a href=""><h2>Credit</h2></a>
                 </div>
                 <div class="flex">
-                    <a href=""><h2><em><u>Print Version</u></em></h2></a>
+                    <a href=""><h2>Print Version</h2></a>
                 </div>
                 <div class="header-date">
                     <h2>10/<br>2023</h2>
@@ -45,7 +45,7 @@
                 <div>About</div>
                 <div>Exhibition</div>
                 <div>Credit</div>
-                <div><em>Print Version</em></div>
+                <div>Print Version</div>
             </div>
         </div>
 
@@ -55,7 +55,7 @@
             <li>About</li>
             <li>Exhibition</li>
             <li>Credit</li>
-            <li><em>Print Version</em></li>
+            <li>Print Version</li>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
         <div class="section red" id="about">
             <div class="grid">
                 <h3>About</h3>
-                <p class="section-text about">
+                <p class="section-text">
                     Asian immigrants often bring sentimental objects with them when immigrating to the US. These cherished items, ranging from family heirlooms to cultural artifacts, serve as tangible connections to their roots and provide comfort in the face of a new and unfamiliar environment. 
                     <br><br>
                     <em><strong>CARRY ON</strong></em> features 4 objects, the stories surrounding them, and a 3D interactive reiteration of their context as shared by the owners. 
@@ -160,37 +160,38 @@
         </div>
 
         <!-- comment -->
-        <div class="section red">
+        <div class="section red" id="comment">
             <div class="grid" id="commentGrid">
                 <h3 id="yourTurn">Your<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;turn</h3>
                 <p class="section-text">
                     Share with us the story behind your special memory object :) Your story will live among others that has been shared with us underneath the comment box below.
                 </p>
-                <div class="cmt-box"></div>
+                <textarea class="cmt-box" name="comment" rows="12" cols="35">Start comment...</textarea><br>
                 <button class="upload-img">↑ Upload image</button>
                 <button class="post-cmt">Post comment</button>
-            </div>
-        </div>
-
-        <!-- credit -->
-        <div class="section">
-            <div class="grid">
-                <h3>Credit</h3>
-                <p class="section-text">
-                    Site designed and developed by Anna @ Parsons 2023.<br><br>
-                    Content edited by Anna. Special thanks to my friends who let me interview and photograph their objects. 
+                <p class="section-text" id="credit">
+                    <p class="credit-1">
+                    Site designed and developed by Anna @ Parsons 2023.
+                    Special thanks to my friends who let me interview and photograph their objects. All models are compiled in Blender and uploaded to web using THREE.js WebGL. Assets used are from Blenderkit with the exception of:
+                    </p>
                     <br><br>
-                    All models are compiled in Blender and uploaded to web using THREE.js WebGL by Anna. Assets used are from Blenderkit with the exception of:
-                    <br><br>
-                    <a href="">Plane simulation</a> – IgYerm (purchased on Sketchfab)
+                    <a href="https://sketchfab.com/3d-models/pack-airplane-chair-3-colors-688b0c2b8b7f4217894b281dc39dde12">1. Pack Airplane chair 3 colors</a> – IgYerm (Sketchfab), and,
+                    <br>
+                    <a href="https://sketchfab.com/3d-models/wrinkled-fabric-cloth-6451c1d3d09c4216be9b1b009c8db63b">2. Wrinkled Fabric Cloth</a> – Lucapianta (Sketchfab)
                     <br><br>
                     Thanks for visiting :) Any issue please contact <strong>buip150@newschool.edu</strong>.
                 </p>
             </div>
         </div>
-        <footer>
+
+        <!-- credit -->
+        <!-- <div class="section">
+            <div class="grid" 
+            </div>
+        </div> -->
+        <!-- <footer>
             <a href="https://annnabui.github.io"><em>Anna's Portfolio →</em></a>
-        </footer>
+        </footer> -->
     </main>
 </body>
 </html>

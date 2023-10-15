@@ -90,11 +90,16 @@ p {
 /* section about */
 .red {
     background-color: #D2232A;
-    color:#E7E0D9;
+    color:#EDE8E2;
+}
+#about {
+    background-image: url(./asset/book.png);
+    background-blend-mode:soft-light;
+    background-size: 60%;
 }
 /* section exhibition */
 .exhibition {
-    grid-template-rows: 12vh repeat(4, 18vh 18vh 18vh 10vh) ;
+    grid-template-rows: 12vh repeat(4, 20vh 20vh 20vh 7vh) ;
     grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 h3 {
@@ -157,8 +162,14 @@ span {
 }
 
 /* section comment */
+#comment {
+    background-image: url(./asset/book.png);
+    background-blend-mode:soft-light;
+    background-size: 100%;
+    background-position: center;
+}
 #commentGrid {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 #yourTurn {
     grid-area: 1 / 2 / span 2 / span 1;
@@ -168,6 +179,11 @@ span {
     border-radius: 1.25rem;
     grid-area: 2 / 3 / span 2 / span 3;
     height: 25vh;
+    padding: 1rem;
+    background-color: transparent;
+    color:#EDE8E2;
+    font-family: Helvetica, sans-serif;
+    font-size:large;
 }
 .upload-img {
     grid-area: 4 / 4 / span 1 / span 1;
@@ -190,8 +206,18 @@ button {
     color:#E7E0D9;
 }
 .post-cmt {
-    background-color: #E7E0D9;
+    background-color: #EDE8E2;
     color: #D2232A;
+}
+
+/* section credit */
+#credit {
+    font-size: x-small;
+    grid-area: 5 / 5 / span 1 / span 3;
+    text-align: right;
+}
+.credit-1 {
+    
 }
 
 /* navigation */
@@ -206,7 +232,7 @@ button {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 0.75px solid #D2232A;
-    /* background-color: #E7E0D9; */
+    background-color: #EDE8E2;
 }
 .nav-list {
     display: flex;
@@ -219,11 +245,11 @@ button {
 }
 
 /* footer */
-footer {
+/* footer {
     padding-top: 1rem;
     border-top: 0.75px solid #D2232A;
     text-align: right;
-}
+} */
 /* link */
 a:link{
     color: #D2232A;
@@ -234,8 +260,8 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    color: #D2232A;
-    text-decoration: none;
+    color: #ff6200;
+    font-style: italic;
 }
 a:focus{
     color: #D2232A;
