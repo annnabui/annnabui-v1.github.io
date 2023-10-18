@@ -5,6 +5,7 @@ export default class Garden {
     this.activeShape = {};
     this.mousePos = {x:0, y:0};
     this.activeShapeEl = null;
+    this.grassElements = [];
 
     this.initInteraction();
     this.drawShape();
@@ -62,6 +63,7 @@ export default class Garden {
       this.activeShapeEl.innerText = `${this.activeShape.emoji}`;
       this.activeShapeEl.style.textAlign = "center";
       this.activeShapeEl.style.fontSize = `${this.activeShape.height}px`;
+      this.activeShapeEl.className = "grass";
 
     } else if (this.activeShape.type === "circle") {
       this.activeShapeEl.style.width = `${this.activeShape.radius*2}px`;
@@ -83,12 +85,21 @@ export default class Garden {
     }
   }
   placeShape() {
+  if (this.activeShapeEl) {
     this.activeShapeEl = null;
+
+    // Draw the shape
     this.drawShape();
+
+    this.grassElements.push(this.activeShapeEl);
+    // Replace content of the last element with class "grass" after a delay
+    setTimeout(() => {
+      for (const replaceDiv of this.grassElements) {
+        if (replaceDiv !== this.activeShapeEl) {
+          replaceDiv.innerHTML = "🌳";
+        }
+      }
+    }, 10000);
   }
-  clear() {
-    this.activeShapeEl = null;
-    this.gardenEl.innerHTML = '';
-    this.drawShape();
-  }
+}
 }
