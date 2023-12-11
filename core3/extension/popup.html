@@ -11,10 +11,18 @@
         white-space: pre-line;
       }
     </style>
+    <link rel="stylesheet" type="text/css" href="popup.css">
     <script src="popup.js"></script>
   </head>
   <body>
     <h2>Font Highlighter</h2>
+    <div class="flip-switch-container">
+      <label class="flip-switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider"></span>
+      </label>
+      <p id="switchStatus">Hidden</p>
+    </div>
     <div id="result"></div>
   </body>
 </html>

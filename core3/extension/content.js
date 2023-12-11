@@ -1,10 +1,10 @@
 var popup;
 
 let fontList = [
-    { name: "Google Sans", foundry: "Google Fonts", url: "https://fonts.google.com/specimen/Open+Sans" },
-    { name: "Editorial Old", foundry: "Pangram Pangram", url: "https://pangrampangram.com/products/editorial-old" },
-    { name: "Times", foundry: "Fonts.com", url: "https://www.fonts.com/font/linotype/times" },
-    { name: "DaVinci", foundry: "Virgile Flores", url: "https://virgileflores.com/category/typefaces/" }
+    { name: "G", foundry: "Google Fonts", url: "https://fonts.google.com/specimen/Open+Sans" },
+    { name: "E", foundry: "Pangram Pangram", url: "https://pangrampangram.com/products/editorial-new" },
+    { name: "T", foundry: "Fonts.com", url: "https://www.fonts.com/font/linotype/times" },
+    { name: "D", foundry: "Virgile Flores", url: "https://virgileflores.com/category/typefaces/" }
 ];
   
 document.addEventListener('dblclick', function (event) {
@@ -13,39 +13,34 @@ document.addEventListener('dblclick', function (event) {
   // Check if the clicked element has text content
   if (clickedElement && clickedElement.textContent.trim() !== "") {
         var styles = window.getComputedStyle(clickedElement);
-        // var fontFamily = styles.fontFamily;
-        var fontFamily = styles.fontFamily.split(',')[0].trim();
+        var fontFamily = styles.fontFamily;
         console.log('Font Family:', fontFamily);
         var fontSize = styles.fontSize;
         var color = styles.color;
 
-        var fontInfo = `
-        <strong>Font Family:</strong> ${fontFamily}<br>
-        <strong>Font Size:</strong> ${fontSize}<br>
-        <strong>Color:</strong> ${color}<br>
-        `;
-
-        console.log('Font Family:', fontFamily);
-
-        let matchingFont;
+        let firstLetterMatchFont;
 
         fontList.forEach(font => {
-        let trimmedFontFamily = fontFamily.trim();
+        let trimmedFontFamily = `${fontFamily}`.trim();
         let trimmedFontName = font.name.trim();
 
-        console.log('Comparing First Letters:', trimmedFontFamily[0], trimmedFontName[0]);
-
-        if (trimmedFontFamily[0] === trimmedFontName[0]) {
-            matchingFont = font.name;
+        if (trimmedFontFamily[1] === trimmedFontName) {
+            firstLetterMatchFont = font;
+            console.log('Match Found! Font:', firstLetterMatchFont);
+            return;
         }
         });
 
-        console.log('Matching Font:', matchingFont);
-
-        if (matchingFont) {
-        fontInfo += `
-            Foundry: <a href="${matchingFont.url}" target="_blank">${matchingFont.foundry}</a><br>
+        let fontInfo = `
+        <strong style="background-color: #E8FF5E;">Font Family:</strong> ${fontFamily}<br>
+        <strong>Font Size:</strong> ${fontSize}<br>
+        <strong>Color:</strong> ${color}<br>
         `;
+       
+        if (firstLetterMatchFont) {
+            fontInfo += `
+              <strong>Foundry:</strong> <a href=${firstLetterMatchFont.url}>${firstLetterMatchFont.foundry}</a><br>
+            `;
         }
 
         // Create a dynamic popup element
@@ -71,10 +66,42 @@ document.addEventListener('dblclick', function (event) {
     }
 });
 
-// document.addEventListener('mousemove', function (event) {
-//     // Remove the popup if it exists
-//     if (popup) {
-//       document.body.removeChild(popup);
-//       popup = null;
-//     }
-// });
+function replaceText() {
+    const allText = document.body.getElementsByTagName('*');
+  
+    Array.from(allText).forEach(element => {
+        const styles = window.getComputedStyle(element);
+        const fontFamily = styles.fontFamily;
+        const fontSize = styles.fontSize;
+        const color = styles.color;
+    
+        const originalText = element.textContent;
+        const fontInfoText = `Font Family: ${fontFamily}, Font Size: ${fontSize}, Color: ${color}`;
+    
+        element.textContent = fontInfoText;
+        element.dataset.originalText = originalText;
+    });
+}
+  
+function restoreText() {
+    const allText = document.body.getElementsByTagName('*');
+  
+    Array.from(allText).forEach(element => {
+        if (element.dataset.originalText) {
+            // Restore the original text content
+            element.textContent = element.dataset.originalText;
+            delete element.dataset.originalText;
+        }
+    });
+}
+  
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.action === 'replaceText') {
+      replaceText();
+    } else if (request.action === 'restoreText') {
+      restoreText();
+    }
+});
+  
+// Send a message to content script from popup.js when the switch is toggled
+chrome.runtime.sendMessage({ action: 'popupSwitchToggled', checked: false });
