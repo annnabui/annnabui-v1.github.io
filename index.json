@@ -193,5 +193,31 @@
         "img4": "imgs/red-img4.jpg",
         "img5": "",
         "link": "https://annnabui.github.io/index-projects/red.html"
+    },
+     {
+        "name": "↗Leaflet Map",
+        "tag1": "Web/Interaction",
+        "tag2": "",
+        "year": "2024",
+        "description": "Internet Geography Assignment",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": "",
+        "link": "https://annnabui.github.io/int-geo/prj1/leaflet/index.html"
+    },
+    {
+        "name": "↗Underground Railroad",
+        "tag1": "Web/Interaction",
+        "tag2": "",
+        "year": "2024",
+        "description": "Internet Geography Assignment",
+        "img1": "",
+        "img2": "",
+        "img3": "",
+        "img4": "",
+        "img5": "",
+        "link": "https://annnabui.github.io/int-geo/prj2/main-files/index.html"
     }
 ]
