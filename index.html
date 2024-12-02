@@ -17,6 +17,7 @@
             const div2021 = document.getElementById('div2021');
             const div2022 = document.getElementById('div2022');
             const div2023 = document.getElementById('div2023');
+            const div2024 = document.getElementById('div2024');
 
             const divAni = document.getElementById('divAniIllu');
             const divWeb = document.getElementById('divWebInt');
@@ -175,7 +176,48 @@
 
 
 
-            }
+            } else if (item.year === "2024") {
+                const div = document.createElement('div');
+                div.className = 'table';
+
+                const p1 = document.createElement('a');
+                p1.style.marginBottom = "0em";
+                p1.innerHTML = item.name;
+                p1.href = item.link;
+
+                const p2 = document.createElement('p');
+                p2.style.marginTop = "0em";
+                p2.style.marginBottom = ".5em";
+                p2.textContent = item.description;
+                p2.className = 'description';
+
+                const imgflex = document.createElement('div');
+                imgflex.classList.add("container");
+                imgflex.className = "imgcontainer";
+                imgflex.style.display = "flex";
+                imgflex.style.alignItems = "center";
+                imgflex.style.marginBottom = "1.2em";
+
+                const imageUrls = [
+                    item.img1,
+                    item.img2,
+                    item.img3,
+                    item.img4,
+                    item.img5
+                ];
+
+                imageUrls.forEach(url => {
+                    const img = document.createElement('img');
+                    img.setAttribute('src', url);
+                    img.classList.add('image');
+                    imgflex.appendChild(img);
+                });
+
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(imgflex);
+                div2022.appendChild(div);
+                }
         });
 
             jsonData.forEach(item => {
@@ -425,6 +467,8 @@
         <div id="div2022" class="div2022"></div><br><br>
         <div class="blue year title2023">☆ <u>2023</u></div>
         <div id="div2023" class="div2023"></div>
+        <div class="green year title2024">☆ <u>2024</u></div>
+        <div id="div2024" class="div2024"></div>
     </section>
     <section class="by-medium" id="byMedium">
         <div class="red medium">☆ <u>Animation/Illustration</u></div>
