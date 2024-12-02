@@ -1,0 +1,255 @@
+[
+    {"source": "Abolitionist Activists", "target": "William Lloyd Garrison"},
+    {"source": "Abolitionist Activists", "target": "Lucretia Mott"},
+    {"source": "Abolitionist Activists", "target": "James Mott"},
+    {"source": "Abolitionist Activists", "target": "Lydia Maria Child"},
+    {"source": "Abolitionist Activists", "target": "Gerrit Smith"},
+    {"source": "Abolitionist Activists", "target": "Frederick Douglass"},
+    {"source": "Abolitionist Activists", "target": "Anna Murray Douglass"},
+    {"source": "Abolitionist Activists", "target": "Stephen Myers"},
+    {"source": "Abolitionist Activists", "target": "William Henry Johnson"},
+    {"source": "Abolitionist Activists", "target": "Henry Highland Garnet"},
+    {"source": "Abolitionist Activists", "target": "Abel Brown"},
+    {"source": "Abolitionist Activists", "target": "Rev. Leonard Grimes"},
+    {"source": "Abolitionist Activists", "target": "Samuel Gridley Howe"},
+    {"source": "Abolitionist Activists", "target": "Moses Dickson"},
+    {"source": "Abolitionist Activists", "target": "Thomas Galt"},
+    {"source": "Abolitionist Activists", "target": "Samuel Joseph May"},
+    {"source": "Abolitionist Activists", "target": "John P. Parker"},
+    {"source": "Abolitionist Activists", "target": "Peter Quire"},
+    {"source": "Abolitionist Activists", "target": "Ann Carroll Fitzhugh"},
+    {"source": "Abolitionist Activists", "target": "Charles Turner Torrey"},
+    {"source": "Abolitionist Activists", "target": "Harriet Forten Purvis"},
+    {"source": "Abolitionist Activists", "target": "James Forten"},
+    {"source": "Abolitionist Activists", "target": "Thomas Wentworth Higginson"},
+    {"source": "Abolitionist Activists", "target": "Robert Purvis"},
+    {"source": "Abolitionist Activists", "target": "Theodore Parker"},
+    {"source": "Abolitionist Activists", "target": "Charlotte Forten Grimké"},
+    {"source": "Abolitionist Activists", "target": "Joshua Giddings"},
+
+    {"source": "Suffragettes", "target": "Laura Smith Haviland"},
+    {"source": "Suffragettes", "target": "Elizabeth M'Clintock"},
+    {"source": "Suffragettes", "target": "Elizabeth Cady Stanton"},
+    {"source": "Suffragettes", "target": "Susan B. Anthony"},
+    {"source": "Suffragettes", "target": "Mary Ann Shadd"},
+
+    {"source": "Conductors", "target": "Harriet Tubman"},
+    {"source": "Conductors", "target": "Levi Coffin"},
+    {"source": "Conductors", "target": "Vestal Coffin"},
+    {"source": "Conductors", "target": "John Hopper"},
+    {"source": "Conductors", "target": "Rev. John Rankin"},
+    {"source": "Conductors", "target": "John Berry Meachum"},
+    {"source": "Conductors", "target": "Mary Meachum"},
+    {"source": "Conductors", "target": "George deBaptiste"},
+    {"source": "Conductors", "target": "Edward Garrison Draper"},
+
+    {"source": "Station Masters", "target": "Isaac T. Hopper"},
+    {"source": "Station Masters", "target": "William Still"},
+    {"source": "Station Masters", "target": "Thomas Garrett"},
+    {"source": "Station Masters", "target": "Mary Ann Shadd"},
+    {"source": "Station Masters", "target": "John Brown"},
+    {"source": "Station Masters", "target": "Lydia Mott"},
+    {"source": "Station Masters", "target": "Abigail Mott"},
+    {"source": "Station Masters", "target": "Lewis Hayden"},
+    {"source": "Station Masters", "target": "Harriet Hayden"},
+    {"source": "Station Masters", "target": "Sydney Howard Gay"},
+    {"source": "Station Masters", "target": "John Hunn"},
+    {"source": "Station Masters", "target": "John Wesley Posey"},
+    {"source": "Station Masters", "target": "Jermain Wesley Loguen"},
+    {"source": "Station Masters", "target": "Frances Seward"},
+
+    {"source": "Authors & Advocates", "target": "David Ruggles"},
+    {"source": "Authors & Advocates", "target": "Henry Bibb"},
+    {"source": "Authors & Advocates", "target": "Henry 'Box' Brown"},
+    {"source": "Authors & Advocates", "target": "Solomon Northup"},
+    {"source": "Authors & Advocates", "target": "Harriet Beecher Stowe"},
+    {"source": "Authors & Advocates", "target": "Robert F. Wallcut"},
+    {"source": "Authors & Advocates", "target": "Sojourner Truth"},
+    {"source": "Authors & Advocates", "target": "Edward Beecher"},
+    {"source": "Authors & Advocates", "target": "Louis Napoleon"},
+    {"source": "Authors & Advocates", "target": "William H. Leonard"},
+    {"source": "Authors & Advocates", "target": "Frances Ellen Watkins Harper"},
+
+    {"source": "Freedom Seekers & Martyrs", "target": "Elijah Parish Lovejoy"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Charles Nalle"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Josiah Henson"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Shadrach Minkins"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Thomas Sims"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Anthony Burns"},
+    {"source": "Freedom Seekers & Martyrs", "target": "William Craft"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Ellen Smith Craft"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Jane Johnson"},
+    {"source": "Freedom Seekers & Martyrs", "target": "Austin Bearse"},
+
+    {"source": "Ellen Smith Craft", "target": "William Craft"},
+    {"source": "Ellen Smith Craft", "target": "Lewis Hayden"},
+    {"source": "Ellen Smith Craft", "target": "Harriet Hayden"},
+
+    {"source": "Harriet Forten Purvis", "target": "Lucretia Mott"},
+    {"source": "Harriet Forten Purvis", "target": "William Still"},
+    {"source": "Harriet Forten Purvis", "target": "Suffragettes"},
+
+    {"source": "Isaac T. Hopper", "target": "William Lloyd Garrison"},
+    {"source": "Isaac T. Hopper", "target": "David Ruggles"},
+    {"source": "Isaac T. Hopper", "target": "Lucretia Mott"},
+    {"source": "Isaac T. Hopper", "target": "John Hopper"},
+    {"source": "Isaac T. Hopper", "target": "Lydia Maria Child"},
+
+    {"source": "James Forten", "target": "William Lloyd Garrison"},
+
+    {"source": "Thomas Wentworth Higginson", "target": "John Brown"},
+
+    {"source": "Theodore Parker", "target": "John Brown"},
+
+    {"source": "Robert Purvis", "target": "John Hopper"},
+    {"source": "Robert Purvis", "target": "David Ruggles"},
+
+    {"source": "Frances Ellen Watkins Harper", "target": "William Lloyd Garrison"},
+    {"source": "Frances Ellen Watkins Harper", "target": "Frederick Douglass"},
+
+    {"source": "Vestal Coffin", "target": "Levi Coffin"},
+
+    {"source": "Levi Coffin", "target": "Vestal Coffin"},
+    {"source": "Levi Coffin", "target": "Rev. John Rankin"},
+
+    {"source": "William Lloyd Garrison", "target": "Isaac T. Hopper"},
+    {"source": "William Lloyd Garrison", "target": "Frederick Douglass"},
+    {"source": "William Lloyd Garrison", "target": "Gerrit Smith"},
+    {"source": "William Lloyd Garrison", "target": "Elijah Parish Lovejoy"},
+
+    {"source": "David Ruggles", "target": "Isaac T. Hopper"},
+    {"source": "David Ruggles", "target": "Frederick Douglass"},
+    {"source": "David Ruggles", "target": "Anna Murray Douglass"},
+    {"source": "David Ruggles", "target": "Lydia Maria Child"},
+
+    {"source": "Lucretia Mott", "target": "Isaac T. Hopper"},
+    {"source": "Lucretia Mott", "target": "Lydia Maria Child"},
+    {"source": "Lucretia Mott", "target": "James Mott"},
+
+    {"source": "James Mott", "target": "Lucretia Mott"},
+    {"source": "James Mott", "target": "John Hopper"},
+
+    {"source": "Rev. John Rankin", "target": "Levi Coffin"},
+
+    {"source": "William Still", "target": "Henry 'Box' Brown"},
+    {"source": "William Still", "target": "Thomas Garrett"},
+    {"source": "William Still", "target": "Harriet Tubman"},
+    {"source": "William Still", "target": "Lydia Maria Child"},
+    {"source": "William Still", "target": "Anna Murray Douglass"},
+    {"source": "William Still", "target": "Joshua Giddings"},
+
+    {"source": "Henry 'Box' Brown", "target": "William Still"},
+
+    {"source": "Thomas Garrett", "target": "William Still"},
+    {"source": "Thomas Garrett", "target": "Harriet Tubman"},
+    {"source": "Thomas Garrett", "target": "Edward Garrison Draper"},
+
+    {"source": "Harriet Tubman", "target": "William Still"},
+    {"source": "Harriet Tubman", "target": "John Brown"},
+    {"source": "Harriet Tubman", "target": "Gerrit Smith"},
+    {"source": "Harriet Tubman", "target": "Frances Seward"},
+
+
+    {"source": "Henry Bibb", "target": "Mary Ann Shadd"},
+
+    {"source": "Mary Ann Shadd", "target": "Henry Bibb"},
+    {"source": "Mary Ann Shadd", "target": "Frederick Douglass"},
+
+    {"source": "John Brown", "target": "Harriet Tubman"},
+    {"source": "John Brown", "target": "Frederick Douglass"},
+    {"source": "John Brown", "target": "Gerrit Smith"},
+    {"source": "John Brown", "target": "Elijah Parish Lovejoy"},
+    {"source": "John Brown", "target": "Charles Turner Torrey"},
+
+    {"source": "Charles Turner Torrey", "target": "William Lloyd Garrison"},
+    {"source": "Charles Turner Torrey", "target": "Gerrit Smith"},
+
+    {"source": "Frederick Douglass", "target": "William Lloyd Garrison"},
+    {"source": "Frederick Douglass", "target": "David Ruggles"},
+    {"source": "Frederick Douglass", "target": "Mary Ann Shadd"},
+    {"source": "Frederick Douglass", "target": "John Brown"},
+    {"source": "Frederick Douglass", "target": "Gerrit Smith"},
+    {"source": "Frederick Douglass", "target": "Anna Murray Douglass"},
+    {"source": "Frederick Douglass", "target": "Elizabeth M'Clintock"},
+    {"source": "Frederick Douglass", "target": "Elizabeth Cady Stanton"},
+    {"source": "Frederick Douglass", "target": "Susan B. Anthony"},
+    {"source": "Frederick Douglass", "target": "Jermain Wesley Loguen"},
+
+    {"source": "John Hopper", "target": "Isaac T. Hopper"},
+    {"source": "John Hopper", "target": "James Mott"},
+
+    {"source": "Lydia Maria Child", "target": "Isaac T. Hopper"},
+    {"source": "Lydia Maria Child", "target": "Lucretia Mott"},
+    {"source": "Lydia Maria Child", "target": "William Still"},
+
+    {"source": "Gerrit Smith", "target": "William Lloyd Garrison"},
+    {"source": "Gerrit Smith", "target": "Harriet Tubman"},
+    {"source": "Gerrit Smith", "target": "John Brown"},
+    {"source": "Gerrit Smith", "target": "Ann Carroll Fitzhugh"},
+    {"source": "Gerrit Smith", "target": "Joshua Giddings"},
+
+    {"source": "Anna Murray Douglass", "target": "David Ruggles"},
+    {"source": "Anna Murray Douglass", "target": "William Still"},
+    {"source": "Anna Murray Douglass", "target": "Frederick Douglass"},
+
+    {"source": "Elijah Parish Lovejoy", "target": "William Lloyd Garrison"},
+    {"source": "Elijah Parish Lovejoy", "target": "John Brown"},
+
+    {"source": "Harriet Beecher Stowe", "target": "Edward Beecher"},
+    {"source": "Harriet Beecher Stowe", "target": "Josiah Henson"},
+
+    {"source": "Rev. Leonard Grimes", "target": "Shadrach Minkins"},
+    {"source": "Rev. Leonard Grimes", "target": "Thomas Sims"},
+    {"source": "Rev. Leonard Grimes", "target": "Anthony Burns"},
+
+    {"source": "Lewis Hayden", "target": "Harriet Hayden"},
+    {"source": "Lewis Hayden", "target": "William Craft"},
+    {"source": "Lewis Hayden", "target": "Shadrach Minkins"},
+    {"source": "Lewis Hayden", "target": "Anthony Burns"},
+
+    {"source": "Sojourner Truth", "target": "William Lloyd Garrison"},
+    {"source": "Sojourner Truth", "target": "Frederick Douglass"},
+    {"source": "Sojourner Truth", "target": "Suffragettes"},
+
+    {"source": "William Craft", "target": "Ellen Smith Craft"},
+    {"source": "William Craft", "target": "Lewis Hayden"},
+    {"source": "William Craft", "target": "Harriet Hayden"},
+
+    {"source": "Stephen Myers", "target": "Frederick Douglass"},
+
+    {"source": "William Henry Johnson", "target": "Stephen Myers"},
+
+    {"source": "Lydia Mott", "target": "Abigail Mott"},
+    {"source": "Lydia Mott", "target": "Lucretia Mott"},
+    {"source": "Lydia Mott", "target": "James Mott"},
+    {"source": "Lydia Mott", "target": "Austin Bearse"},
+
+    {"source": "Moses Dickson", "target": "Henry 'Box' Brown"},
+
+    {"source": "Thomas Galt", "target": "Elijah Parish Lovejoy"},
+    {"source": "Thomas Galt", "target": "Edward Beecher"},
+
+    {"source": "Sydney Howard Gay", "target": "Isaac T. Hopper"},
+    {"source": "Sydney Howard Gay", "target": "William Still"},
+    {"source": "Sydney Howard Gay", "target": "Henry 'Box' Brown"},
+    {"source": "Sydney Howard Gay", "target": "Jane Johnson"},
+    {"source": "Sydney Howard Gay", "target": "Harriet Tubman"},
+    {"source": "Sydney Howard Gay", "target": "Louis Napoleon"},
+    {"source": "Sydney Howard Gay", "target": "William H. Leonard"},
+
+    {"source": "Jane Johnson", "target": "William Still"},
+
+    {"source": "Laura Smith Haviland", "target": "George deBaptiste"},
+
+    {"source": "John Hunn", "target": "Thomas Garrett"},
+
+    {"source": "Samuel Joseph May", "target": "William Lloyd Garrison"},
+    {"source": "Samuel Joseph May", "target": "Gerrit Smith"},
+    {"source": "Samuel Joseph May", "target": "Suffragettes"},
+
+    {"source": "John Berry Meachum", "target": "Mary Meachum"},
+
+    {"source": "Rev. John Rankin", "target": "William Lloyd Garrison"},
+    {"source": "Rev. John Rankin", "target": "Harriet Beecher Stowe"},
+    {"source": "Rev. John Rankin", "target": "Authors & Advocates"}
+]

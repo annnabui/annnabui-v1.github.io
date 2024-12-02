@@ -1,0 +1,118 @@
+{
+    "name": "Underground Railroad",
+    "children": [
+      {
+        "name": "",
+        "children": [
+          {"name": "Abolitionist Activists"},
+          { "name": "William Lloyd Garrison" },
+          { "name": "Lucretia Mott" },
+          { "name": "James Mott" },
+          { "name": "Lydia Maria Child" },
+          { "name": "Gerrit Smith" },
+          { "name": "Frederick Douglass" },
+          { "name": "Anna Murray Douglass" },
+          { "name": "Stephen Myers" },
+          { "name": "William Henry Johnson" },
+          { "name": "Henry Highland Garnet" },
+          { "name": "Abel Brown" },
+          { "name": "Rev. Leonard Grimes" },
+          { "name": "Samuel Gridley Howe" },
+          { "name": "Moses Dickson" },
+          { "name": "Thomas Galt" },
+          { "name": "Samuel Joseph May" },
+          { "name": "John P. Parker" },
+          { "name": "Peter Quire" },
+          { "name": "Ann Carroll Fitzhugh" },
+          { "name": "Charles Turner Torrey" },
+          { "name": "Harriet Forten Purvis" },
+          { "name": "James Forten" },
+          { "name": "Thomas Wentworth Higginson" },
+          { "name": "Robert Purvis" },
+          { "name": "Theodore Parker" },
+          { "name": "Charlotte Forten Grimké" },
+          { "name": "Joshua Giddings" }
+
+        ]
+      },
+      {
+        "name": "",
+        "children": [
+          {"name": "Suffragettes"},
+          { "name": "Elizabeth M'Clintock" },
+          { "name": "Elizabeth Cady Stanton" },
+          { "name": "Susan B. Anthony" },
+          { "name": "Laura Smith Haviland" }
+        ]
+      },
+      {
+        "name": "",
+        "children": [
+          {"name": "Conductors"},
+          { "name": "Harriet Tubman" },
+          { "name": "Levi Coffin" },
+          { "name": "Vestal Coffin" },
+          { "name": "John Hopper" },
+          { "name": "Rev. John Rankin" },
+          { "name": "John Berry Meachum" },
+          { "name": "Mary Meachum" },
+          { "name": "George deBaptiste" },
+          { "name": "Edward Garrison Draper" }
+        ]
+      },
+      {
+        "name": "",
+        "children": [
+          {"name": "Station Masters"},
+          { "name": "Isaac T. Hopper" },
+          { "name": "William Still" },
+          { "name": "Thomas Garrett" },
+          { "name": "Mary Ann Shadd" },
+          { "name": "John Brown" },
+          { "name": "Lydia Mott" },
+          { "name": "Abigail Mott" },
+          { "name": "Lewis Hayden" },
+          { "name": "Harriet Hayden" },
+          { "name": "Sydney Howard Gay" },
+          { "name": "John Hunn" },
+          { "name": "John Wesley Posey" },
+          { "name": "Jermain Wesley Loguen" },
+          { "name": "Frances Seward" }
+
+        ]
+      },
+      {
+        "name": "",
+        "children": [
+          {"name": "Authors & Advocates"},
+          { "name": "David Ruggles" },
+          { "name": "Henry Bibb" },
+          { "name": "Henry 'Box' Brown" },
+          { "name": "Solomon Northup" },
+          { "name": "Harriet Beecher Stowe" },
+          { "name": "Robert F. Wallcut" },
+          { "name": "Sojourner Truth" },
+          { "name": "Edward Beecher" },
+          { "name": "Louis Napoleon" },
+          { "name": "William H. Leonard" },
+          { "name": "Frances Ellen Watkins Harper" }
+        ]
+      },
+      {
+        "name": "",
+        "children": [
+          {"name": "Freedom Seekers & Martyrs"},
+          { "name": "Elijah Parish Lovejoy" },
+          { "name": "Charles Nalle" },
+          { "name": "Josiah Henson" },
+          { "name": "Shadrach Minkins" },
+          { "name": "Thomas Sims" },
+          { "name": "Anthony Burns" },
+          { "name": "William Craft" },
+          { "name": "Ellen Smith Craft" },
+          { "name": "Jane Johnson" },
+          { "name": "Austin Bearse" }
+        ]
+      }
+    ]
+}

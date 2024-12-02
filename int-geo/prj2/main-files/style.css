@@ -1,0 +1,84 @@
+html {
+    margin: 1em 20em 1em 20em;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.vertical {
+    width: 10px;
+    transform: rotate(90deg);
+}
+
+.year {
+    text-align: center;
+}
+
+#timeline {
+    width: auto;
+    height: auto;
+    margin: 0em 0em 0em 0;
+}
+
+#trainTimeline {
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background-color: blue;
+    z-index: 2;
+    margin-top: 8px;
+    transition: width 0.5s ease;
+}
+
+#grayTimeline {
+    position: absolute;
+    width: 755px;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+    margin-top: 8px;
+}
+
+#yearNotches {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    z-index: -1;
+}
+
+#yearText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0em 4em 2em 4em;
+    height: 150px;
+}
+
+.eachYearText {
+    display:none;
+    color: blue;
+}
+
+.eachYearText.active {
+    display: block;
+}
+
+.hierarchyChart {
+    margin: 4em 0em 4em 0;
+}
+
+button {
+    background-color: white;
+    border: white ;
+}
+
+button:focus {
+    color: blue;
+}

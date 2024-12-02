@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Underground Railroad @ Detroit</title>
+</head>
+<body>
+    <div class="textCont grid">
+        <h1 class="title edOld">Underground<br> Railroad</h1>
+        <p class="subtitle IBML">––a secret network of safe houses and routes used by enslaved African Americans to escape to free states and Canada.</p>
+        <p class="small IBML"><em>This interactive map provides information on the Underground Railroad network nodes particular to <a href="https://catalog.data.gov/dataset/underground-railroad-sites-18740">Detroit, Michigan.</a></em></p>
+    </div>
+    <div class="mapCont grid">
+        <div id="map"></div>
+        <div class="site-info">
+            <h2 class="edOld">Site Information</h2>
+            <div id="info">
+                <div id="name" class="stroke IBMM">Site name</div>
+                <div id="description" class="stroke IBML">Select a site to start</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="UR.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

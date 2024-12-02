@@ -1,0 +1,120 @@
+@font-face {
+    font-family: edOldUltrLight;
+    src: url(fonts/PPEditorialOld-Ultralight.otf);
+}
+
+.edOld {
+    font-family: edOldUltrLight;
+    margin: 0;
+}
+
+@font-face {
+    font-family: IBMPlexSansLight;
+    src: url(fonts/IBMPlexSans-Light.ttf);
+}
+
+@font-face {
+    font-family: IBMPlexSansMedium;
+    src: url(fonts/IBMPlexSans-Medium.ttf);
+}
+
+.IBML {
+    font-family: IBMPlexSansLight;
+    margin: 0;
+}
+
+.IBMM {
+    font-family: IBMPlexSansMedium;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+.grid {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+    column-gap: 2rem;
+}
+
+.title {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.subtitle {
+    grid-area: 1 / 4 / 1 / 7;
+    font-size: 1rem;
+}
+
+.small {
+    grid-area: 1 / 10 / 1 / 12;
+    font-size: 0.75rem;
+}
+
+.mapCont {
+    height: 100%;
+}
+
+#map {
+    grid-area: 1 / 1 / 1 / 10;
+    height: 100%;
+}
+
+.site-info {
+    grid-area: 1 / 10 / 1 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stroke {
+    padding: 0.75rem;
+    border: .5px solid black;
+}
+
+#name {
+    font-size: 0.875rem;
+}
+
+#description {
+    border-top: 0;
+    font-size: 0.875rem;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+    background-color: white;
+    padding: .5rem;
+}
+
+.legend h4 {
+    margin: 0;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}

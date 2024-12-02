@@ -10,7 +10,6 @@ let fontList = [
 document.addEventListener('dblclick', function (event) {
   var clickedElement = event.target;
 
-  // Check if the clicked element has text content
   if (clickedElement && clickedElement.textContent.trim() !== "") {
         var styles = window.getComputedStyle(clickedElement);
         var fontFamily = styles.fontFamily;
@@ -42,8 +41,8 @@ document.addEventListener('dblclick', function (event) {
               <strong>Foundry:</strong> <a href=${firstLetterMatchFont.url}>${firstLetterMatchFont.foundry}</a><br>
             `;
         }
+        chrome.runtime.sendMessage({ action: 'updatePopup', fontInfo: fontInfo });
 
-        // Create a dynamic popup element
         popup = document.createElement('div');
         popup.style.position = 'absolute';
         popup.style.top = event.clientY + 'px';
@@ -55,10 +54,8 @@ document.addEventListener('dblclick', function (event) {
         popup.innerHTML = fontInfo;
         popup.style.fontFamily = 'Helvetica';
 
-        // Append the popup to the document body
         document.body.appendChild(popup);
 
-        // Remove the popup after a short delay (adjust as needed)
         setTimeout(function () {
         document.body.removeChild(popup);
         popup = null;
@@ -103,5 +100,4 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     }
 });
   
-// Send a message to content script from popup.js when the switch is toggled
 chrome.runtime.sendMessage({ action: 'popupSwitchToggled', checked: false });

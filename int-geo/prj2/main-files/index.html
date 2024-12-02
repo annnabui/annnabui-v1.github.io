@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underground Railroad</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <h1>Underground Railroad</h1>
+    <h3>Short summary of the underground railroad here</h3>
+    <hr>
+    <p>Started out because the metaphor of railroad people used to call this grassroot effort towards abolition of slavery in the united states. Reminds me of the materials I read in Nicole Starosielski's The Undersea Network. In my first project of this series, I made a map with leaflet.js that shows the Underground Railroad locations in Detroit, Michigan. I noticed that many of the sites are religious or religious-affiliated, which piqued my interest. I highlighted those sites wonder, why are churches and cemeteries such a big part of Underground Railroad efforts in Detroit? Is it the same in other regions of the US?</p>
+
+    <p>I found a large dataset with all Underground Railroad locations from the National Park Service's <a href="https://www.nps.gov/subjects/undergroundrailroad/about-the-network-to-freedom.htm">Network to Freedom Project</a>. I cleaned and mapped this data set using Datawrapper to see the percentage of religious and religious-affiliated sites in the Underground Railroad in all of the US to see if my suspicion was correct.</p>
+    <br>
+    <center><iframe title="Proportion of Churches and Cemeteries Among Underground Railroad Sites" aria-label="Map" id="datawrapper-chart-lqYz3" src="https://datawrapper.dwcdn.net/lqYz3/2/" scrolling="no" frameborder="0" style="border: none;" width="600" height="656" data-external="1"></iframe></center>
+    <br>
+    <p>More than half of categorized sites are churches or cemeteries. I was curious to why, and found out that was because the Quakers, [explain], were deeply involved in the organization and operation of the Underground Railroad</p>
+
+    <p>To understand why or how the Quakers were involved, below is a short timeline that recaps major events of the Underground Railroad.</p>
+    <br>
+    <center><p>Click on a year to know a specific event, or simply wait for the animation to begin.</p></center>
+    <br>
+
+    <div id="timeline">
+        <div id="yearText">
+            <div id="1760-text" class="eachYearText">
+                <em>The first railroad in the US went into operation.</em>
+            </div>
+            <div id="1790-text" class="eachYearText">
+                <em>Quaker Isaac T. Hopper and African-American collaborators begin helping fugitive slaves in Philadelphia. Their cooperation set the pattern for the Underground Railroad.</em>
+            </div>
+            <div id="1820-text" class="eachYearText">
+                <em>Vestal and Levi Coffin send fugitive slaves overland with Quaker emigrants from North Carolina to Indiana, establishing the first long distance route of the Underground Railroad.</em>
+            </div>
+            <div id="1831-text" class="eachYearText">
+                <em>William Lloyd Garrison establishes the Liberator, in Boston. It is the first newspaper to call for the immediate abolition of slavery. Garrison's passionate advocacy will sway the hearts and minds of countless Americans.</em>
+            </div>
+            <div id="1844-text" class="eachYearText">
+                <em>The earliest representation of the Underground Railroad as an actual train appears, in an abolitionist newspaper in Illinois, the Western Citizen. As iron railroads spread across the North, the lingo of railroading— “stations,” “station masters,” “cars,” and “passengers” —became the coded language of the underground.</em>
+            </div>
+            <div id="1847-text" class="eachYearText">
+                <em>William Still is hired as a clerk by the Pennsylvania Society for the Abolition of Slavery. He soon becomes the coordinator of one of the most important underground networks in the country, linking activists from Norfolk, Virginia to New York, and throughout southern Pennsylvania. When Henry “Box” Brown succeeds in one of the most dramatic fugitive slave escapes, in 1848, Still is on hand to help open the box. Brown had himself shipped from Richmond, Virginia to Philadelphia in a box.</em>
+            </div>
+            <div id="1848-text" class="eachYearText">
+                <em>Thomas Garrett, one of the underground's most important station masters, is put on trial in Wilmington, Delaware for helping the escape of six fugitive slaves. After his acquittal, he defiantly declares that he will add another story to his home to accommodate more fugitives. The first national women's rights conference is held in Seneca Falls, New York. Women have long been active in the underground. Increasingly, they identify their own oppression with that of slaves.</em>
+            </div>
+            <div id="1849-text" class="eachYearText">
+                <em>Harriet Tubman escapes from slavery in Maryland. She will return to Maryland at least thirteen times to rescue slaves, and guide them to safety in the North, becoming the most famous “conductor” on the underground. Thomas Garrett and William Still will be among her closest collaborators.</em>
+            </div>
+            <div id="1850-text" class="eachYearText">
+                <em>Congress passes the Fugitive Slave Act. The law requires all citizens regardless of their personal beliefs to collaborate with public officials in capturing and returning fugitive slaves to their masters. Protests against the law erupt across the North. Recruits flock to help the Underground Railroad.</em>
+            </div>
+            <div id="1852-text" class="eachYearText">
+                <em>Isaac T. Hopper, the “father of the Underground Railroad,” dies in New York.</em>
+            </div>
+            <div id="1853-text" class="eachYearText">
+                <em>In many parts of the North, the Underground Railroad has become increasingly open, as Northerners refuse to cooperate with Federal officials. In Detroit, Michigan, Albany, New York, and elsewhere, underground activists openly advertise their work with fugitives.</em>
+            </div>
+            <div id="1855-text" class="eachYearText">
+                <em>Fugitive slaves in Canada number more than 20,000. Communities mature and prosper. Fugitive slave, underground activist, and journalist Henry Bibb establishes the Voice of the Fugitive, which reports details of fugitives' arrivals in Canada. His rival, Mary Ann Shadd, the daughter of an underground station master, becomes the first black woman to publish a newspaper in North America.</em>
+            </div>
+            <div id="1861-text" class="eachYearText">
+                <em>South Carolina troops fire on Fort Sumter, in Charleston harbor. The Civil War begins.</em>
+            </div>
+            <div id="1865-text" class="eachYearText">
+                <em>The Underground Railroad is superseded by the Civil War. Wherever Union armies march, slaves flock to their protection.</em>
+            </div>
+            <div id="1870-text" class="eachYearText">
+                <em>The Fifteenth Amendment extends suffrage to African-Americans. Underground veteran Levi Coffin proclaims that the underground has reached its symbolic end. “Our work is done,” he declares.</em>
+            </div>
+        </div>
+        <div id="trainTimeline"></div>
+        <div id="grayTimeline"></div>
+        <div id="yearNotches">
+            <button class="year" id="1760">
+                <hr class="vertical">
+                1760s
+            </button>
+            <button class="year" id="1790">
+                <hr class="vertical">
+                1790s
+            </button>
+            <button class="year" id="1820">
+                <hr class="vertical">
+                1820
+            </button>
+            <button class="year" id="1831">
+                <hr class="vertical">
+                1831
+            </button>
+            <button class="year" id="1844">
+                <hr class="vertical">
+                1844
+            </button>
+            <button class="year" id="1847">
+                <hr class="vertical">
+                1847
+            </button>
+            <button class="year" id="1848">
+                <hr class="vertical">
+                1848
+            </button>
+            <button class="year" id="1849">
+                <hr class="vertical">
+                1849
+            </button>
+            <button class="year" id="1850">
+                <hr class="vertical">
+                1850
+            </button>
+            <button class="year" id="1852">
+                <hr class="vertical">
+                1852
+            </button>
+            <button class="year" id="1853">
+                <hr class="vertical">
+                1853
+            </button>
+            <button class="year" id="1855">
+                <hr class="vertical">
+                1855
+            </button>
+            <button class="year" id="1861">
+                <hr class="vertical">
+                1861
+            </button>
+            <button class="year" id="1865">
+                <hr class="vertical">
+                1865
+            </button>
+            <button class="year" id="1870">
+                <hr class="vertical">
+                1870
+            </button>
+        </div>
+    </div>
+    <br>
+    <p>I also made a chart to illustrate the connection between major figures of the Underground Railroad to illustrate the complexity and strength of this grassroot movement.</p>
+    <br>
+    <svg class="hierarchyChart" width="100%" height="100%"></svg>
+    <br>
+    <p>Obviously these are just people who are written down in history, there are so many martyrs and maroon community leaders who went unnoticed due to oppression. I hope to continue my research and visualization work in this direction to give the stage back to people who were most affected by racism and oppresion.</p>
+    
+    <script src="timeline.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
