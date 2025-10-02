@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NYC Host Sites Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS + JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- PapaParse for Google Sheets CSV -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+  <style>
+    #map { 
+        width: 1000px;
+        height: 500px;
+        position: relative;
+    }
+
+    /* Bottom-right info box */
+    #infoBox {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: white;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      max-width: 300px;
+      font-family: Arial, sans-serif;
+    }
+    #infoBox h3 {
+      margin: 0 0 .5em 0;
+      font-size: 16px;
+    }
+    #infoBox p {
+      margin: .5em 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map">
+    <div id="infoBox">
+        <img id="infoLogo" src="" alt="logo" style="width:80px; height:auto; display:block; margin-bottom:8px;">
+        <h3 id="infoName">Select a location</h3>
+        <p id="infoAddress"></p>
+        <p id="infoDescription"></p>
+    </div>
+</div>
+
+<script>
+  // Initialize map centered on NYC
+  var map = L.map('map').setView([40.7128, -74.0060], 12);
+
+  // Add grayscale/light OSM base map (Carto Positron)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Google Sheet CSV URL (replace with your published CSV)
+  var sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSkHAZaRTgM2ThtJ2bJxWE6eaSNQiiZjh_JA_d59cNiBaa7-IQdRQm-wWeKHlDVOcrTV-UIPoovmQZb/pub?gid=0&single=true&output=csv";
+
+  // Load CSV with PapaParse
+  Papa.parse(sheetURL, {
+    download: true,
+    header: true,
+    complete: function(results) {
+      results.data.forEach(function(row) {
+        if (row.lat && row.lng) {
+          var marker = L.marker([row.lat, row.lng]).addTo(map);
+
+          // Zoom to pin and update info box on click
+          marker.on('click', function() {
+            map.setView([row.lat, row.lng], 16);
+            document.getElementById('infoLogo').src = row.logo || "";
+            document.getElementById('infoName').innerText = row.name || "No name";
+            document.getElementById('infoAddress').innerText = row.address || "No address";
+            document.getElementById('infoDescription').innerText = row.description || "No description";
+
+          });
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
